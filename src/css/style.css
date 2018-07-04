@@ -134,6 +134,8 @@ html, body {
 }
 
 .action-banner {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   background: #333333;
   padding: 3rem 0;
