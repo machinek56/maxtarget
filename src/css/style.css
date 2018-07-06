@@ -251,7 +251,7 @@ html, body {
             transform-origin: 100px 85px;
             animation: fadeOutLeft 0.5s ease 0s 1 normal both running;
             background: rgba(0, 0, 0, 0) url("https://www.media-sfera.com/smm/assets/img/how-back-blank.png") no-repeat scroll 0px 0px / contain padding-box border-box;
-            font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 15px / 17.25px 'Roboto';
             margin: 0px 0px 20px;
             padding: 10px 0px;
         }
@@ -264,7 +264,7 @@ html, body {
             width: 200px;
             perspective-origin: 100px 17px;
             transform-origin: 100px 17px;
-            font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 15px / 17.25px 'Roboto';
             margin: 0px 0px 17px;
         }
         /*#DIV_2*/
@@ -289,7 +289,7 @@ html, body {
             caret-color: rgb(255, 255, 255);
             background: hsl(360, 72%, 65%) none repeat scroll 0% 0% / auto padding-box border-box;
             border: 0px none rgb(255, 255, 255);
-            font: normal normal 400 normal 24px / 27.6px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 24px / 27.6px 'Roboto';
             margin: 0px 18px 0px 0px;
             outline: rgb(255, 255, 255) none 0px;
             padding: 3px 0px;
@@ -319,7 +319,7 @@ html, body {
             border-right: 0px solid rgba(0, 0, 0, 0);
             border-bottom: 17px solid rgba(0, 0, 0, 0);
             border-left: 6px solid hsl(360, 72%, 65%);
-            font: normal normal 400 normal 24px / 27.6px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 24px / 27.6px 'Roboto';
             outline: rgb(255, 255, 255) none 0px;
         }
         /*#DIV_3:after*/
@@ -333,7 +333,7 @@ html, body {
             column-rule-color: rgb(255, 255, 255);
             caret-color: rgb(255, 255, 255);
             border: 0px none rgb(255, 255, 255);
-            font: normal normal 400 normal 24px / 27.6px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 24px / 27.6px 'Roboto';
             outline: rgb(255, 255, 255) none 0px;
         }
         /*#DIV_3:before*/
@@ -345,7 +345,7 @@ html, body {
             width: 200px;
             perspective-origin: 100px 20px;
             transform-origin: 100px 20px;
-            font: normal normal 700 normal 18px / 20.7px HelveticaNeueCyr-Light;
+            font: normal normal 700 normal 16px / 20.7px 'Roboto';
             padding: 0px 25px 0px 0px;
             margin-bottom: 10px;
         }
@@ -358,7 +358,7 @@ html, body {
             width: 200px;
             perspective-origin: 100px 34px;
             transform-origin: 100px 34px;
-            font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 14px / 17.25px 'Roboto';
             margin: 0px 0px 15px;
             padding: 0px 12px 0px 20px;
         }
@@ -381,7 +381,7 @@ html, body {
             transform-origin: 100px 8.5px;
             caret-color: rgb(175, 176, 171);
             border: 0px none rgb(175, 176, 171);
-            font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 14px / 17.25px 'Roboto';
             margin: 0px 0px 10px;
             outline: rgb(175, 176, 171) none 0px;
             padding: 0px 0px 0px 20px;
@@ -396,7 +396,7 @@ html, body {
             column-rule-color: rgb(175, 176, 171);
             caret-color: rgb(175, 176, 171);
             border: 0px none rgb(175, 176, 171);
-            font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 14px / 17.25px 'Roboto';
             outline: rgb(175, 176, 171) none 0px;
         }
         /*#DIV_8:after*/
@@ -409,7 +409,7 @@ html, body {
             column-rule-color: rgb(175, 176, 171);
             caret-color: rgb(175, 176, 171);
             border: 0px none rgb(175, 176, 171);
-            font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
+            font: normal normal 400 normal 14px / 17.25px 'Roboto';
             outline: rgb(175, 176, 171) none 0px;
         }
 /*----------STEPS-END--------------------*/
@@ -420,4 +420,7 @@ html, body {
 }
 .steps__box{
   min-width: 25%;
+}
+.offer__heading {
+    font-size: 2rem;
 }
