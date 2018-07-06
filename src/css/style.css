@@ -103,6 +103,14 @@ html, body {
   box-shadow: 0px 2px 14px 7px #00000029;
 }
 
+.button--empty {
+    background: transparent;
+    color: #ffffff;
+}
+.button--empty:hover {
+    background: #00effb;
+    color: #333333;
+}
 
 .target {
   margin-bottom: 3rem;
@@ -139,6 +147,7 @@ html, body {
   flex-direction: column;
   box-sizing: border-box;
   padding: 1rem;
+    transition: .2s all ease-in;
 }
 
 .target__features-item:hover {
@@ -166,6 +175,61 @@ html, body {
 .action-banner_item h2{
   margin: 0px;
   color: hsl(183, 100%, 49%);
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #333;
+    text-align: center;
+}
+.contact-form__wrapper {
+    max-width: 400px;
+    margin: 2rem auto 1rem;
+}
+
+.contact-form__heading {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.contact-form__subheading {
+    margin-top: 10px;
+}
+
+.contact-form__form {
+   padding-bottom: 2rem;
+}
+
+.contact-form__input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    outline: 0;
+}
+.contact-form__input:focus {
+    border-color: #00effb;
+}
+
+.modal-container {
+    padding: 2rem 2rem 1.5rem;
+    background: #fcfcfc;
+    text-align: center;
+}
+
+.modal-container .contact-form__form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.modal-container .contact-form__input {
+    border-color: #333333;
 }
 
 /*--------------STEPS--------------*/

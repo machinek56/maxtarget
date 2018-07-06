@@ -16,20 +16,23 @@
                 <div class="header__logo">MaxTarget</div>
                 <nav class="header__nav">
                     <div class="header__nav-item">
+                        <a href="#" class="header__nav-link">Таргет</a>
+                    </div>
+                    <div class="header__nav-item">
                         <a href="#" class="header__nav-link">Услуги</a>
                     </div>
                     <div class="header__nav-item">
-                        <a href="#" class="header__nav-link">Примеры работ</a>
+                        <a href="#" class="header__nav-link">Как мы работаем</a>
                     </div>
                     <div class="header__nav-item">
-                        <a href="#" class="header__nav-link">Цены</a>
+                        <!--<a href="#" class="header__nav-link">Цены</a>-->
                     </div>
                     <div class="header__nav-item">
-                        <a href="#" class="header__nav-link">Отзывы</a>
+                        <!--<a href="#" class="header__nav-link">Отзывы</a>-->
                     </div>
                 </nav>
                 <div class="header__phone">
-                    <a href="tel:+7(999)-999-99-22">+7(999)-999-99-22</a>
+                    <a href="tel:+7(920)591-72-95">+7(920)591-72-95</a>
                 </div>
             </header>
             <div class="top">
@@ -39,7 +42,7 @@
                     <br>уже через 3 дня!
                 </h1>
                     <h4>С помощью официальной таргетированной рекламы</h4>
-                    <button class="button">
+                    <button class="button trigger">
                         Получить новых клиентов
                     </button>
                 </div>
@@ -111,10 +114,10 @@
     <div class="action-banner">
         <div class="action-banner_item">
             <h2>НУЖНЫ КЛИЕНТЫ?</h2>
-            <h4>ЗАКАЖИТЕ НАСТРОЙКУ ТАРГЕТИРОВАННОЙ РЕКЛАМЫ УЖЕ СЕЙЧАС</h4>
+            <h4>ЗАКАЖИТЕ НАСТРОЙКУ ТАРГЕТИРОВАННОЙ РЕКЛАМЫ УЖЕ СЕЙЧАС!</h4>
         </div>
         <div class="action-banner_item">
-            <button class="button">
+            <button class="button trigger">
                 Мне нужны клиенты!
             </button>
         </div>
@@ -144,23 +147,46 @@
 
     	</div>
     </div>
-    <main class="container">
+    </div>
 
-        <section style="text-align: center;">
-            <h2>Давайте обсудим ваш проект</h2>
-            <h4>Получите бесплатную консультацию у наших специлистов</h4>
+    <section class="contact-form">
+        <div class="contact-form__wrapper">
+            <h2 class="contact-form__heading">Давайте обсудим ваш проект</h2>
+            <h4 class="contact-form__subheading">Получите бесплатную консультацию у наших специалистов</h4>
 
-            <form action="">
-                <input type="text" placeholder="имя">
-                <input type="tel" placeholder="телефон">
-                <button type="submit">Получить консультацию</button>
+            <form action="" class="contact-form__form">
+                <input type="text" placeholder="Имя" class="contact-form__input">
+                <input type="tel" placeholder="Телефон" class="contact-form__input" id="phone">
+                <button type="submit" class="button button--empty">Получить консультацию</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
+
     <footer>
     	<!-- ПОЛУЧИТЕ СТРАТЕГИЮ РОСТА ВАШЕГО БИЗНЕСА УЖЕ СЕГОДНЯ///-->
     </footer>
-    <script src="main.js"></script>
+
+    <!-- Modal structure -->
+    <div id="modal" data-iziModal-icon="icon-home"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle" -->
+     <div class="modal-container">
+         <h2 class="contact-form__heading">Давайте обсудим ваш проект</h2>
+         <h4 class="contact-form__subheading">Получите бесплатную консультацию у наших специалистов</h4>
+
+         <form action="" class="contact-form__form">
+             <input type="text" placeholder="Имя" class="contact-form__input">
+             <input type="tel" placeholder="Телефон" class="contact-form__input" id="phoneModal">
+             <button type="submit" class="button">Получить консультацию</button>
+         </form>
+     </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+    <script src="src/main.js"></script>
 </body>
 
 </html>
