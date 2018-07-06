@@ -1,170 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
 
-html, body {
-  font-size: 16px;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
 
-.container {
-  max-width: 1140px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  color: #ffffff;
-}
-
-.header__bg {
-  background: linear-gradient(45deg, #9198e5, #e66465);
-}
-
-
-.header__logo {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.header__nav {
-  display: flex;
-}
-
-.header__nav-item:not(last-child) {
-  color: #ffffff;
-  margin-right: 1rem;
-}
-
-.header__nav-link {
-  text-decoration: none;
-  color: #ffffff;
-  transition: all .2s ease-in-out;
-}
-
-.header__nav-link:hover {
-  color: #00effb;
-}
-
-.header__phone a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.top {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 150px;
-}
-
-.top__text {
-  flex-basis: 50%;
-  color: #ffffff;
-}
-
-.top__text-4u {
-  font-size: 2.7rem;
-  text-transform: uppercase;
-}
-.top__text-4u--accent {
-  color: #00effb;
-}
-.top__banner {
-  background: url('../../assets/img/people.png') no-repeat;
-  background-size: cover;
-  max-width: 450px;
-  width: 100%;
-}
-
-.button {
-  color: #333;
-  background: #00effb;
-  border-radius: 2rem;
-  padding: 15px 40px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid #00effb;
-  box-shadow: 0px 2px 8px 3px #00000029;
-  transition: all .2s ease-in-out;
-  outline: none;
-}
-
-.button:hover {
-  box-shadow: 0px 2px 14px 7px #00000029;
-}
-
-
-.target {
-}
-
-.target h2{
-  margin: 3rem 0rem 1rem 0rem;
-}
-
-.target__head {
-  border-left: 3px solid #D17075;
-  padding-left: 2rem;
-}
-
-.target__heading {
-  text-transform: uppercase;
-  color: #333333;
-  font-size: 2.3rem;
-}
-
-.target__desc {
-  font-size: 1.5rem;
-}
-
-.target__features {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.target__features-item {
-  flex: 0 1 50%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-
-.target__features-item:hover {
-  box-shadow: 0px 2px 14px 7px #00000029;
-}
-.target__features-item img{
-  width: 80px;
-}
-
-.action-banner {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  background: #333333;
-  padding: 3rem 0;
-  margin: 2rem 0rem 2rem 0rem;
-  color: #fff;
-  background: linear-gradient(45deg, hsl(235, 62%, 73%), hsl(360, 72%, 65%))
-}
-.action-banner_item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.action-banner_item h2{
-  margin: 0px;
-  color: hsl(183, 100%, 49%);
-}
-
-/*--------------STEPS--------------*/
-       .steps__box {
+<body>
+    <div id="DIV_1">
+        <div id="DIV_2">
+            <div id="DIV_3">
+                1
+            </div>
+            <div id="DIV_4">
+                Отправка заявки
+            </div>
+        </div>
+        <div id="DIV_5">
+            Вы можете отправить
+            <br id="BR_6" /> заявку с сайта,
+            <br id="BR_7" /> заказать звонок или позвонить
+        </div>
+        <div id="DIV_8">
+            (5 мин)
+        </div>
+    </div>
+    <div class="steps__box">
+        <div class="steps__item animIt1 fadeOutLeft">
+            <div class="steps__item-header">
+                <div class="steps__item-header-number">1</div>
+                <div class="steps__item-header-ttl">Отправка заявки</div>
+            </div>
+            <div class="steps__item-text">Вы можете отправить
+                <br> заявку с сайта,
+                <br> заказать звонок или позвонить</div>
+            <div class="steps__item-time">(5 мин)</div>
+        </div>
+        <style type="text/css">
+        .steps__box {
             background-position: 0px 0px;
             bottom: 0px;
             box-sizing: border-box;
@@ -342,4 +215,8 @@ html, body {
             font: normal normal 400 normal 15px / 17.25px HelveticaNeueCyr-Light;
             outline: rgb(175, 176, 171) none 0px;
         }
-/*----------STEPS-END--------------------*/
+        /*#DIV_8:before*/
+        </style>
+</body>
+
+</html>
