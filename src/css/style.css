@@ -128,7 +128,8 @@ html, body {
   flex: 0 1 50%;
   display: flex;
   flex-direction: column;
-  /*padding: 1rem;*/
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .target__features-item:hover {
