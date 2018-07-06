@@ -33,4 +33,14 @@ $(document).ready(function() {
     }, 2000);
   });
 
+   $(document).on('submit', '.contact-form__form', function (event) {
+    event.preventDefault();
+    console.log('submit');
+    setTimeout(function() {
+      $('#modal').iziModal('close');
+      $("#modal-alert").iziModal('open');
+      $('.contact-form__form')[0].reset()
+    }, 2000);
+  });
+
 });
