@@ -16,10 +16,21 @@ $(document).ready(function() {
     overlayColor: 'rgba(0, 0, 0, 0.7)',
   });
 
+   $("#modal-alert").iziModal()
+
   $(document).on('click', '.trigger', function (event) {
     event.preventDefault();
     console.log('open')
     $('#modal').iziModal('open');
+  });
+
+  $(document).on('click', '.js-submit-form', function (event) {
+    event.preventDefault();
+    console.log('submit');
+    setTimeout(function() {
+      $('#modal').iziModal('close');
+      $("#modal-alert").iziModal('open');
+    }, 2000);
   });
 
 });
