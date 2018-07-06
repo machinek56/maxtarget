@@ -287,7 +287,7 @@ html, body {
             perspective-origin: 17px 17px;
             transform-origin: 17px 17px;
             caret-color: rgb(255, 255, 255);
-            background: rgb(229, 33, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+            background: hsl(360, 72%, 65%) none repeat scroll 0% 0% / auto padding-box border-box;
             border: 0px none rgb(255, 255, 255);
             font: normal normal 400 normal 24px / 27.6px HelveticaNeueCyr-Light;
             margin: 0px 18px 0px 0px;
@@ -318,7 +318,7 @@ html, body {
             border-top: 17px solid rgba(0, 0, 0, 0);
             border-right: 0px solid rgba(0, 0, 0, 0);
             border-bottom: 17px solid rgba(0, 0, 0, 0);
-            border-left: 6px solid rgb(229, 33, 40);
+            border-left: 6px solid hsl(360, 72%, 65%);
             font: normal normal 400 normal 24px / 27.6px HelveticaNeueCyr-Light;
             outline: rgb(255, 255, 255) none 0px;
         }
@@ -347,6 +347,7 @@ html, body {
             transform-origin: 100px 20px;
             font: normal normal 700 normal 18px / 20.7px HelveticaNeueCyr-Light;
             padding: 0px 25px 0px 0px;
+            margin-bottom: 10px;
         }
         /*#DIV_4*/
 
@@ -412,3 +413,11 @@ html, body {
             outline: rgb(175, 176, 171) none 0px;
         }
 /*----------STEPS-END--------------------*/
+
+.offer__features{
+  display: flex;
+  flex-wrap: wrap;
+}
+.steps__box{
+  min-width: 25%;
+}
