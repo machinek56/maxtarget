@@ -1,298 +1,1079 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Max target</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>SEO Rocket - Material Design Template for SEO Services</title>
+    <meta name="description" content="A material design full and final template for seo, marketing or any kind of support firm">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/material-kit.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.transitions.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/color/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="http://codepassenger.com/html/seorocket/images/template/favicon.png">
+    <link rel="apple-touch-icon" href="http://codepassenger.com/html/seorocket/images/template/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="http://codepassenger.com/html/seorocket/images/template/icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="http://codepassenger.com/html/seorocket/images/template/icon-114x114.png" sizes="114x114">
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-<div class="header__bg">
-    <div class="container">
-        <header class="header">
-            <div class="header__logo">MaxTarget</div>
-            <nav class="header__nav">
-                <!-- <div class="header__nav-item">
-                    <a href="#target" class="header__nav-link">Таргет</a>
-                </div> -->
-                <div class="header__nav-item">
-                    <!--<a href="#" class="header__nav-link">Услуги</a>-->
-                </div>
-               <!--  <div class="header__nav-item">
-                    <a href="#how" class="header__nav-link">Как мы работаем</a>
-                </div> -->
-                <div class="header__nav-item">
-                    <!--<a href="#" class="header__nav-link">Цены</a>-->
-                </div>
-                <div class="header__nav-item">
-                    <!--<a href="#" class="header__nav-link">Отзывы</a>-->
-                </div>
-            </nav>
-            <div class="header__phone">
-                <a href="tel:+7(920)591-72-95">+7(920)591-72-95</a>
-            </div>
-        </header>
-        <div class="top">
-            <div class="top__text">
-                <h1 class="top__text-4u">Получите от <span class="top__text-4u--accent">14</span> новых клиентов в день
-                    <br> из
-                    <span class="top__text-4u--accent">Instagram</span>
-                    <br>уже через 3 дня!
-                </h1>
-                <h4>С помощью официальной таргетированной рекламы</h4>
-                <button class="button trigger">
-                    Получить новых клиентов
+
+    <!-- Preloader -->
+    <div id="preloader-wrap" class="preloader-wrap">
+        <span class="ouro ouro3">
+            <span class="left"><span class="anim"></span></span>
+        <span class="right"><span class="anim"></span></span>
+        </span>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Heade and navigation -->
+    <nav class="navbar navbar-transparent main-navbar" role="navigation" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
+                <button id="search-toggle-mobile" class="search-toggle-mobile"><i class="fa fa-search"></i></button>
+                <a class="navbar-brand" href="index.html">
+                    <img class="brand-img" src="images/template/logo.png" alt="Site Logo">
+                </a>
             </div>
-            <div class="top__banner"></div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="target">
-        <div class="target__head">
-            <h2 class="target__heading" id="target">
-                Таргетированная реклама
-            </h2>
-            <p class="target__desc">
-                Единственный официальный инструмент продвижения в сети Instagram. Позволяет точечно взаимодействовать с
-                Вашей целевой аудиторией. Вы получаете действующий готовый канал продаж, который увеличит прибыль вашего
-                бизнеса уже через несколько дней.
-                <!--Вы получаете мощный поток клиентов, готовых приобрести ваш продукт уже сегодня. -->
-            </p>
-        </div>
-        <h2>Преимущества таргета</h2>
-        <div class="target__features">
-            <div class="target__features-item">
-                <img src="assets/img/target_people.svg" alt="">
-                <h4>Целевая аудитория</h4>
-                <span>
-                    Вашу публикацию видят люди только с определенными характеристиками: возрастом, полом, интересами и т.д. Вы получаете только качественную, заинтересованную в вашем продукте аудиторию.
-                </span>
-            </div>
-            <div class="target__features-item">
-                <img src="assets/img/target_location.svg" alt="">
-                <h4>Геолокация</h4>
-                <span>
-                   Получайте клиентов по выбранному месту нахождения. Будь то город, район и даже улица!
-                </span>
-            </div>
-            <div class="target__features-item">
-                <img src="assets/img/target_opac.svg" alt="">
-                <h4>Прозрачность</h4>
-                <span>
-                    Узнавайте результаты компании в режиме реального времени.
-                    <!-- Получайте подробные отчеты о том, сколько привлечено аудитории, кто эти люди и сколько это стоит.  -->
-                    Статистика по каждой аудитории и объявлению позволяет быстро корректировать объявления и получать высокие результатов.
-                </span>
-            </div>
-            <div class="target__features-item">
-                <img src="assets/img/target_economy.svg" alt="">
-                <h4>Экономия</h4>
-                <span>
-                   Таркетинг дешевле в 5-10 раз контекстной рекламы
-                   Вашу публикацию видит только целевая аудитория. Каждый вложенный вами рубль работает макимально эффективно.
-                </span>
-            </div>
-            <div class="target__features-item">
-                <img src="assets/img/target_speed.svg" alt="">
-                <h4>Скорость</h4>
-                <span>
-                    	У блогера забито расписание? Паблики не отвечают по несколько дней? 
-                    	Реламная кампания разварачивается мгновенно. Вы получаете первых клинетов уже через 3 дня.
-                </span>
-            </div>
-            <div class="target__features-item">
-                <img src="assets/img/target_low_concure.svg" alt="">
-                <h4>Малая конкуренция</h4>
-                <span>
-                    	 Получайте клиентов, не думая о конкурентах. В популярных источниках трафика множество конкурирующих бизнесов
-                    <!-- Яндекс директ, контекстная реклама и прочие рекламные инструменты - в этих источниках трафика множество конкурирующих бизнесов.  -->Таргетингова реклама - новая свободная ниша для увеличения прибыли вашего бизнеса.
-                </span>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" id="one-page-nav">
+                    <li class="active dropdown">
+                        <a href="index.html#banner">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home OnePage</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/home-onepage-red.html">Home OnePage Red</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/home-multipage.html">Home MultiPage</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/home-multipage-red.html">Home MultiPage Red</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html#intro-area">Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://codepassenger.com/html/seorocket/service.html">Service</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/service-single.html">Service Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#about-us-area">About</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#casestudy-area">Case Study</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://codepassenger.com/html/seorocket/case-study.html">Case Study</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/case-study-single.html">Case Study Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#pricing-area">Pricing</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#blog-area">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://codepassenger.com/html/seorocket/blog.html">Blog 3 Column</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/blog-2-column.html">Blog 2 Column</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/blog-list.html">Blog List Style</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/blog-single.html">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#contact-area">contact</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#" class="pages">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://codepassenger.com/html/seorocket/about.html">About</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/pricing.html">Pricing</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/team.html">Team</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/testimonial.html">Testimonial</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/faq.html">FAQ</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/404.html">404 Page</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/commingsoon.html">Commingsoon</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/commingsoon-2.html">Commingsoon 2</a></li>
+                            <li><a href="http://codepassenger.com/html/seorocket/element.html">Elements</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown search-item">
+                        <a id="search-toggle" href="index.html#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
-<div class="action-banner">
-    <div class="action-banner_item">
-        <h2>НУЖНЫ КЛИЕНТЫ?</h2>
-        <h4>ЗАКАЖИТЕ НАСТРОЙКУ ТАРГЕТИРОВАННОЙ РЕКЛАМЫ УЖЕ СЕЙЧАС!</h4>
-    </div>
-    <div class="action-banner_item">
-        <button class="button trigger">
-            Мне нужны клиенты!
-        </button>
-    </div>
-</div>
-<div class="container">
-    <div class="offer">
-        <div class="offer_head">
-            <h2 class="offer__heading" id="how">
-                Я ХОЧУ! С ЧЕГО НАЧАТЬ?
-            </h2>
-            <p class="offer_desc">
-            </p>
-        </div>
-        <div class="offer__features">
 
-            <div class="steps__box">
-                <div class="steps__item animIt1 ">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">1</div>
-                        <div class="steps__item-header-ttl">Отправка заявки</div>
+        <!-- Header search -->
+        <div class="header-search" id="header-search">
+            <div class="container">
+                <h3>Just type and press enter</h3>
+                <form id="searchForm" class="searchform" action="index.html#" method="post">
+                    <div class="form-group">
+                        <input type="search" name="searchinput" placeholder="Search..." class="form-control" required>
                     </div>
-                    <div class="steps__item-text">Вы можете отправить
-                        <br> заявку с сайта,
-                        <br> заказать звонок или позвонить
-                    </div>
-                    <div class="steps__item-time">(5 мин)</div>
-                </div>
-            </div>
-
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">2</div>
-                        <div class="steps__item-header-ttl">Брифинг клиента</div>
-                    </div>
-                    <div class="steps__item-text">Мы погружаемся в
-                        <br>ваш бизнес для подготовки качественного КП
-                    </div>
-                    <div class="steps__item-time">(20 мин)</div>
-                </div>
-            </div>
-
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                <div class="steps__item-header">
-                    <div class="steps__item-header-number">3</div>
-                    <div class="steps__item-header-ttl">Подготовка предложения</div>
-                </div>
-                <div class="steps__item-text">Готовим коммерческое предложение с обоснованием выбора инструментов
-                </div>
-                <div class="steps__item-time">(3ч)</div>
+                </form>
             </div>
         </div>
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">4</div>
-                        <div class="steps__item-header-ttl">Презентация предложения</div>
+        <!-- Header search end -->
+    </nav>
+    <!-- Heade and navigation end -->
+
+    <!-- Banner -->
+    <div class="banner text-white" id="banner">
+        <div id="banner-slider" class="owl-carousel banner-slider">
+            <div class="banner-item item-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="left-part">
+                                <div class="banner-content">
+                                    <h1 class="layer-1">Получите от <span class="text-highlight">14</span> клиентов в день из <span class="text-highlight">Instagram</span> уже через 3 дня!</h1>
+                                    <p class="layer-2">С помощью официальной таргетированной рекламы</p>
+                                    <ul class="banner-features layer-3">
+                                        <li>SEO</li>
+                                        <li>SMM</li>
+                                        <li>CRO</li>
+                                        <li>Content</li>
+                                    </ul>
+                                    <div class="button-group">
+                                        <a class="btn btn-orange btn-lg" href="index.html#">Learn More</a>
+                                        <a class="btn btn-simple btn-lg with-icon play-video" href="https://www.youtube.com/watch?v=5cY5PHE4x_g"><i class="fa fa-play-circle"></i> Video Presentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 hidden-sm hidden-xs">
+                            <div class="right-part">
+                                <div class="banner-img">
+                                    <img src="images/banner/man.png" alt="Banner Image">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="steps__item-text">Презентуем выбор инструментов и прогноз результатов. Обсуждаем все нюансы.
-                    </div>
-                    <div class="steps__item-time">(1ч)</div>
                 </div>
             </div>
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">5</div>
-                        <div class="steps__item-header-ttl">Разработка стратегии</div>
+            <div class="banner-item item-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="left-part">
+                                <div class="banner-content">
+                                    <h1 class="layer-1">Access all services &amp; resources</h1>
+                                    <p class="layer-2">We are digital marketing agency for all your needs. We help you to increase your website's traffic &amp; brand value.</p>
+                                    <ul class="banner-features layer-3">
+                                        <li>SEO</li>
+                                        <li>SMM</li>
+                                        <li>CRO</li>
+                                        <li>Content</li>
+                                    </ul>
+                                    <div class="button-group">
+                                        <a class="btn btn-orange btn-lg" href="index.html#">Learn More</a>
+                                        <a class="btn btn-simple btn-lg with-icon" href="index.html#"><i class="fa fa-play-circle"></i> Video Presentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 hidden-sm hidden-xs">
+                            <div class="right-part">
+                                <div class="banner-img">
+                                    <img src="images/banner/4.png" alt="Banner Image">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="steps__item-text">Анализируем ЦА, конкурентов, проблемы. Разрабатываем идею и контент-план
-                    </div>
-                    <div class="steps__item-time">(1 день)</div>
                 </div>
             </div>
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">6</div>
-                        <div class="steps__item-header-ttl">Запуск кампании!</div>
+            <div class="banner-item item-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="left-part">
+                                <div class="banner-content">
+                                    <h1 class="layer-1">SEo experts are ready to help you</h1>
+                                    <p class="layer-2">We are digital marketing agency for all your needs. We help you to increase your website's traffic &amp; brand value.</p>
+                                    <ul class="banner-features layer-3">
+                                        <li>SEO</li>
+                                        <li>SMM</li>
+                                        <li>CRO</li>
+                                        <li>Content</li>
+                                    </ul>
+                                    <div class="button-group">
+                                        <a class="btn btn-orange btn-lg" href="index.html#">Learn More</a>
+                                        <a class="btn btn-simple btn-lg with-icon" href="index.html#"><i class="fa fa-play-circle"></i> Video Presentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 hidden-sm hidden-xs">
+                            <div class="right-part">
+                                <div class="banner-img">
+                                    <img src="images/banner/5.png" alt="Banner Image">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="steps__item-text">После согласования стратегии приступаем к работам
-                    </div>
-                    <div class="steps__item-time">(1ч)</div>
                 </div>
             </div>
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">7</div>
-                        <div class="steps__item-header-ttl">Аналитика и оптимизация</div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Intros -->
+    <!--<div id="intro-area" class="section section-padding intro-area">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="intros">-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<div class="intro">-->
+                            <!--<div class="intro-img">-->
+                                <!--<img src="images/intro/1.png" alt="Targeted seo">-->
+                            <!--</div>-->
+                            <!--<h3 class="intro-title">Targeted SEO</h3>-->
+                            <!--<p>SEO Rocket is a limited digital marketing company specializing in Search Engine</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<div class="intro">-->
+                            <!--<div class="intro-img">-->
+                                <!--<img src="images/intro/2.png" alt="Search Engine Recovery">-->
+                            <!--</div>-->
+                            <!--<h3 class="intro-title">Search Engine Recovery</h3>-->
+                            <!--<p>SEO Rocket is a limited digital marketing company specializing in Search Engine</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<div class="intro">-->
+                            <!--<div class="intro-img">-->
+                                <!--<img src="images/intro/3.png" alt="Reputation Recover">-->
+                            <!--</div>-->
+                            <!--<h3 class="intro-title">Reputation Recover</h3>-->
+                            <!--<p>SEO Rocket is a limited digital marketing company specializing in Search Engine</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; Intros End &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Fun Facts &ndash;&gt;-->
+    <!--<div id="fact-area" class="section fact-area theme-bg">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="fact-items">-->
+                    <!--<div class="col-sm-3 col-xs-6">-->
+                        <!--<div class="fact">-->
+                            <!--<div class="fact-icon"><i class="fa fa-users"></i></div>-->
+                            <!--<h3 class="fact-number"><span class="count" data-form="0" data-to="54856">54856</span></h3>-->
+                            <!--<p class="fact-name">Clients</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3 col-xs-6">-->
+                        <!--<div class="fact">-->
+                            <!--<div class="fact-icon"><i class="fa fa-area-chart"></i></div>-->
+                            <!--<h3 class="fact-number"><span class="count" data-form="0" data-to="55485"></span></h3>-->
+                            <!--<p class="fact-name">Goal Achieved</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3 col-xs-6">-->
+                        <!--<div class="fact">-->
+                            <!--<div class="fact-icon"><i class="fa fa-clock-o"></i></div>-->
+                            <!--<h3 class="fact-number"><span class="count" data-form="0" data-to="254736"></span></h3>-->
+                            <!--<p class="fact-name">Hours work</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3 col-xs-6">-->
+                        <!--<div class="fact">-->
+                            <!--<div class="fact-icon"><i class="fa fa-support"></i></div>-->
+                            <!--<h3 class="fact-number"><span class="count" data-form="0" data-to="547586"></span></h3>-->
+                            <!--<p class="fact-name">Support Given</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Fun Facts End -->
+
+    <!-- about us section -->
+    <div id="about-us-area" class="section section-padding about-us-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 sm-bottom-30">
+                    <div class="about-us-content">
+                        <h2>Таргетированная реклама</h2>
+                        <p>Единственный официальный инструмент продвижения в сети Instagram. Позволяет точечно взаимодействовать с Вашей целевой аудиторией. Вы получаете действующий готовый канал продаж, который увеличит прибыль вашего бизнеса уже через несколько дней.</p>
                     </div>
-                    <div class="steps__item-text">Собираем статистику и постепенно доводим рекламные кампании до
-                        совершенства
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div style="background-color: #4D87ED; border-radius: 20px; padding: 1rem">
+                        <img src="images/banner/5.png" alt="" style="width: 100%">
                     </div>
-                    <div class="steps__item-time">(3 дня)</div>
+
+                    <!--<div class="card card-orange card-video text-center">-->
+                        <!--<div class="card-content">-->
+                            <!--<h5>Best SEO Agency</h5>-->
+                            <!--<a class="btn btn-white btn-just-icon btn-round play-video" href="https://www.youtube.com/watch?v=5cY5PHE4x_g">-->
+                                <!--<i class="material-icons">play_arrow</i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card card-half card-default card-case text-center">-->
+                        <!--<div class="card-content">-->
+                            <!--<h5>Case Studies</h5>-->
+                            <!--<a class="btn btn-white btn-just-icon btn-round" href="index.html#">-->
+                                <!--<i class="material-icons">keyboard_arrow_right</i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card card-half card-green card-quote text-center">-->
+                        <!--<div class="card-content">-->
+                            <!--<h5>Get a Quote</h5>-->
+                            <!--<a class="btn btn-white btn-just-icon btn-round" href="index.html#">-->
+                                <!--<i class="material-icons">create</i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
-            <div class="steps__box">
-                <div class="steps__item animIt1">
-                    <div class="steps__item-header">
-                        <div class="steps__item-header-number">8</div>
-                        <div class="steps__item-header-ttl">Улучшения каждый месяц</div>
+        </div>
+    </div>
+    <!-- about us section end -->
+
+    <!--<div id="call-to-action-1" class="call-to-action call-to-action-1 theme-bg">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-5">-->
+                    <!--<div class="cta-content">-->
+                        <!--<h2 class="cta-title">Access all our services and assets.</h2>-->
+                        <!--<a class="btn btn-orange" href="#">Purchase Now</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-5 col-md-offset-2 hidden-sm hidden-xs">-->
+                    <!--<div class="cta-mock">-->
+                        <!--<img src="images/mock/cta-1.png" alt="Call to action image">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div id="subscribe-area" class="section section-padding theme-bg subscribe-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="subscribe-header">
+                        <h2 class="subscribe-title">Don't miss our future updates</h2>
+                        <p class="subscribe-subtext">If you want to stay connect with PostBox plesae subscribe our newsletter to get news, updates, promotions &amp; so many </p>
                     </div>
-                    <div class="steps__item-text">Запускаем новый контент, цикл оптимизации и повышения эффективности
-                        рекламы!
-                    </div>
-                    <div class="steps__item-time"></div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <form id="subscribeForm" class="subscribe-form" action="#" method="post" novalidate="true">
+                        <div class="form-group label-floating is-empty">
+                            <label class="control-label">Enter your email address</label>
+                            <input type="email" name="EMAIL" class="form-control">
+                            <span class="material-input"></span></div>
+                        <button type="submit" class="btn btn-orange">Subscribe</button>
+                        <p class="newsletter-success alert alert-success"></p>
+                        <p class="newsletter-error alert alert-danger"></p>
+                    </form>
                 </div>
             </div>
-
+        </div>
     </div>
-</div>
-</div>
-<section class="contact-form">
-    <div class="contact-form__wrapper">
-        <h2 class="contact-form__heading">Давайте обсудим ваш проект</h2>
-        <h4 class="contact-form__subheading">Получите бесплатную консультацию у наших специалистов</h4>
 
-        <form class="contact-form__form">
-            <input type="text" placeholder="Имя" class="contact-form__input" required>
-            <input type="tel" placeholder="Телефон" class="contact-form__input" id="phone" required>
-            <button type="submit" class="button button--emptyjs-submit-form">Получить консультацию</button>
-        </form>
+    <!-- Services -->
+    <div id="service-area" class="section section-padding service-area gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Преимущества таргета</h2>
+                        <!--<p class="section-subtext">We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation, Research, Google Advertising, Real Time Analysis and many more</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="services">
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/service/1.png" alt="Service Icon">
+                            </div>
+                            <div class="service-content">
+                                <h5 class="service-title">Целевая аудитория</h5>
+                                <p>Seo Rocket is a limited digital marketing company specializing PostBox is a limited digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/service/2.png" alt="Service Icon">
+                            </div>
+                            <div class="service-content">
+                                <h5 class="service-title">Геолокация</h5>
+                                <p>Seo Rocket is a limited digital marketing company specializing PostBox is a limited digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/service/3.png" alt="Service Icon">
+                            </div>
+                            <div class="service-content">
+                                <h5 class="service-title">Прозрачность</h5>
+                                <p>Seo Rocket is a limited digital marketing company specializing PostBox is a limited digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/service/4.png" alt="Service Icon">
+                            </div>
+                            <div class="service-content">
+                                <h5 class="service-title">Paid search advertising</h5>
+                                <p>Seo Rocket is a limited digital marketing company specializing PostBox is a limited digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/service/5.png" alt="Service Icon">
+                            </div>
+                            <div class="service-content">
+                                <h5 class="service-title">Targeted email campaign</h5>
+                                <p>Seo Rocket is a limited digital marketing company specializing PostBox is a limited digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/service/6.png" alt="Service Icon">
+                            </div>
+                            <div class="service-content">
+                                <h5 class="service-title">CPA marketing</h5>
+                                <p>Seo Rocket is a limited digital marketing company specializing PostBox is a limited digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+    <!-- Services End -->
 
-<footer>
-    <!-- ПОЛУЧИТЕ СТРАТЕГИЮ РОСТА ВАШЕГО БИЗНЕСА УЖЕ СЕГОДНЯ///-->
-</footer>
-
-<!-- Modal structure -->
-<div id="modal" data-iziModal-icon="icon-home">
-    <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle" -->
-    <div class="iziModal-header iziModal-noSubtitle" style="background: linear-gradient(45deg, hsl(235, 62%, 73%), hsl(360, 72%, 65%)); padding: 20px;"><i
-            class="iziModal-header-icon icon-check"></i>
-        <div class="iziModal-header-buttons"><a href="javascript:void(0)" class="iziModal-button iziModal-button-close"
-                                                data-izimodal-close=""></a></div>
+    <!-- Working process -->
+    <div id="working-process-area" class="section section-padding working-processa-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="section-header section-header-left">
+                        <h2 class="section-title">Я хочу! С чего начать?</h2>
+                        <p class="section-subtext">До получения клиентов осталось всего несколько шагов</p>
+                        <a class="btn btn-primary" href="index.html#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-offset-1">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="process-item">
+                                <div class="process-img">
+                                    <img class="img-responsive" src="images/process/1.png" alt="Process Image">
+                                </div>
+                                <h5 class="process-title">Отправка заявки</h5>
+                                <p>Вы можете отправить заявку сами, заказать звонок или позвонить</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="process-item">
+                                <div class="process-img">
+                                    <img class="img-responsive" src="images/process/2.png" alt="Process Image">
+                                </div>
+                                <h5 class="process-title">Data Collection</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="process-item">
+                                <div class="process-img">
+                                    <img class="img-responsive" src="images/process/3.png" alt="Process Image">
+                                </div>
+                                <h5 class="process-title">Targeting</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="process-item">
+                                <div class="process-img">
+                                    <img class="img-responsive" src="images/process/4.png" alt="Process Image">
+                                </div>
+                                <h5 class="process-title">Result</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="modal-container">
-        <h2 class="contact-form__heading">Давайте обсудим ваш проект</h2>
-        <h4 class="contact-form__subheading">Получите бесплатную консультацию у наших специалистов</h4>
+    <!-- Working process end -->
 
-        <form class="contact-form__form">
-            <input type="text" placeholder="Имя" class="contact-form__input" required>
-            <input type="tel" placeholder="Телефон" class="contact-form__input" id="phoneModal" required>
-            <button type="submit" class="button js-submit-form">Получить консультацию</button>
-        </form>
+    <!-- Case studies -->
+    <!--<div id="casestudy-area" class="section section-padding casestudy-area gray-bg">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-8 col-md-offset-2">-->
+                    <!--<div class="section-header text-center">-->
+                        <!--<h2 class="section-title">Case Studies</h2>-->
+                        <!--<p class="section-subtext">We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation, Research, Google Advertising, Real Time Analysis and many more</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="case-studies">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="case-study">-->
+                            <!--<a class="case-thumb" href="http://codepassenger.com/html/seorocket/case-study-single.html">-->
+                                <!--<img class="img-responsive" src="images/case/1.png" alt="Case image">-->
+                            <!--</a>-->
+                            <!--<h3 class="case-title"><a href="http://codepassenger.com/html/seorocket/case-study-single.html">Keyword research &amp; income growth</a></h3>-->
+                            <!--<p>Perfect keyword finding was challenge. We take seriously to match the keywords, monitoring from different views, and now income is wow.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="case-study">-->
+                            <!--<a class="case-thumb" href="http://codepassenger.com/html/seorocket/case-study-single.html">-->
+                                <!--<img class="img-responsive" src="images/case/2.png" alt="Case image">-->
+                            <!--</a>-->
+                            <!--<h3 class="case-title"><a href="http://codepassenger.com/html/seorocket/case-study-single.html">Targeted email campaign</a></h3>-->
+                            <!--<p>After targeted email marketing campign, click-rates &amp; open-rates are higher than previous. We tested several ways, and it works fine.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="case-study">-->
+                            <!--<a class="case-thumb" href="http://codepassenger.com/html/seorocket/case-study-single.html">-->
+                                <!--<img class="img-responsive" src="images/case/3.png" alt="Case image">-->
+                            <!--</a>-->
+                            <!--<h3 class="case-title"><a href="http://codepassenger.com/html/seorocket/case-study-single.html">Re-Marketing Advertisement</a></h3>-->
+                            <!--<p>As always re-marketing helps visitor reconnect with website he visited. We are happy that everything is well &amp; website gain more sells.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-12 text-center">-->
+                        <!--<a class="btn btn-primary" href="index.html#">View More</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Case studies end -->
+
+    <!--&lt;!&ndash; Call to action / 1 &ndash;&gt;-->
+    <!--<div id="call-to-action-1" class="call-to-action call-to-action-1 theme-bg">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-5">-->
+                    <!--<div class="cta-content">-->
+                        <!--<h2 class="cta-title">Access all our services and assets.</h2>-->
+                        <!--<a class="btn btn-orange" href="index.html#">Purchase Now</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-5 col-md-offset-2 hidden-sm hidden-xs">-->
+                    <!--<div class="cta-mock">-->
+                        <!--<img src="images/mock/cta-1.png" alt="Call to action image">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Call to action / 1 end -->
+
+    <!-- Pricing -->
+    <!--<div id="pricing-area" class="section section-padding pricing-section">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-8 col-md-offset-2">-->
+                    <!--<div class="section-header text-center">-->
+                        <!--<h2 class="section-title">Affordable Pricing &amp; Plan</h2>-->
+                        <!--<p class="section-subtext">We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation, Research, Google Advertising, Real Time Analysis and many more</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="pricings">-->
+                    <!--<div class="col-sm-4 col-xs-12">-->
+                        <!--<div class="pricing-table pricing-default pricing-starter">-->
+                            <!--<h5 class="pack-name">Starter</h5>-->
+                            <!--<p class="pack-price">-->
+                                <!--<span class="currency">$</span>15<span class="price-duration">/Monthly</span>-->
+                            <!--</p>-->
+                            <!--<ul class="pack-features">-->
+                                <!--<li>SEO Pack</li>-->
+                                <!--<li>Monthly Subscription</li>-->
+                                <!--<li>Targeted Email List</li>-->
+                                <!--<li>Website Traffic</li>-->
+                                <!--<li>Daily Result</li>-->
+                            <!--</ul>-->
+                            <!--<a class="btn btn-orange" href="index.html#">Purchase Now</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4 col-xs-12">-->
+                        <!--<div class="pricing-table pricing-red pricing-premium">-->
+                            <!--<h5 class="pack-name">Premium</h5>-->
+                            <!--<p class="pack-price">-->
+                                <!--<span class="currency">$</span>30<span class="price-duration">/Monthly</span>-->
+                            <!--</p>-->
+                            <!--<ul class="pack-features">-->
+                                <!--<li>SEO Pack</li>-->
+                                <!--<li>Monthly Subscription</li>-->
+                                <!--<li>Targeted Email List</li>-->
+                                <!--<li>Website Traffic</li>-->
+                                <!--<li>Daily Result</li>-->
+                            <!--</ul>-->
+                            <!--<a class="btn btn-yellow" href="index.html#">Purchase Now</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4 col-xs-12">-->
+                        <!--<div class="pricing-table pricing-green pricing-corporate">-->
+                            <!--<h5 class="pack-name">Corporate</h5>-->
+                            <!--<p class="pack-price">-->
+                                <!--<span class="currency">$</span>69<span class="price-duration">/Monthly</span>-->
+                            <!--</p>-->
+                            <!--<ul class="pack-features">-->
+                                <!--<li>SEO Pack</li>-->
+                                <!--<li>Monthly Subscription</li>-->
+                                <!--<li>Targeted Email List</li>-->
+                                <!--<li>Website Traffic</li>-->
+                                <!--<li>Daily Result</li>-->
+                            <!--</ul>-->
+                            <!--<a class="btn btn-primary" href="index.html#">Purchase Now</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Pricing End -->
+
+    <!-- Testimonials -->
+    <!--<div id="testimonial-area" class="section testimonial-area text-white style-1">-->
+        <!--<div class="overlay section-padding">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-8 col-md-offset-2">-->
+                        <!--<div class="section-header text-center">-->
+                            <!--<h2 class="section-title">What our client says</h2>-->
+                            <!--<p class="section-subtext">We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation, Research, Google Advertising, Real Time Analysis and many more</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="testimonials">-->
+                        <!--<div class="col-md-4 col-xs-12">-->
+                            <!--<div class="testimonial-item">-->
+                                <!--<blockquote>SEO Rocket is professional team, dedicated support team. I used SEO Rocket service from 2004 and I am very happy about their service. My income growth is smooth. Highly recommended.</blockquote>-->
+                                <!--<div class="commenter">-->
+                                    <!--<div class="mock">-->
+                                        <!--<img class="img-responsive" src="images/client/avatar-1.png" alt="Client mock">-->
+                                    <!--</div>-->
+                                    <!--<div class="body">-->
+                                        <!--<h5 class="client-name">Martina Merry</h5>-->
+                                        <!--<p class="client-info">CEO, ShapeMerry LLC</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4 col-xs-12">-->
+                            <!--<div class="testimonial-item">-->
+                                <!--<blockquote>SEO Rocket is professional team, dedicated support team. I used SEO Rocket service from 2004 and I am very happy about their service. My income growth is smooth. Highly recommended.</blockquote>-->
+                                <!--<div class="commenter">-->
+                                    <!--<div class="mock">-->
+                                        <!--<img class="img-responsive" src="images/client/avatar-2.png" alt="Client mock">-->
+                                    <!--</div>-->
+                                    <!--<div class="body">-->
+                                        <!--<h5 class="client-name">Martina Merry</h5>-->
+                                        <!--<p class="client-info">CEO, ShapeMerry LLC</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4 col-xs-12">-->
+                            <!--<div class="testimonial-item">-->
+                                <!--<blockquote>SEO Rocket is professional team, dedicated support team. I used SEO Rocket service from 2004 and I am very happy about their service. My income growth is smooth. Highly recommended.</blockquote>-->
+                                <!--<div class="commenter">-->
+                                    <!--<div class="mock">-->
+                                        <!--<img class="img-responsive" src="images/client/avatar-3.png" alt="Client mock">-->
+                                    <!--</div>-->
+                                    <!--<div class="body">-->
+                                        <!--<h5 class="client-name">Martina Merry</h5>-->
+                                        <!--<p class="client-info">CEO, ShapeMerry LLC</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Testimonials End -->
+
+    <!-- News and blog -->
+    <!--<div id="blog-area" class="section section-padding blog-area">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-8 col-md-offset-2">-->
+                    <!--<div class="section-header text-center">-->
+                        <!--<h2 class="section-title">News &amp; Blog</h2>-->
+                        <!--<p class="section-subtext">We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation, Research, Google Advertising, Real Time Analysis and many more</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="posts">-->
+                    <!--<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">-->
+                        <!--<article class="card post">-->
+                            <!--<div class="card-image post-thumb">-->
+                                <!--<img src="images/blog/1.png" alt="...">-->
+                                <!--<div class="sharing">-->
+                                    <!--<div class="btn btn-share btn-round btn-primary btn-just-icon">-->
+                                        <!--<i class="fa fa-share-alt"></i>-->
+                                    <!--</div>-->
+                                    <!--<div class="social-share">-->
+                                        <!--<a href="index.html#"><i class="fa fa-facebook"></i></a>-->
+                                        <!--<a href="index.html#"><i class="fa fa-twitter"></i></a>-->
+                                        <!--<a href="index.html#"><i class="fa fa-google-plus"></i></a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="card-content post-body">-->
+                                <!--<h3 class="post-title"><a href="http://codepassenger.com/html/seorocket/blog-single.html">SEO is the biggest lie but</a></h3>-->
+                                <!--<p class="post-excerpt">You heard that no need SEO or it is lie from the air. We agree but it needs proper way to do. SEO is still in major factor... </p>-->
+                                <!--<p class="post-metas">-->
+                                    <!--<span class="post-meta author-meta">by <b itemprop="author">Author</b></span> |-->
+                                    <!--<span class="post-meta date-meta">22 June 2017</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</article>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">-->
+                        <!--<article class="card post">-->
+                            <!--<div class="card-image post-thumb">-->
+                                <!--<img src="images/blog/2.png" alt="...">-->
+                                <!--<div class="sharing">-->
+                                    <!--<div class="btn btn-share btn-round btn-primary btn-just-icon">-->
+                                        <!--<i class="fa fa-share-alt"></i>-->
+                                    <!--</div>-->
+                                    <!--<div class="social-share">-->
+                                        <!--<a href="index.html#"><i class="fa fa-facebook"></i></a>-->
+                                        <!--<a href="index.html#"><i class="fa fa-twitter"></i></a>-->
+                                        <!--<a href="index.html#"><i class="fa fa-google-plus"></i></a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="card-content post-body">-->
+                                <!--<h3 class="post-title"><a href="http://codepassenger.com/html/seorocket/blog-single.html">10 Tips for best keyword</a></h3>-->
+                                <!--<p class="post-excerpt">Keyword Research is always tough job and everything is depends on right keyword. We tell you how to find best keywords...</p>-->
+                                <!--<p class="post-metas">-->
+                                    <!--<span class="post-meta author-meta">by <b itemprop="author">Author</b></span> |-->
+                                    <!--<span class="post-meta date-meta">22 June 2017</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</article>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">-->
+                        <!--<article class="card post">-->
+                            <!--<div class="card-image post-thumb">-->
+                                <!--<img src="images/blog/3.png" alt="...">-->
+                                <!--<div class="sharing">-->
+                                    <!--<div class="btn btn-share btn-round btn-primary btn-just-icon">-->
+                                        <!--<i class="fa fa-share-alt"></i>-->
+                                    <!--</div>-->
+                                    <!--<div class="social-share">-->
+                                        <!--<a href="index.html#"><i class="fa fa-facebook"></i></a>-->
+                                        <!--<a href="index.html#"><i class="fa fa-twitter"></i></a>-->
+                                        <!--<a href="index.html#"><i class="fa fa-google-plus"></i></a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="card-content post-body">-->
+                                <!--<h3 class="post-title"><a href="http://codepassenger.com/html/seorocket/blog-single.html">Grow your business like a king</a></h3>-->
+                                <!--<p class="post-excerpt">SEO Rocket is digital marketing agency since 2002. You can choose SEO Rocket to grow your busines and income.</p>-->
+                                <!--<p class="post-metas">-->
+                                    <!--<span class="post-meta author-meta">by <b itemprop="author">Author</b></span> |-->
+                                    <!--<span class="post-meta date-meta">22 June 2017</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</article>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- News and blog end -->
+
+    <!-- Client logo -->
+    <!--<div id="client-section" class="section client-section theme-bg">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="client-logos">-->
+                    <!--<a class="client-logo" href="index.html#"><img src="images/client/logo-1.png" alt="..."></a>-->
+                    <!--<a class="client-logo" href="index.html#"><img src="images/client/logo-2.png" alt="..."></a>-->
+                    <!--<a class="client-logo" href="index.html#"><img src="images/client/logo-3.png" alt="..."></a>-->
+                    <!--<a class="client-logo" href="index.html#"><img src="images/client/logo-4.png" alt="..."></a>-->
+                    <!--<a class="client-logo" href="index.html#"><img src="images/client/logo-5.png" alt="..."></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Client logo end -->
+
+    <!-- Contact -->
+    <div id="contact-area" class="section section-padding contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Давайте обсудим ваш проект</h2>
+                        <!--<p class="section-subtext"></p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 sm-bottom-30">
+                    <h4>Получите бесплатную консультацию у наших специалистов</h4>
+                    <!--<p>We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation.</p>-->
+                    <form id="contactForm" class="contact-form" method="post" action="index.html#">
+                        <div class="form-group label-floating">
+                            <label class="control-label">Your Name</label>
+                            <input id="name" type="text" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label">Email</label>
+                            <input id="email" type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label">Message</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        <p class="input-success alert alert-success">We have received your mail, We will get back to you soon!</p>
+                        <p class="input-error alert alert-danger">Sorry, Message could not send! Please try again.</p>
+                    </form>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="contact-blocks">
+                        <div class="contact-item">
+                            <div class="contact-img">
+                                <img src="images/contact/1.png" alt="Contact Image">
+                            </div>
+                            <p class="contact-info">127 Park Street Ave <br/>Miami, FL, 8546</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-img">
+                                <img src="images/contact/2.png" alt="Contact Image">
+                            </div>
+                            <p class="contact-info">+1-2345-547859 <br/>+1-2354-547858</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-img">
+                                <img src="images/contact/3.png" alt="Contact Image">
+                            </div>
+                            <p class="contact-info">info@example.com <br/>admin@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <!-- Contact end -->
 
-<div id="modal-alert" aria-hidden="true" aria-labelledby="modal-alert" role="dialog" class="iziModal"
-     data-izimodal-loop="true"
-     style="z-index: 999; border-radius: 3px 3px 0px 0px; border-bottom: 3px solid rgb(0, 175, 102); overflow: hidden; max-width: 600px; margin-bottom: 0px; display: none; height: 48px;">
-    <div class="iziModal-header iziModal-noSubtitle" style="background: rgb(0, 175, 102); padding-right: 40px;"><i
-            class="iziModal-header-icon icon-check"></i>
-        <h2 class="iziModal-header-title">Ваша заявка была успешно отправлена</h2>
-        <p class="iziModal-header-subtitle"></p>
-        <div class="iziModal-header-buttons"><a href="javascript:void(0)" class="iziModal-button iziModal-button-close"
-                                                data-izimodal-close=""></a></div>
-    </div>
-</div>
+    <!-- Location on map -->
+    <!--<div id="map-area" class="section">-->
+        <!--<div class="google-map" id="location" data-lat="23.75043" data-lng="90.38844" data-zoom="16"></div>-->
+    <!--</div>-->
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-<script src="https://unpkg.com/imask"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-<script src="src/main.js"></script>
+    <!-- Subscription -->
+    <!--<div id="subscribe-area" class="section section-padding theme-bg subscribe-area">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-6">-->
+                    <!--<div class="subscribe-header">-->
+                        <!--<h2 class="subscribe-title">Don't miss our future updates</h2>-->
+                        <!--<p class="subscribe-subtext">If you want to stay connect with PostBox plesae subscribe our newsletter to get news, updates, promotions &amp; so many </p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-5 col-md-offset-1">-->
+                    <!--<form id="subscribeForm" class="subscribe-form" action="index.html#" method="post">-->
+                        <!--<div class="form-group label-floating">-->
+                            <!--<label class="control-label">Enter your email address</label>-->
+                            <!--<input type="email" name="email" class="form-control">-->
+                        <!--</div>-->
+                        <!--<button type="submit" class="btn btn-orange">Subscribe</button>-->
+                        <!--<p class="newsletter-success alert alert-success"></p>-->
+                        <!--<p class="newsletter-error alert alert-danger"></p>-->
+                    <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- Subscription end -->
+
+    <!-- Footer -->
+    <!--<footer>-->
+        <!--<div class="footer-upper">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-3 col-sm-6">-->
+                        <!--<div class="widget about-widget">-->
+                            <!--<div class="widget-inner">-->
+                                <!--<a href="index.html" class="footer-logo">-->
+                                    <!--<img src="images/template/logo-footer.png" alt="Site Logo">-->
+                                <!--</a>-->
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6">-->
+                        <!--<div class="widget contact-widget">-->
+                            <!--<h4 class="widget-title">Contact us</h4>-->
+                            <!--<div class="widget-inner">-->
+                                <!--<div class="widget-contact">-->
+                                    <!--<div class="widget-contact-item">-->
+                                        <!--<div class="contact-icon">-->
+                                            <!--<i class="fa fa-map-marker"></i>-->
+                                        <!--</div>-->
+                                        <!--<p class="contact-info">127 Park Street Ave <br/>Miami, FL 8546</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="widget-contact-item">-->
+                                        <!--<div class="contact-icon">-->
+                                            <!--<i class="fa fa-phone"></i>-->
+                                        <!--</div>-->
+                                        <!--<p class="contact-info">+1-2354-854769</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="widget-contact-item">-->
+                                        <!--<div class="contact-icon">-->
+                                            <!--<i class="fa fa-envelope"></i>-->
+                                        <!--</div>-->
+                                        <!--<p class="contact-info">info@example.com</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6">-->
+                        <!--<div class="widget menu-widget">-->
+                            <!--<h4 class="widget-title">Useful Links</h4>-->
+                            <!--<div class="widget-inner">-->
+                                <!--<ul class="custom-menu widget-menu">-->
+                                    <!--<li><a href="index.html#">Privacy Policy</a></li>-->
+                                    <!--<li><a href="index.html#">Support Form</a></li>-->
+                                    <!--<li><a href="index.html#">Service</a></li>-->
+                                    <!--<li><a href="index.html#">Tools</a></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6">-->
+                        <!--<div class="widget social-widget">-->
+                            <!--<h4 class="widget-title">Follow us</h4>-->
+                            <!--<div class="widget-inner">-->
+                                <!--<div class="social">-->
+                                    <!--<a href="index.html#" class="facebook"><i class="fa fa-facebook"></i></a>-->
+                                    <!--<a href="index.html#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+                                    <!--<a href="index.html#" class="youtube"><i class="fa fa-youtube-play"></i></a>-->
+                                    <!--<a href="index.html#" class="googleplus"><i class="fa fa-google-plus"></i></a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="widget payment-widget">-->
+                            <!--<h4 class="widget-title">We accept</h4>-->
+                            <!--<div class="widget-inner">-->
+                                <!--<div class="payments">-->
+                                    <!--<a href="index.html#">PayPal</a>,-->
+                                    <!--<a href="index.html#">Payoneer</a>,-->
+                                    <!--<a href="index.html#">Skrill</a>,-->
+                                    <!--<a href="index.html#">BitCoin</a>,-->
+                                    <!--<a href="index.html#">Master card</a>,-->
+                                    <!--<a href="index.html#">Visa card</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Copyright Footer &ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="copyright-footer theme-bg">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-lg-8 col-md-7">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<ul class="footer-nav">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html">Home</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">About</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">FAQ</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">Blog</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">Contact</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">Resources</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">TOS</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="index.html#">Legal</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-lg-4 col-md-5">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<p class="copyright-text">Copyright <a href="index.html#">SEO Rocket</a> 2017, All right reserved.</p>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash; Copyright Footer End &ndash;&gt;-->
+    <!--</footer>-->
+    <!-- Footer End -->
+
+    <!-- Go to top -->
+    <a class="scrollup btn btn-lg btn-orange btn-just-icon" href="index.html#">
+        <i class="fa fa-angle-up"></i>
+    </a>
+	<!--   Script Files   -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/material.min.js"></script>
+	<script src="assets/js/nouislider.min.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+	<script src="assets/js/material-kit.js"></script>
+	<script src="assets/js/jquery.nav.js"></script>
+	<script src="assets/js/visible.js"></script>
+	<script src="assets/js/imagesloaded.js"></script>
+	<script src="assets/js/owl.carousel.js"></script>
+	<script src="assets/js/jquery.countTo.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="assets/js/Chart.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
+	<script src="js/map.js"></script>
+	<script src="js/custom.js"></script>
 </body>
-
 </html>
