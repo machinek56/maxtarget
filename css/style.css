@@ -187,6 +187,9 @@ a:hover, a:focus, a:visited {
 .section-padding {
   padding: 120px 0;
 }
+.section-padding-sm {
+  padding: 60px 0;
+}
 
 .theme-bg {
   color: #ffffff;
@@ -1029,6 +1032,15 @@ About Styles
    padding: 1rem
 }
 
+
+/*---------------------------------------
+Subscribe Styles
+---------------------------------------*/
+.subscribe-subtext{
+  font-size: 1.6rem;
+}
+
+
 /*---------------------------------------
 Service Styles
 ---------------------------------------*/
@@ -1609,6 +1621,8 @@ Subscription Styles
 ---------------------------------------*/
 .subscribe-title {
   margin-bottom: 27px;
+  padding-left: 2rem;
+  border-left: 3px solid hsl(59, 100%, 50%);
 }
 
 .subscribe-form {
@@ -1617,16 +1631,16 @@ Subscription Styles
   margin-top: 57px;
 }
 .subscribe-form .form-group {
-  width: calc(100% - 158px);
+  width: calc(100% - 200px);
   float: left;
 }
 .subscribe-form [type=submit] {
-  width: 128px;
+  width: 175px;
   text-align: center;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 23px;
-  margin-left: 30px;
+  margin-left: 20px;
   float: left;
 }
 .subscribe-form .newsletter-success, .subscribe-form .newsletter-error {
