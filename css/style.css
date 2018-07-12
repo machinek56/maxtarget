@@ -1115,11 +1115,17 @@ Process Styles
 
 .process-img {
   position: relative;
+    display: flex;
+    justify-content: center;
+}
+.process-img .img-responsive{
+  width: 100px;
+  height: 100px;
 }
 .process-img:after {
   content: "";
   height: 18px;
-  width: 63px;
+  width: 69px;
   background-image: url(../images/process/arrow-1.png);
   background-size: contain;
   background-repeat: no-repeat;
