@@ -840,15 +840,17 @@ Banner Styles
   margin: 0;
   padding: 23px 40px;
   font-size: 2.4rem;
-  background-color: #e74c3c;
+  background-color: hsl(172, 88%, 41%);
   text-transform: uppercase;
   -webkit-box-shadow: 2px 9px 7px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 9px 7px 0px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: #fff;
 }
 .banner-registration form {
   padding: 40px;
+  background-color: hsl(217, 95%, 65%);
 }
 .banner-registration form .form-group {
   margin: 0;
@@ -872,6 +874,11 @@ Banner Styles
 .banner-registration form .btn {
   width: 100%;
   text-align: center;
+  background-color: hsl(172, 88%, 41%);
+}
+.banner-registration form .btn:hover{
+   background-color: hsl(172, 88%, 41%);
+  box-shadow: 0 14px 26px -12px rgba(231, 76, 60, 0.42), 0 4px 23px 0px rgba(231, 76, 60, 0.12), 0 8px 10px -5px rgba(231, 76, 60, 0.2)
 }
 
 /*---------------------------------------

@@ -321,6 +321,17 @@
         mobileNav();
         commingsoonHeight();
     });
+ /*-----------------------------------
+    IziModal
+    -----------------------------------*/
+        $("#modal").iziModal();
+        $(document).on('click', '.modal_open', function (event) {
+            event.preventDefault();
+            // $('#modal').iziModal('setZindex', 99999);
+            // $('#modal').iziModal('open', { zindex: 99999 });
+            $('#modal').iziModal('open');
+        });
+
 
 })(jQuery);
 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/color/default.css">
@@ -39,7 +40,6 @@
 </head>
 
 <body>
-
     <!-- Preloader -->
     <div id="preloader-wrap" class="preloader-wrap">
         <span class="ouro ouro3">
@@ -48,7 +48,6 @@
         </span>
     </div>
     <!-- Preloader End -->
-
     <!-- Heade and navigation -->
     <nav class="navbar navbar-transparent main-navbar" role="navigation" data-spy="affix" data-offset-top="100">
         <div class="container">
@@ -156,7 +155,7 @@
                                         <li>Content</li>
                                     </ul> -->
                                     <div class="button-group">
-                                        <a class="btn btn-orange btn-lg" href="index.html#" style="background-color: hsl(172, 88%, 41%)">ПОЛУЧИТЬ КЛИЕНТОВ</a>
+                                        <a class="btn btn-orange btn-lg modal_open" href="index.html#" style="background-color: hsl(172, 88%, 41%)">ПОЛУЧИТЬ КЛИЕНТОВ</a>
                                        <!--  <a class="btn btn-simple btn-lg with-icon play-video" href="https://www.youtube.com/watch?v=5cY5PHE4x_g"><i class="fa fa-play-circle"></i> Video Presentation</a> -->
                                     </div>
                                 </div>
@@ -495,7 +494,7 @@
                     <div class="section-header section-header-left">
                         <h2 class="section-title">Я хочу! <br> С чего начать?</h2>
                         <p class="section-subtext">До получения клиентов осталось всего несколько шагов</p>
-                        <a class="btn btn-primary" href="index.html#">ПОЛУЧИТЬ КЛИЕНТОВ</a>
+                        <a class="btn btn-primary modal_open" href="index.html#">ПОЛУЧИТЬ КЛИЕНТОВ</a>
                     </div>
                 </div>
                 <div class="col-md-8 col-lg-offset-1">
@@ -913,7 +912,7 @@
                             <input id="phone" type="phone" name="phone" class="form-control" required>
                         </div>
                         <div class="form-group label-floating">
-                            <label class="control-label">Когда позвонить?</label>
+                            <label class="control-label">Когда Вам позвонить?</label>
                             <textarea class="form-control" rows="5"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">ПОЛУЧИТЬ БЕСПЛАТНО</button>
@@ -1090,10 +1089,31 @@
     <!--</footer>-->
     <!-- Footer End -->
 
+
+    <!-- Modal structure -->
+	<div id="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+	<div class="banner-registration card card-green">
+		<a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
+    <h3 class="banner-registration-title">Get a quote</h3>
+    <form id="registrationForm" class="banner-registration-form" action="#" method="post">
+        <div class="form-group is-empty">
+            <input type="text" name="name" placeholder="Имя" class="form-control">
+            <span class="material-input"></span></div>
+        <div class="form-group is-empty">
+            <input type="phone" name="phone" placeholder="Телефон" class="form-control">
+            <span class="material-input"></span></div>
+        <div class="form-group is-empty">
+            <textarea class="form-control" placeholder="Когда Вам позвонить?" rows="4"></textarea><span class="material-input"></span></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>   
+	</div>
+
     <!-- Go to top -->
     <a class="scrollup btn btn-lg btn-orange btn-just-icon" href="index.html#">
         <i class="fa fa-angle-up"></i>
     </a>
+	 <!-- Modal end -->
 	<!--   Script Files   -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -1112,6 +1132,7 @@
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
 	<script src="js/map.js"></script>
 	<script src="js/custom.js"></script>
 </body>
