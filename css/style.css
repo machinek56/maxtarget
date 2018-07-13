@@ -1114,6 +1114,10 @@ Featured Service Styles
 /*---------------------------------------
 Process Styles
 ---------------------------------------*/
+.process-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
 .process-item {
   float: left;
   width: 100%;
@@ -1594,6 +1598,11 @@ Client Logo Styles
 /*---------------------------------------
 Contact Styles
 ---------------------------------------*/
+.contact-form-wrap{
+  display: flex;
+  flex-wrap: wrap;
+
+}
 .contact-blocks {
   float: left;
   width: 100%;
