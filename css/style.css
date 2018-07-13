@@ -1652,6 +1652,11 @@ Contact Styles
   height: 450px;
 }
 
+.contact-area {
+  background-color: #F6F6F6;
+  padding-top: 60px;
+}
+
 /*---------------------------------------
 Subscription Styles
 ---------------------------------------*/
