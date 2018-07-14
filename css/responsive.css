@@ -380,7 +380,7 @@
   .banner-item,
   .banner-item .left-part,
   .banner-item .right-part {
-    height: 580px;
+    height: 400px;
   }
   .banner-content h1 {
     font-size: 3.6rem;
@@ -551,5 +551,13 @@
   }
   .commingsoon-wrap.style-2 .countdown-time {
     margin-bottom: 30px;
+  }
+
+  .about-us-content p {
+    font-size: 1.5rem;
+  }
+
+  .section-padding {
+    padding: 50px 0;
   }
 }
