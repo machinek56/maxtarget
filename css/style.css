@@ -1653,7 +1653,7 @@ Contact Styles
 .contact-blocks .contact-item .contact-info {
   float: left;
   width: calc(100% - 120px);
-  margin-top: 26px;
+  margin-top: 5%;
   font-size: 1.6rem;
   color: hsl(217, 89%, 61%);
 }
