@@ -117,11 +117,11 @@
         e.preventDefault();
         var data = {
             name: $("#name").val(),
-            email: $("#email").val(),
+            phone: $("#phone").val(),
             message: $("#message").val()
         };
 
-        if (isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1)) {
+        if (isValidEmail(data['phone']) && (data['message'].length > 1) && (data['name'].length > 1)) {
             $.ajax({
                 type: "POST",
                 url: "sendmail.php",
