@@ -743,9 +743,10 @@ Banner Styles
 }
 .banner-img-desc{
   position: absolute;
-  top: 35%;
-  left: 0;
-  color: #000;
+  top: 25%;
+  left: 10%;
+  color: #333!important;
+  font-size: 2rem;
 }
 
 .banner-content {
