@@ -142,20 +142,30 @@
     /*-----------------------------------
     Subscription
     -----------------------------------*/
-    $(".subscribe-form").ajaxChimp({
-        callback: mailchimpResponse,
-        url: "http://codepassenger.us10.list-manage.com/subscribe/post?u=6b2e008d85f125cf2eb2b40e9&id=6083876991" // Replace your mailchimp post url inside double quote "".  
+    $(function(){
+      $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("8(999) 999-99-99");
     });
 
-    function mailchimpResponse(resp) {
-        if (resp.result === 'success') {
+    // $(".subscribe-form").on( "submit", function (ev) {
+    //     ev.preventDefault();
+    //     var phoneField = this.querySelector('[name="phone"]');
+    // })
 
-            $('.newsletter-success').html(resp.msg).fadeIn().delay(3000).fadeOut();
 
-        } else if (resp.result === 'error') {
-            $('.newsletter-error').html(resp.msg).fadeIn().delay(3000).fadeOut();
-        }
-    }
+    // $(".subscribe-form").ajaxChimp({
+    //     callback: mailchimpResponse,
+    //     url: "http://codepassenger.us10.list-manage.com/subscribe/post?u=6b2e008d85f125cf2eb2b40e9&id=6083876991" // Replace your mailchimp post url inside double quote "".  
+    // });
+
+    // function mailchimpResponse(resp) {
+    //     if (resp.result === 'success') {
+
+    //         $('.newsletter-success').html(resp.msg).fadeIn().delay(3000).fadeOut();
+
+    //     } else if (resp.result === 'error') {
+    //         $('.newsletter-error').html(resp.msg).fadeIn().delay(3000).fadeOut();
+    //     }
+    // }
 
     /*-----------------------------------
     Magnific Popup
