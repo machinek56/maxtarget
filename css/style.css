@@ -191,7 +191,7 @@ a:hover, a:focus, a:visited {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .section-padding-sm {
   padding: 60px 0;
@@ -486,17 +486,18 @@ Button Styles
   font-size: 1.4rem;
 }
 .btn.btn-orange {
-  background-color: #e74c3c;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(231, 76, 60, 0.14), 0 3px 1px -2px rgba(231, 76, 60, 0.2), 0 1px 5px 0 rgba(231, 76, 60, 0.12);
-          box-shadow: 0 2px 2px 0 rgba(231, 76, 60, 0.14), 0 3px 1px -2px rgba(231, 76, 60, 0.2), 0 1px 5px 0 rgba(231, 76, 60, 0.12);
+  background-color: hsl(172, 88%, 41%);
+  /*-webkit-box-shadow: 0 2px 2px 0 rgba(231, 76, 60, 0.14), 0 3px 1px -2px rgba(231, 76, 60, 0.2), 0 1px 5px 0 rgba(231, 76, 60, 0.12);*/
+  /*-webkit-box-shadow: 0 2px 2px 0 rgba(231, 76, 60, 0.14), 0 3px 1px -2px rgba(231, 76, 60, 0.2), 0 1px 5px 0 rgba(231, 76, 60, 0.12);*/
+          box-shadow: 0 2px 2px 0 rgba(85, 85, 85, 0.14), 0 3px 1px -2px rgba(85, 85, 85, 0.2), 0 1px 5px 0 rgba(85, 85, 85, 0.2);
 }
 .navbar .navbar-nav > li > .btn.btn-orange {
   -webkit-box-shadow: 0 2px 2px 0 rgba(231, 76, 60, 0.14), 0 3px 1px -2px rgba(231, 76, 60, 0.2), 0 1px 5px 0 rgba(231, 76, 60, 0.12);
           box-shadow: 0 2px 2px 0 rgba(231, 76, 60, 0.14), 0 3px 1px -2px rgba(231, 76, 60, 0.2), 0 1px 5px 0 rgba(231, 76, 60, 0.12);
 }
 .btn.btn-orange:focus, .btn.btn-orange:active, .btn.btn-orange:hover {
-  -webkit-box-shadow: 0 14px 26px -12px rgba(231, 76, 60, 0.42), 0 4px 23px 0px rgba(231, 76, 60, 0.12), 0 8px 10px -5px rgba(231, 76, 60, 0.2);
-          box-shadow: 0 14px 26px -12px rgba(231, 76, 60, 0.42), 0 4px 23px 0px rgba(231, 76, 60, 0.12), 0 8px 10px -5px rgba(231, 76, 60, 0.2);
+  /*-webkit-box-shadow: 0 14px 26px -12px rgba(231, 76, 60, 0.42), 0 4px 23px 0px rgba(231, 76, 60, 0.12), 0 8px 10px -5px rgba(231, 76, 60, 0.2);*/
+          box-shadow: 0 14px 26px -12px rgba(85, 85, 85, 0.42), 0 4px 23px 0px rgba(85, 85, 85, 0.12), 0 8px 10px -5px rgba(85, 85, 85, 0.2);
 }
 .navbar .navbar-nav > li > .btn.btn-orange:focus, .navbar .navbar-nav > li > .btn.btn-orange:active, .navbar .navbar-nav > li > .btn.btn-orange:hover {
   -webkit-box-shadow: 0 14px 26px -12px rgba(231, 76, 60, 0.42), 0 4px 23px 0px rgba(231, 76, 60, 0.12), 0 8px 10px -5px rgba(231, 76, 60, 0.2);
@@ -856,25 +857,25 @@ Banner Styles
 }
 .banner-registration form {
   padding: 40px;
-  background-color: hsl(217, 95%, 65%);
+  background-color: #fff;
 }
 .banner-registration form .form-group {
   margin: 0;
 }
 .banner-registration form .form-group .form-control::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #333;
   opacity: 1;
 }
 .banner-registration form .form-group .form-control::-moz-placeholder {
-  color: #ffffff;
+  color: #333;
   opacity: 1;
 }
 .banner-registration form .form-group .form-control:-ms-input-placeholder {
-  color: #ffffff;
+  color: #333;
   opacity: 1;
 }
 .banner-registration form .form-group .form-control:-moz-placeholder {
-  color: #ffffff;
+  color: #333;
   opacity: 1;
 }
 .banner-registration form .btn {
@@ -1046,7 +1047,8 @@ About Styles
    background: #4D87ED url(/images/banner/5.png) no-repeat center;
    background-size:contain;
    border-radius: 20px; 
-   padding: 1rem
+   padding: 1rem;
+   max-width: 230px;
 }
 
 
@@ -2910,4 +2912,9 @@ Commingsoon Styles
 
 .service-area {
   padding-bottom: 60px;
+}
+
+.about-us-pic-img {
+    max-height: 200px;
+    width: auto;
 }
