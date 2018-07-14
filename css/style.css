@@ -741,6 +741,12 @@ Banner Styles
   height: 768px;
   position: relative;
 }
+.banner-img-desc{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  color: #000;
+}
 
 .banner-content {
   position: absolute;
