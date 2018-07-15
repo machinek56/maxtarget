@@ -125,7 +125,7 @@
         if ((data['phone']) && (data['name'].length > 1)) {
             $.ajax({
                 type: "POST",
-                url: "send.php",
+                url: "ajax.php",
                 data: data,
                 success: function () {
                     $('#contactForm .input-success').delay(500).fadeIn(1000);
