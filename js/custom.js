@@ -118,17 +118,21 @@
         var data = {
             name: $("#name").val(),
             phone: $("#phone").val(),
-            message: $("#message").val()
+            message: $("#whenCall").val()
         };
+        console.log(data)
 
-        if (isValidEmail(data['phone']) && (data['message'].length > 1) && (data['name'].length > 1)) {
+        if ((data['phone']) && (data['name'].length > 1)) {
             $.ajax({
                 type: "POST",
-                url: "sendmail.php",
+                url: "send.php",
                 data: data,
                 success: function () {
                     $('#contactForm .input-success').delay(500).fadeIn(1000);
                     $('#contactForm .input-error').fadeOut(500);
+                },
+                error: function (e) {
+                    console.error(e)
                 }
             });
         } else {
@@ -139,15 +143,17 @@
         return false;
     });
 
+
+
     /*-----------------------------------
     Subscription
     -----------------------------------*/
     $(function(){
-      $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("8(999) 999-99-99");
+      $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("+7(999)999-99-99");
     });
 
     // $(".subscribe-form").on( "submit", function (ev) {
-    //     ev.preventDefault();
+    //     ev.preventDefault();`
     //     var phoneField = this.querySelector('[name="phone"]');
     // })
 
@@ -341,19 +347,6 @@
             // $('#modal').iziModal('open', { zindex: 99999 });
             $('#modal').iziModal('open');
         });
-
-
-  $(".form").submit(function() { //устанавливаем событие отправки для формы с id=form
-    var form_data = $(this).serialize(); //собераем все данные из формы
-    $.ajax({
-      type: "POST", //Метод отправки
-      url: "send.php", //путь до php фаила отправителя
-      data: form_data,
-      success: function() {
-          console.log('Сообщение отправлено успешно');
-      }
-    });
-  });
 
 
 })(jQuery);
