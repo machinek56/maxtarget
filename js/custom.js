@@ -120,20 +120,21 @@
             phone: $("#phone").val(),
             message: $("#whenCall").val()
         };
-        console.log(data)
+        console.log(data);
 
         if ((data['phone']) && (data['name'].length > 1)) {
             $.ajax({
                 type: "POST",
                 url: "ajax.php",
                 data: data,
-                success: function () {
+                success: function (data) {
+                    console.log(data);
                     $('#contactForm .input-success').delay(500).fadeIn(1000);
                     $('#contactForm .input-error').fadeOut(500);
                 },
-                error: function (e) {
-                    console.error(e)
-                }
+              error: function (jqXHR, textStatus, errorThrown) {
+                console.error(jqXHR, textStatus, errorThrown);
+              }
             });
         } else {
             $('#contactForm .input-error').delay(500).fadeIn(1000);
