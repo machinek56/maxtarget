@@ -370,6 +370,11 @@
   .single-service .sub-services .sub-service {
     margin-bottom: 30px;
   }
+    .about-us-pic {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 639px) {
@@ -559,5 +564,13 @@
 
   .section-padding {
     padding: 50px 0;
+  }
+
+  .about-us-pic {
+      max-width: 280px;
+  }
+
+  .service {
+      margin-bottom: 0;
   }
 }
