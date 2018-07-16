@@ -1170,7 +1170,7 @@ Process Styles
   background-repeat: no-repeat;
   position: absolute;
   top: 17px;
-  right: -50px;
+  right: -60px;
 }
 .col-xs-3:last-child .process-img:after {
   content: none;
@@ -1181,7 +1181,9 @@ Process Styles
   top: auto;
 }
 
-.col-xs-3:nth-child(4) .process-img:after {
+ 
+.col-xs-4:nth-child(3) .process-img:after,
+.col-xs-4:nth-child(5) .process-img:after   {
   content: none;
 }
 
