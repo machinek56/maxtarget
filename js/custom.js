@@ -128,11 +128,11 @@
 
     $("#registrationForm").on('submit', function (e) {
         e.preventDefault();
-        console.log('@@@');
+        alert('@@@');
         var data = {
             name: $("#modalName").val() || 'Username',
-            phone: $("#modalPhone").val(),
-            message: $("#modalWhenCall").val() || ''
+            phone: $("#modalPhone").val()||'phone',
+            message: $("#modalWhenCall").val() || 'message'
         };
         console.log(data);
 
