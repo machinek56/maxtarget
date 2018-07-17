@@ -5,7 +5,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 //if ($method === "POST") {
     $phone = trim($_POST['phone']);
     $name = trim($_POST['name']);
-    $message = trim($_POST['whenCall']);
+    $message = trim($_POST['message']);
     $nameInputPattern = "/^[а-яА-ЯёЁa-zA-Z+\s]/";
     $letterToMe = "Имя: $name \nТелефон: $phone\nСообщение: $message";
     if (empty($name) || empty($phone)) {
