@@ -116,33 +116,65 @@
     $("#contactForm").on('submit', function (e) {
         e.preventDefault();
         var data = {
-            name: $("#name").val(),
+            name: $("#name").val() || 'Username',
             phone: $("#phone").val(),
-            message: $("#whenCall").val()
+            message: $("#whenCall").val() || ''
         };
         console.log(data);
 
-        if ((data['phone']) && (data['name'].length > 1)) {
-            $.ajax({
-                type: "POST",
-                url: "ajax.php",
-                data: data,
-                success: function (data) {
-                    console.log(data);
-                    $('#contactForm .input-success').delay(500).fadeIn(1000);
-                    $('#contactForm .input-error').fadeOut(500);
-                },
-              error: function (jqXHR, textStatus, errorThrown) {
-                console.error(jqXHR, textStatus, errorThrown);
-              }
-            });
-        } else {
-            $('#contactForm .input-error').delay(500).fadeIn(1000);
-            $('#contactForm .input-success').fadeOut(500);
-        }
-
+        sendForm(data, 'contactForm');
         return false;
     });
+
+    $("#registrationForm").on('submit', function (e) {
+        e.preventDefault();
+        console.log('@@@');
+        var data = {
+            name: $("#modalName").val() || 'Username',
+            phone: $("#modalPhone").val(),
+            message: $("#modalWhenCall").val() || ''
+        };
+        console.log(data);
+
+        sendForm(data, 'registrationForm');
+        return false;
+    });
+
+    $("#subscribeForm").on('submit', function (e) {
+        e.preventDefault();
+        var data = {
+            name: 'Username',
+            phone: $("#phoneOnly").val(),
+            message: ''
+        };
+        console.log(data);
+
+        sendForm(data, 'subscribeForm');
+        return false;
+    });
+
+
+    function sendForm (data, id) {
+
+      if ((data['phone']) && (data['name'].length > 1)) {
+        $.ajax({
+          type: "POST",
+          url: "ajax.php",
+          data: data,
+          success: function (data) {
+            console.log(data);
+            $(`#${id} .input-success`).delay(500).fadeIn(1000);
+            $(`#${id} .input-error`).fadeOut(500);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+            console.error(jqXHR, textStatus, errorThrown);
+          }
+        });
+      } else {
+        $(`#${id} .input-error`).delay(500).fadeIn(1000);
+        $(`#${id} .input-success`).fadeOut(500);
+      }
+    }
 
 
 
@@ -150,7 +182,7 @@
     Subscription
     -----------------------------------*/
     $(function(){
-      $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("+7(999)999-99-99");
+      $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("+7(999)999-99-99"); // полный пиздос
     });
 
     // $(".subscribe-form").on( "submit", function (ev) {

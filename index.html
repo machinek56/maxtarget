@@ -287,11 +287,11 @@
                     <form id="subscribeForm" class="subscribe-form form">
                         <div class="form-group label-floating is-empty">
                             <label class="control-label">Телефон</label>
-                            <input type="phone" name="phone" class="form-control" required style="color: #fff; font-size: 2rem;">
+                            <input type="phone" name="phone" id="phoneOnly" class="form-control" required style="color: #fff; font-size: 2rem;">
                             <span class="material-input"></span></div>
                         <button type="submit" class="btn btn-orange" style="background-color: hsl(172, 88%, 41%)">ПЕРЕЗВОНИТЕ МНЕ</button>
-                        <p class="newsletter-success alert alert-success"></p>
-                        <p class="newsletter-error alert alert-danger"></p>
+                        <p class="newsletter-success input-success alert alert-success">Спасибо за вашу заявку!</p>
+                        <p class="newsletter-error  input-error  alert alert-danger">Что-то пошло не так..попробуйте позже.</p>
                     </form>
                 </div>
             </div>
@@ -405,7 +405,7 @@
             </div>
             <div class="row contact-form-wrap">
                 <div class="col-sm-6 sm-bottom-30 order-sm-2">
-                    <h4>Узнайте, как получить клиентов из Инстаграм именно вашему бизнесу, на бесплатной консультации с маркетологом Max-Target<!--Закажите настройку таргетированной рекламы и получите рост вашего бизнеса уже сегодня!<--></h4>
+                    <h4>Узнайте, как получить клиентов из Инстаграм именно вашему бизнесу на бесплатной консультации с маркетологом Max-Target<!--Закажите настройку таргетированной рекламы и получите рост вашего бизнеса уже сегодня!<--></h4>
                     <!--<p>We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation.</p>-->
                     <form id="contactForm" class="contact-form form">
                         <div class="form-group label-floating">
@@ -422,7 +422,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
                         <p class="input-success alert alert-success">Спасибо за вашу заявку!</p>
-                        <p class="input-error alert alert-danger">Что-то пошло не так..</p>
+                        <p class="input-error alert alert-danger">Что-то пошло не так..попробуйте позже.</p>
                     </form>
                 </div>
                 <div class="col-sm-5 col-sm-offset-1 order-sm-2">
@@ -459,14 +459,17 @@
     <h3 class="banner-registration-title">Get a quote</h3>
     <form id="registrationForm" class="banner-registration-form form">
         <div class="form-group is-empty">
-            <input type="text" name="name" id="name" placeholder="Имя" class="form-control" required>
+            <input type="text" name="name" id="modalName" placeholder="Имя" class="form-control" required>
             <span class="material-input"></span></div>
         <div class="form-group is-empty">
-            <input type="tel" name="phone" id="phone" placeholder="Телефон" class="form-control" required>
+            <input type="tel" name="phone" id="modalPhone" placeholder="Телефон" class="form-control" required>
             <span class="material-input"></span></div>
         <div class="form-group is-empty">
-            <textarea class="form-control" id="whenCall" name="whenCall" placeholder="Когда Вам позвонить?" rows="4"></textarea><span class="material-input"></span></div>
+            <textarea class="form-control" id="modalWhenCall" name="whenCall" placeholder="Когда Вам позвонить?" rows="4"></textarea><span class="material-input"></span></div>
         <button type="submit" class="btn btn-primary">Отправить</button>
+
+        <p class="input-success alert alert-success">Спасибо за вашу заявку!</p>
+        <p class="input-error alert alert-danger">Что-то пошло не так..попробуйте позже.</p>
     </form>
 </div>   
 	</div>

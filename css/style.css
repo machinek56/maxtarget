@@ -2937,3 +2937,7 @@ Commingsoon Styles
     width: 100%;
     border-radius: 10px;
 }
+
+#registrationForm .input-error, .input-success {
+  display: none;
+}
