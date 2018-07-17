@@ -126,8 +126,8 @@
         return false;
     });
 
-    $("#registrationForm").on('submit', function (e) {
-        e.preventDefault();
+    $("#sendRegistrationForm").on('click', function (e) {
+        // ev.preventDefault();
         alert('@@@');
         var data = {
             name: $("#modalName").val() || 'Username',
@@ -155,7 +155,6 @@
 
 
     function sendForm (data, id) {
-
       if ((data['phone']) && (data['name'].length > 1)) {
         $.ajax({
           type: "POST",
