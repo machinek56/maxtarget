@@ -512,6 +512,7 @@
         console.log(data);
 
         sendForm(data, 'registrationForm');
+        $('#registrationForm')[0].reset();
         return false;
     });
 		function sendForm (data, id) {

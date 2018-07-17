@@ -123,6 +123,7 @@
         console.log(data);
 
         sendForm(data, 'contactForm');
+        $('#contactForm')[0].reset();
         return false;
     });
 
@@ -136,6 +137,7 @@
         console.log(data);
 
         sendForm(data, 'registrationForm');
+        $('#registrationForm')[0].reset();
         return false;
     });
 
@@ -149,6 +151,7 @@
         console.log(data);
 
         sendForm(data, 'subscribeForm');
+        $('#subscribeForm')[0].reset();
         return false;
     });
 

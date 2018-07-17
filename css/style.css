@@ -890,6 +890,7 @@ Banner Styles
   width: 100%;
   text-align: center;
   background-color: hsl(172, 88%, 41%);
+    margin-bottom: 1rem;
 }
 .banner-registration form .btn:hover{
    background-color: hsl(172, 88%, 41%);
