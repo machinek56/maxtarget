@@ -128,7 +128,6 @@
 
     $("#sendRegistrationForm").on('click', function (e) {
         // ev.preventDefault();
-        alert('@@@');
         var data = {
             name: $("#modalName").val() || 'Username',
             phone: $("#modalPhone").val()||'phone',
