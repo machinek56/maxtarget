@@ -573,4 +573,16 @@
   .service {
       margin-bottom: 0;
   }
+
+  .contact-blocks .contact-item .contact-img {
+    width: 70px;
+    height: 70px;
+  }
+  .contact-img img {
+    width: 70px;
+  }
+
+  .contact-blocks .contact-item .contact-info {
+    font-size: 1.4rem;
+  }
 }
