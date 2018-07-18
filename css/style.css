@@ -814,7 +814,9 @@ Banner Styles
 .text-highlight {
   color: #fffb00;
 }
-
+.text-highlight-blue{
+  color: hsl(217, 89%, 61%);
+}
 .banner-slider .owl-pagination .owl-page.active {
   background-color: #ffffff;
 }
