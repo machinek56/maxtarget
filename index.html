@@ -74,18 +74,7 @@
 <script>
   fbq('track', 'ViewContent');
 </script>
-<script type="text/javascript">
-    var data = {
-    name: 'Приход клиента',
-    phone: 'phone',
-    message: 'message'
-};
-$.ajax({
-            type: "POST",
-            url: "ajax.php",
-            data: data,
-        }
-</script>
+ 
 
     <!-- Preloader -->
     <div id="preloader-wrap" class="preloader-wrap">
@@ -520,6 +509,19 @@ $.ajax({
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
 	<script src="js/map.js"></script>
 	<script src="js/custom.js"></script>
+<script type="text/javascript">
+    var data = {
+    name: 'Приход клиента',
+    phone: 'phone',
+    message: 'message'
+};
+$.ajax({
+            type: "POST",
+            url: "ajax.php",
+            data: data,
+        })
+</script>
+    
 	<script type="text/javascript">
 		$("#sendRegistrationForm").on('click', function (e) {
         var data = {
