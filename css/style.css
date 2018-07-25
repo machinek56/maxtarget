@@ -2955,3 +2955,20 @@ Commingsoon Styles
 .iziModal .iziModal-button{
   margin-right: 10px;
 }
+/*Why section*/
+.reasons-checklist{
+  list-style-type:none;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.checklist-item{
+  display: flex;
+  margin-bottom: 3rem;
+}
+.check-mark-wrap{
+  display: inline-block;
+  margin: 0px 1rem 0px 1rem;
+}
+.check-mark-wrap svg{
+  fill: rgb(15,132,243);
+}
