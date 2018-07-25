@@ -741,6 +741,14 @@ Banner Styles
   height: 768px;
   position: relative;
 }
+@media (max-width: 519px) {
+  .banner-item .left-part,
+.banner-item .right-part,
+.banner-item {
+  height: 568px;
+  position: relative;
+}
+}
 .banner-img-desc{
   position: absolute;
   top: 25%;
@@ -760,8 +768,10 @@ Banner Styles
 }
 @media screen and(max-width: 768) {
 .banner-content {
-  
-          transform: translateY(-65%);
+  transform: translateY(-65%);
+ }
+ .layer-1{
+  font-size: 2rem;
  }
 }
 .banner-content h1 {
