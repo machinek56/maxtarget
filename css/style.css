@@ -2950,3 +2950,8 @@ Commingsoon Styles
 #registrationForm .input-error, .input-success {
   display: none;
 }
+
+/*Izi Modal Css Rewright*/
+.iziModal .iziModal-button{
+  margin-right: 10px;
+}

@@ -385,6 +385,6 @@
 
 })(jQuery);
 
-$(window).on('load', function () {
-    $("#preloader-wrap").delay(200).fadeOut();
-});
+// $(window).on('load', function () {
+//     $("#preloader-wrap").delay(200).fadeOut();
+// });
