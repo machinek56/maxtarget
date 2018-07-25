@@ -51,15 +51,15 @@
     /*-----------------------------------
     Banner Carousel 
     -----------------------------------*/
-    $('#banner-slider').owlCarousel({
-        singleItem: true,
-        slideSpeed: 200,
-        //autoPlay: 3000,
-        stopOnHover: true,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"><i>', '<i class=\"fa fa-angle-right\"><i>'],
-        pagination: true,
-    });
+    // $('#banner-slider').owlCarousel({
+    //     singleItem: true,
+    //     slideSpeed: 200,
+    //     //autoPlay: 3000,
+    //     stopOnHover: true,
+    //     navigation: true,
+    //     navigationText: ['<i class=\"fa fa-angle-left\"><i>', '<i class=\"fa fa-angle-right\"><i>'],
+    //     pagination: true,
+    // });
 
     /*-----------------------------------
     CountTo 

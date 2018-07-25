@@ -68,11 +68,11 @@
   .banner-slider .owl-buttons .owl-next {
     right: -360px;
   }
-  .banner-item,
+  /*.banner-item,
   .banner-item .left-part,
   .banner-item .right-part {
     height: 520px;
-  }
+  }*/
   .section-padding {
     padding: 90px 0;
   }
@@ -382,13 +382,13 @@
     max-height: 480px;
     overflow: auto;
   }
-  .banner-item,
+  /*.banner-item,
   .banner-item .left-part,
   .banner-item .right-part {
     height: 400px;
-  }
+  }*/
   .banner-content h1 {
-    font-size: 3.6rem;
+    /*font-size: 3.6rem;*/
   }
   .banner-content p {
     margin-top: 15px;
@@ -407,7 +407,7 @@
     bottom: 0px;
   }
   .banner-content h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .banner-content p {
     font-size: 1.3rem;
@@ -433,6 +433,12 @@
   }
   .working-processa-area .col-xs-3 {
     width: 50%;
+  }
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+  .banner-content p {
+    font-size: 1.5rem;
   }
   .process-item {
     margin-bottom: 30px;

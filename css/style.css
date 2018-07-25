@@ -758,10 +758,16 @@ Banner Styles
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media screen and(max-width: 768) {
+.banner-content {
+  
+          transform: translateY(-65%);
+ }
+}
 .banner-content h1 {
   text-transform: uppercase;
   line-height: 1.357;
-  margin: 0;
+  margin-bottom: 4rem;
 }
 .banner-content p {
   font-size: 1.8rem;
