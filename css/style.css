@@ -2962,11 +2962,13 @@ Commingsoon Styles
 }
 
 /*Izi Modal Css Rewright*/
-#modal{
+#modal,.iziModal-overlay{
   display: none;
+  left: -99999px;
 }
 .iziModal .iziModal-button{
   margin-right: 10px;
+
 }
 /*Why section*/
 .reasons-checklist{
