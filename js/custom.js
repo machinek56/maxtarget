@@ -374,12 +374,16 @@
  /*-----------------------------------
     IziModal
     -----------------------------------*/
-        $("#modal").iziModal();
+       // $("#modal").iziModal();
         $(document).on('click', '.modal_open', function (event) {
-            event.preventDefault();
-            // $('#modal').iziModal('setZindex', 99999);
-            // $('#modal').iziModal('open', { zindex: 99999 });
-            $('#modal').iziModal('open');
+             event.preventDefault();     
+ 
+           var top = $('#contact-area').offset().top;
+ 
+        $('body,html').animate({scrollTop: top}, 1500);
+
+            // event.preventDefault();
+            // $('#modal').iziModal('open');
         });
 
 
