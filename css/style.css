@@ -221,10 +221,7 @@ a:hover, a:focus, a:visited {
 }
 
 .section-title {
-  /*display: inline-block;*/
   margin: 0;
-  /*padding-left: 2rem;*/
-  /*border-left: 3px solid;*/
 }
 
 .section-subtext {
@@ -724,6 +721,12 @@ Banner Styles
 .banner {
   width: 100%;
   overflow: hidden;
+  padding-top: 12rem;
+  padding-bottom: 3rem;
+}
+
+.banner__heading {
+  text-transform: uppercase;
 }
 .banner.style-2 {
   background-image: url(../images/bg/2.png);
@@ -766,7 +769,7 @@ Banner Styles
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-@media screen and(max-width: 768) {
+@media screen and(max-width: 768px) {
 .banner-content {
   transform: translateY(-65%);
  }
@@ -915,6 +918,13 @@ Banner Styles
   box-shadow: 0 14px 26px -12px rgba(231, 76, 60, 0.42), 0 4px 23px 0px rgba(231, 76, 60, 0.12), 0 8px 10px -5px rgba(231, 76, 60, 0.2)
 }
 
+.banner-mobile {
+  display: none;
+}
+
+.banner-form .form-control {
+  color: #ffffff;
+}
 /*---------------------------------------
 Intro Styles
 ---------------------------------------*/
