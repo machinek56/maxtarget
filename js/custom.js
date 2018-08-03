@@ -198,6 +198,7 @@
     -----------------------------------*/
     $(function(){
       $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("+7(999)999-99-99"); // полный пиздос
+      $("#bannerPhone").mask("+7(999)999-99-99");
     });
 
     // $(".subscribe-form").on( "submit", function (ev) {
