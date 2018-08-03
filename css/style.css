@@ -2997,3 +2997,8 @@ Commingsoon Styles
 .check-mark-wrap svg{
   fill: rgb(15,132,243);
 }
+
+
+.contact-form__text {
+  font-size: 2.2rem;
+}

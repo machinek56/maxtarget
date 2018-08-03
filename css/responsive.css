@@ -597,11 +597,11 @@
 
 
   .about-us-content p {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 
   .section-padding {
-    padding: 50px 0;
+    padding: 35px 0;
   }
   .section-title {
     font-size: 2.5rem;
@@ -634,5 +634,10 @@
   .banner__form-text {
     text-align: center;
     font-size: 1.6rem;
+  }
+
+  .contact-form__text {
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 }

@@ -164,7 +164,7 @@
         };
         console.log(data);
 
-        sendForm(data, 'subscribeForm');
+        sendForm(data, 'bannerForm');
         $('#subscribeForm')[0].reset();
         return false;
     });
@@ -178,19 +178,34 @@
           data: data,
           success: function (data) {
             console.log(data);
+
             $(`#${id} .input-success`).delay(500).fadeIn(1000);
             $(`#${id} .input-error`).fadeOut(500);
+            showSuccessMsg();
           },
           error: function (jqXHR, textStatus, errorThrown) {
             console.error(jqXHR, textStatus, errorThrown);
+            showErrorMsg();
           }
         });
       } else {
-        $(`#${id} .input-error`).delay(500).fadeIn(1000);
-        $(`#${id} .input-success`).fadeOut(500);
+        showErrorMsg();
       }
     }
 
+    function showSuccessMsg () {
+      iziToast.success({
+        title: 'Отлично!',
+        message: 'Ваша заявка успешно отправлена.'
+      });
+    }
+
+    function showErrorMsg () {
+      iziToast.error({
+        title: 'Упсс!',
+        message: 'Что-то пошло не так, попробуйте еще раз.'
+      });
+    }
 
 
     /*-----------------------------------
