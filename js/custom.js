@@ -155,6 +155,20 @@
         return false;
     });
 
+    $("#bannerForm").on('submit', function (e) {
+        e.preventDefault();
+        var data = {
+            name: $('#bannerName').val(),
+            phone: $("#bannerPhone").val(),
+            message: ''
+        };
+        console.log(data);
+
+        sendForm(data, 'subscribeForm');
+        $('#subscribeForm')[0].reset();
+        return false;
+    });
+
 
     function sendForm (data, id) {
       if ((data['phone']) && (data['name'].length > 1)) {

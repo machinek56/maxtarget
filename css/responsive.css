@@ -630,4 +630,9 @@
   .reasons-checklist {
     font-size: 1.3rem;
   }
+
+  .banner__form-text {
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
