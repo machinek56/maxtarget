@@ -181,6 +181,7 @@
 
             $(`#${id} .input-success`).delay(500).fadeIn(1000);
             $(`#${id} .input-error`).fadeOut(500);
+            $(`#${id}`)[0].reset();
             showSuccessMsg();
           },
           error: function (jqXHR, textStatus, errorThrown) {
