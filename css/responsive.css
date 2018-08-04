@@ -612,7 +612,8 @@
   }
 
   .service {
-      margin-bottom: 0;
+    margin-bottom: 0;
+    padding: 2rem 3rem;
   }
 
   .contact-blocks .contact-item .contact-img {
