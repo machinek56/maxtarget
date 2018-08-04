@@ -73,9 +73,6 @@
   .banner-item .right-part {
     height: 520px;
   }*/
-  .section-padding {
-    padding: 90px 0;
-  }
   .about-us-content h2 {
     margin-top: 0;
   }
@@ -597,7 +594,16 @@
 
 
   .about-us-content p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .about-us-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .subscribe-title {
+    font-size: 2.5rem;
   }
 
   .section-padding {
@@ -629,7 +635,7 @@
   }
 
   .reasons-checklist {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .banner__form-text {
@@ -652,17 +658,27 @@
   .service-area .section-header {
       margin-bottom: 10px;
   }
+  .subscribe-subtext{
+     font-size: 1.4rem;
+   }
 
-  .subscribe-title {
-      font-size: 2.8rem;
+  .instagram-likes-img {
+    width: 170px;
+    margin: 0 auto;
+    display: block;
   }
-    .subscribe-subtext{
-        font-size: 1.3rem;
-    }
+}
 
-    .instagram-likes-img {
-        width: 170px;
-        margin: 0 auto;
-        display: block;
-    }
+@media screen and (max-width: 380px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-form__text {
+    font-size: 1.4rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
 }

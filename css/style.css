@@ -1673,9 +1673,9 @@ Contact Styles
   margin-bottom: -30px;
 }
 .contact-blocks .contact-item {
-  float: left;
-  width: 100%;
   margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
 }
 .contact-blocks .contact-item .contact-img {
   width: 100px;
@@ -3027,6 +3027,11 @@ Commingsoon Styles
 
 .owl-carousel .owl-item img {
   width: auto;
+}
+
+.navbar-brand {
+  font-size: 2.3rem;
+  text-transform: uppercase;
 }
 
 /*.contact-form {*/
