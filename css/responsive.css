@@ -83,7 +83,7 @@
     margin-bottom: 30px;
   }
   .section-header {
-    margin-bottom: 48px;
+    margin-bottom: 30px;
   }
   .section-header.section-header-left {
     margin-bottom: 50px;
@@ -640,4 +640,28 @@
     font-size: 1.6rem;
     font-weight: 500;
   }
+
+  .form .btn {
+      width: 100%;
+  }
+
+  .service-area {
+      padding: 20px 0 0;
+  }
+  .service-area .section-header {
+      margin-bottom: 10px;
+  }
+
+  .subscribe-title {
+      font-size: 2.8rem;
+  }
+    .subscribe-subtext{
+        font-size: 1.3rem;
+    }
+
+    .instagram-likes-img {
+        width: 170px;
+        margin: 0 auto;
+        display: block;
+    }
 }

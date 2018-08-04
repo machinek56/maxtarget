@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/material-kit.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/owl.transitions.css"> -->
+     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
     <link rel="stylesheet" href="assets/css/iziToast.min.css">
 
@@ -29,16 +30,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 
+    <!-- Loading buttons -->
+    <link rel="stylesheet" href="assets/css/loading.css">
+    <link rel="stylesheet" href="assets/css/loading-btn.css">
+
     <!-- Favicon -->
     <link rel="icon" href="http://codepassenger.com/html/seorocket/images/template/favicon.png">
     <link rel="apple-touch-icon" href="http://codepassenger.com/html/seorocket/images/template/apple-touch-icon.png">
     <link rel="apple-touch-icon" href="http://codepassenger.com/html/seorocket/images/template/icon-72x72.png" sizes="72x72">
     <link rel="apple-touch-icon" href="http://codepassenger.com/html/seorocket/images/template/icon-114x114.png" sizes="114x114">
-
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122491220-1"></script>
@@ -67,24 +67,13 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-
-
 </head>
 
 <body>
 <script>
   fbq('track', 'ViewContent');
 </script>
- 
 
-    <!-- Preloader -->
-  <!--   <div id="preloader-wrap" class="preloader-wrap">
-        <span class="ouro ouro3">
-            <span class="left"><span class="anim"></span></span>
-        <span class="right"><span class="anim"></span></span>
-        </span>
-    </div> -->
-    <!-- Preloader End -->
     <!-- Heade and navigation -->
     <nav class="navbar navbar-transparent main-navbar" role="navigation" data-spy="affix" data-offset-top="100">
         <div class="container">
@@ -103,16 +92,12 @@
 
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right" id="one-page-nav">
-                    <li class="active">
-                        <a href="index.html#banner">Главная</a>
-                    </li>
-                    <li >
-                        <a href="index.html#target">Таргетинг</a>
-                    </li>
+                    <li class="active"><a href="index.html#banner">Главная</a></li>
+                    <li><a href="index.html#target">Таргетинг</a></li>
                     <li><a href="index.html#features">Преимущества</a></li>
                     <li><a href="index.html#start">Как начать</a></li>
                     <li><a href="index.html#contact-area">Заявка</a></li>
-                    <li><a   href="tel:+7(916)970-57-15">+7 (916) 970-57-15</a></li>
+                    <li><a href="tel:+7(916)970-57-15">+7 (916) 970-57-15</a></li>
                 </ul>
             </div>
         </div>
@@ -123,12 +108,13 @@
 
     <!-- Banner -->
     <div class="banner text-white" id="banner">
-        <div id="banner-slider" class="owl-carousel">
+        <div id="banner-slider">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
                         <h1 class="banner__heading">
-                            Профессиональное <span class="text-highlight">продвижение</span>    в <span class="text-highlight">Instagram</span>  <!-- Приведем мощный <br> поток  <span class="text-highlight">клиентов</span><br> из <span class="text-highlight">Instagram</span> уже
+                            Профессиональное <span class="text-highlight">продвижение</span>
+                            в <span class="text-highlight">Instagram</span>  <!-- Приведем мощный <br> поток  <span class="text-highlight">клиентов</span><br> из <span class="text-highlight">Instagram</span> уже
                             <br> через <span class="text-highlight">3 дня!</span> -->
                         </h1>
                         <div class="banner-mobile">
@@ -160,7 +146,7 @@
                         </p> -->
                     </div>
 
-                    <div class="col-sm-6 sm-bottom-30">
+                    <div class="col-sm-4 sm-bottom-30">
                         <h4><!--Закажите настройку таргетированной рекламы и получите рост вашего бизнеса уже сегодня!<--></h4>
                         <p class="banner__form-text">Закажите бесплатный аудит вашего аккаунта и увеличьте его эффективность уже сегодня!</p>
                         <form id="bannerForm" class="contact-form form banner-form">
@@ -172,7 +158,10 @@
                                 <label class="control-label">Телефон</label>
                                 <input id="bannerPhone" type="tel" name="phone" class="form-control phone" required>
                             </div>
-                            <button type="submit" class="btn btn-orange btn-lg">Отправить</button>
+                            <button class="btn btn-orange btn-lg ld-ext-right" type="submit">
+                                <span>Отправить</span>
+                                <div class="ld ld-ring ld-cycle"></div>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -184,12 +173,12 @@
     <!-- Fun Facts End -->
 
     <!-- Why -->
- <div id="features" class="section section-padding service-area gray-bg">
+ <div id="reasons" class="section section-padding gray-bg">
      <div class="container">
             <div class="row">
                  <div class="col-sm-8 col-md-7 sm-bottom-30">
                      <div class="section-header text-center">
-                        <h2 class="section-title">Почему ваш бизнес должен быть в  Instagram?</h2>
+                        <h2 class="section-title">Почему ваш бизнес должен быть в Instagram?</h2>
                     </div>
                     <div class="section-content">
                         <ul class="list-group reasons-checklist">
@@ -230,7 +219,7 @@
                     <!--
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/></svg> -->
  
-                         <img src="images/prod-inst.png" class="about-us-pic-img">
+                         <img src="images/prod-inst.png" class="instagram-likes-img">
                     
                  </div>
             </div>
@@ -278,22 +267,28 @@
         <!--</div>-->
     <!--</div>-->
 
-    <div id="subscribe-area" class="section section-padding-sm theme-bg subscribe-area">
+    <div id="subscribe-area" class="section section-padding theme-bg subscribe-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="subscribe-header">
                         <h2 class="subscribe-title">НУЖНЫ КЛИЕНТЫ?</h2>
-                        <p class="subscribe-subtext">ЗАКАЖИТЕ НАСТРОЙКУ ТАРГЕТИРОВАННОЙ РЕКЛАМЫ УЖЕ СЕЙЧАС, И МЫ ВАМ ПЕРЕЗВОНИМ! </p>
+                        <p class="subscribe-subtext">
+                            Закажите настройку таргетированной рекламы уже сейчас, и мы вам перезвоним!
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-5 col-md-offset-1">
                     <form id="subscribeForm" class="subscribe-form form">
                         <div class="form-group label-floating is-empty">
                             <label class="control-label">Телефон</label>
-                            <input type="phone" name="phone" id="phoneOnly" class="form-control" required style="color: #fff; font-size: 2rem;">
-                            <span class="material-input"></span></div>
-                        <button type="submit" class="btn btn-orange" style="background-color: hsl(172, 88%, 41%)">ПЕРЕЗВОНИТЕ МНЕ</button>
+                            <input type="phone" name="phone" id="phoneOnly" class="form-control" required style="color: #fff;">
+                            <span class="material-input"></span>
+                        </div>
+                        <button type="submit" class="btn btn-orange ld-ext-right" style="background-color: hsl(172, 88%, 41%)">
+                            <span>ПЕРЕЗВОНИТЕ МНЕ</span>
+                            <div class="ld ld-ring ld-cycle"></div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -312,8 +307,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="services">
-                    <div class="col-lg-4 col-xs-6">
+                <div class="services owl-carousel owl-theme">
+                    <div class="col-lg-4 col-xs-12 col-sm-6">
                         <div class="service">
                             <div class="service-icon">
                                 <img src="images/intro/1.png" alt="Service Icon">
@@ -324,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-xs-6">
+                    <div class="col-lg-4 col-xs-12 col-sm-6">
                         <div class="service">
                             <div class="service-icon">
                                 <img src="images/service/placeholder.svg" alt="Service Icon">
@@ -335,7 +330,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-xs-6">
+                    <div class="col-lg-4 col-xs-12 col-sm-6">
                         <div class="service">
                             <div class="service-icon">
                                 <img src="images/service/4.png" alt="Service Icon">
@@ -346,7 +341,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-xs-6">
+                    <div class="col-lg-4 col-xs-12 col-sm-6">
                         <div class="service">
                             <div class="service-icon">
                                 <img src="images/service/5.png" alt="Service Icon">
@@ -357,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-xs-6">
+                    <div class="col-lg-4 col-xs-12 col-sm-6">
                         <div class="service">
                             <div class="service-icon">
                                 <img src="images/service/circle-rocket.png" alt="Service Icon">
@@ -368,7 +363,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-xs-6">
+                    <div class="col-lg-4 col-xs-12 col-sm-6">
                         <div class="service">
                             <div class="service-icon">
                                 <img src="images/service/concurents.png" alt="Service Icon">
@@ -388,67 +383,66 @@
 
     <!-- Working process -->
     <div id="start" class="section section-padding working-processa-area">
-       <!--  <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4">
-                    <div class="section-header section-header-left">
-                        <h2 class="section-title">Я хочу! <br> С чего начать?</h2>
-                        <p class="section-subtext">До получения клиентов осталось всего несколько шагов</p>
-                        <a class="btn btn-primary modal_open" href="index.html#">ПОЛУЧИТЬ КЛИЕНТОВ</a>
-                    </div>
-                </div>
-                <div class="col-md-8 col-lg-offset-1">
-                    <div class="row process-wrap">
-                        <div class="col-xs-4">
-                            <div class="process-item">
-                                <div class="process-img">
-                                    <img class="img-responsive" src="images/service/messaging1.png" alt="Process Image">
-                                </div>
-                                <h5 class="process-title">Отправка заявки</h5>
-                                <p>Вы можете отправить заявку сами, заказать звонок или позвонить</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="process-item">
-                                <div class="process-img">
-                                    <img class="img-responsive" src="images/intro/2.png" alt="Process Image">
-                                </div>
-                                <h5 class="process-title">Брифинг клиента</h5>
-                                 <p>Мы погружаемся в 
-									ваш бизнес, уточняем нюансы для подготовки качественного предложения</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="process-item">
-                                <div class="process-img">
-                                    <img class="img-responsive" src="images/service/offer.png" alt="Process Image">
-                                </div>
-                                <h5 class="process-title">Подготовка и презентация</h5>
-                                <p>Готовим и презентуем коммерческое предложение с обоснованием выбора инструментов. Делаем прогноз результатов</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-offset-1">
-                            <div class="process-item">
-                                <div class="process-img">
-                                    <img class="img-responsive" src="images/service/strategy1.png" alt="Process Image">
-                                </div>
-                                <h5 class="process-title">Разработка стратегии и запуск</h5>
-                                <p>Анализируем аудиторию, конкурентов, проблемы. Разрабатываем идею и контент-план. Приступаем к работам</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-offset-1">
-                            <div class="process-item">
-                                <div class="process-img">
-                                    <img class="img-responsive" src="images/service/analytic1.png" alt="Process Image">
-                                </div>
-                                <h5 class="process-title">Аналитика и оптимизация</h5>
-                                <p>Собираем статистику и доводим рекламные кампании до совершенства</p>
-                            </div>
-                        </div>
-                     
-                </div>
-            </div>
-        </div> -->
+         <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-lg-3 col-md-4">-->
+                    <!--<div class="section-header section-header-left">-->
+                        <!--<h2 class="section-title">Я хочу! <br> С чего начать?</h2>-->
+                        <!--<p class="section-subtext">До получения клиентов осталось всего несколько шагов</p>-->
+                        <!--<a class="btn btn-primary modal_open" href="index.html#">ПОЛУЧИТЬ КЛИЕНТОВ</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-8 col-lg-offset-1">-->
+                    <!--<div class="row process-wrap owl-carousel owl-theme">-->
+                        <!--<div class="col-xs-4">-->
+                            <!--<div class="process-item">-->
+                                <!--<div class="process-img">-->
+                                    <!--<img class="img-responsive" src="images/service/messaging1.png" alt="Process Image">-->
+                                <!--</div>-->
+                                <!--<h5 class="process-title">Отправка заявки</h5>-->
+                                <!--<p>Вы можете отправить заявку сами, заказать звонок или позвонить</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-4">-->
+                            <!--<div class="process-item">-->
+                                <!--<div class="process-img">-->
+                                    <!--<img class="img-responsive" src="images/intro/2.png" alt="Process Image">-->
+                                <!--</div>-->
+                                <!--<h5 class="process-title">Брифинг клиента</h5>-->
+                                 <!--<p>Мы погружаемся в-->
+									<!--ваш бизнес, уточняем нюансы для подготовки качественного предложения</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-4">-->
+                            <!--<div class="process-item">-->
+                                <!--<div class="process-img">-->
+                                    <!--<img class="img-responsive" src="images/service/offer.png" alt="Process Image">-->
+                                <!--</div>-->
+                                <!--<h5 class="process-title">Подготовка и презентация</h5>-->
+                                <!--<p>Готовим и презентуем коммерческое предложение с обоснованием выбора инструментов. Делаем прогноз результатов</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-4 col-sm-offset-1">-->
+                            <!--<div class="process-item">-->
+                                <!--<div class="process-img">-->
+                                    <!--<img class="img-responsive" src="images/service/strategy1.png" alt="Process Image">-->
+                                <!--</div>-->
+                                <!--<h5 class="process-title">Разработка стратегии и запуск</h5>-->
+                                <!--<p>Анализируем аудиторию, конкурентов, проблемы. Разрабатываем идею и контент-план. Приступаем к работам</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-4 col-sm-offset-1">-->
+                            <!--<div class="process-item">-->
+                                <!--<div class="process-img">-->
+                                    <!--<img class="img-responsive" src="images/service/analytic1.png" alt="Process Image">-->
+                                <!--</div>-->
+                                <!--<h5 class="process-title">Аналитика и оптимизация</h5>-->
+                                <!--<p>Собираем статистику и доводим рекламные кампании до совершенства</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="container">
                <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -459,7 +453,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-8 col-md-7 sm-bottom-30">
+                <div class="col-sm-8 col-md-7 sm-bottom-30 col-sm-offset-3">
                     <div class="section-content">
                         <ul class="list-group reasons-checklist">
                           <li class="checklist-item">
@@ -522,7 +516,6 @@
             <div class="row contact-form-wrap">
                 <div class="col-sm-6 sm-bottom-30 order-sm-2">
                     <p class="contact-form__text">Узнайте, как получить целевую аудиторию из Instagram для вашего бизнеса на бесплатной консультации с маркетологом Max-Target<!--Закажите настройку таргетированной рекламы и получите рост вашего бизнеса уже сегодня!<--></p>
-                    <!--<p>We are expert in Digital Marketing like Search Engine Optimization, Social Media Marketing, Lead Generation.</p>-->
                     <form id="contactForm" class="contact-form form">
                         <div class="form-group label-floating">
                             <label class="control-label">Имя</label>
@@ -534,19 +527,16 @@
                         </div>
                         <div class="form-group label-floating">
                             <label class="control-label">Когда Вам позвонить?</label>
-                            <textarea class="form-control" id="whenCall" name="whenCall" rows="5"></textarea>
+                            <textarea class="form-control" id="whenCall" name="whenCall" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
+                        <button type="submit" class="btn btn-primary btn-lg ld-ext-right">
+                            <span>ПЕРЕЗВОНИТЕ МНЕ</span>
+                            <div class="ld ld-ring ld-cycle"></div>
+                        </button>
                     </form>
                 </div>
                 <div class="col-sm-5 col-sm-offset-1 order-sm-2">
                     <div class="contact-blocks">
-                        <!-- <div class="contact-item">
-                            <div class="contact-img">
-                                <img src="images/contact/1.png" alt="Contact Image">
-                            </div>
-                            <p class="contact-info">127 Park Street Ave <br/>Miami, FL, 8546</p>
-                        </div> -->
                         <div class="contact-item">
                             <div class="contact-img">
                                 <img src="images/contact/2.png" alt="Contact Image">
@@ -567,7 +557,7 @@
     <!-- Contact end -->
 
     <!-- Modal structure -->
-	<div id="modal" data-iziModal-fullscreen="true" > <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+	<div id="modal" data-iziModal-fullscreen="true">
 	<div class="banner-registration card card-green">
 		<a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
     <h3 class="banner-registration-title">Узнайте, как получить клиентов уже сегодня!</h3>
@@ -600,7 +590,7 @@
 	<script src="assets/js/jquery.nav.js"></script>
 	<script src="assets/js/visible.js"></script>
 	<script src="assets/js/imagesloaded.js"></script>
-	<!-- <script src="assets/js/owl.carousel.js"></script> -->
+	 <script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/jquery.countTo.js"></script>
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/isotope.pkgd.min.js"></script>

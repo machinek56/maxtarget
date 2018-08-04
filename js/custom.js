@@ -47,20 +47,6 @@
 
     mobileNav();
 
-
-    /*-----------------------------------
-    Banner Carousel 
-    -----------------------------------*/
-    // $('#banner-slider').owlCarousel({
-    //     singleItem: true,
-    //     slideSpeed: 200,
-    //     //autoPlay: 3000,
-    //     stopOnHover: true,
-    //     navigation: true,
-    //     navigationText: ['<i class=\"fa fa-angle-left\"><i>', '<i class=\"fa fa-angle-right\"><i>'],
-    //     pagination: true,
-    // });
-
     /*-----------------------------------
     CountTo 
     -----------------------------------*/
@@ -123,12 +109,11 @@
         console.log(data);
 
         sendForm(data, 'contactForm');
-        $('#contactForm')[0].reset();
         return false;
     });
 
     $("#sendRegistrationForm").on('click', function (e) {
-        // ev.preventDefault();
+        e.preventDefault();
         var data = {
             name: $("#modalName").val() || 'Username',
             phone: $("#modalPhone").val()||'phone',
@@ -137,7 +122,6 @@
         console.log(data);
 
         sendForm(data, 'registrationForm');
-        $('#registrationForm')[0].reset();
         return false;
     });
 
@@ -151,12 +135,12 @@
         console.log(data);
 
         sendForm(data, 'subscribeForm');
-        $('#subscribeForm')[0].reset();
         return false;
     });
 
     $("#bannerForm").on('submit', function (e) {
         e.preventDefault();
+
         var data = {
             name: $('#bannerName').val(),
             phone: $("#bannerPhone").val(),
@@ -165,12 +149,30 @@
         console.log(data);
 
         sendForm(data, 'bannerForm');
-        $('#subscribeForm')[0].reset();
         return false;
     });
 
+    function disableButton (btn) {
+      btn.attr('disabled', 'disabled');
+      btn.find('span').text('Подождите..');
+      btn.addClass('running');
+    }
+
+    function enableButton (btn, btnText) {
+      btn.attr('disabled', false);
+      btn.find('span').text(btnText);
+      btn.removeClass('running');
+    }
+
 
     function sendForm (data, id) {
+      var btn = $(`#${id}`).find('button');
+      var btnText = btn.find('span').text();
+
+      console.log(btnText)
+
+      disableButton(btn);
+
       if ((data['phone']) && (data['name'].length > 1)) {
         $.ajax({
           type: "POST",
@@ -179,14 +181,16 @@
           success: function (data) {
             console.log(data);
 
-            $(`#${id} .input-success`).delay(500).fadeIn(1000);
-            $(`#${id} .input-error`).fadeOut(500);
             $(`#${id}`)[0].reset();
+
+            enableButton(btn, btnText);
+
             showSuccessMsg();
           },
           error: function (jqXHR, textStatus, errorThrown) {
             console.error(jqXHR, textStatus, errorThrown);
             showErrorMsg();
+            enableButton(btn, btnText);
           }
         });
       } else {
@@ -210,33 +214,9 @@
 
 
     /*-----------------------------------
-    Subscription
+    Phone mask
     -----------------------------------*/
-    $(function(){
-      $("#subscribeForm > div > input,#phone,#registrationForm > div:nth-child(2) > input").mask("+7(999)999-99-99"); // полный пиздос
-      $("#bannerPhone").mask("+7(999)999-99-99");
-    });
-
-    // $(".subscribe-form").on( "submit", function (ev) {
-    //     ev.preventDefault();`
-    //     var phoneField = this.querySelector('[name="phone"]');
-    // })
-
-
-    // $(".subscribe-form").ajaxChimp({
-    //     callback: mailchimpResponse,
-    //     url: "http://codepassenger.us10.list-manage.com/subscribe/post?u=6b2e008d85f125cf2eb2b40e9&id=6083876991" // Replace your mailchimp post url inside double quote "".  
-    // });
-
-    // function mailchimpResponse(resp) {
-    //     if (resp.result === 'success') {
-
-    //         $('.newsletter-success').html(resp.msg).fadeIn().delay(3000).fadeOut();
-
-    //     } else if (resp.result === 'error') {
-    //         $('.newsletter-error').html(resp.msg).fadeIn().delay(3000).fadeOut();
-    //     }
-    // }
+    $("input[name='phone']").mask("+7(999)999-99-99");
 
     /*-----------------------------------
     Magnific Popup
@@ -416,8 +396,18 @@
         });
 
 
-})(jQuery);
+        // Slick slider  косячит с марджином
+        // if (window.screen.width <= 480) {
+        //   $('.services').slick({});
+        // }
+  if (window.screen.width <= 480) {
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items: 1
+      });
+  }
 
-// $(window).on('load', function () {
-//     $("#preloader-wrap").delay(200).fadeOut();
-// });
+
+})(jQuery);

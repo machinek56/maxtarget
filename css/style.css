@@ -1732,7 +1732,7 @@ Subscription Styles
 .subscribe-form {
   float: left;
   width: 100%;
-  margin-top: 57px;
+  margin-top: 0;
 }
 .subscribe-form .form-group {
   width: calc(100% - 200px);
@@ -3001,4 +3001,30 @@ Commingsoon Styles
 
 .contact-form__text {
   font-size: 2.2rem;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #111111;
+}
+
+.owl-theme .owl-nav {
+  position:  relative;
+  top: -139px;
+  display:  flex;
+  justify-content:  space-between;
+  color: #000;
+  margin-top: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #4285f4;
+  color: #ffffff;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
 }
