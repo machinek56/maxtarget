@@ -145,17 +145,7 @@
         return false;
     });
 
-    function disableButton (btn) {
-      btn.attr('disabled', 'disabled');
-      btn.find('span').text('Подождите..');
-      btn.addClass('running');
-    }
 
-    function enableButton (btn, btnText) {
-      btn.attr('disabled', false);
-      btn.find('span').text(btnText);
-      btn.removeClass('running');
-    }
 
 
     function sendForm (data, id) {

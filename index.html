@@ -584,12 +584,16 @@
 
                     <form class="form" id="actionForm">
                         <div class="form-group is-empty">
-                            <input type="text" name="name" placeholder="Имя" class="form-control" required>
+                            <input type="text" id="actionName" name="name" placeholder="Имя" class="form-control" required>
                             <span class="material-input"></span></div>
                         <div class="form-group is-empty">
-                            <input type="tel" name="phone" placeholder="Телефон" class="form-control" required>
+                            <input type="tel" name="phone" id="actionPhone" placeholder="Телефон" class="form-control" required>
                             <span class="material-input"></span></div>
-                        <input type="button" class="btn btn-primary" value="Заказать" id="">
+
+                        <button type="submit" class="btn btn-primary btn-lg ld-ext-right">
+                            <span>Заказать</span>
+                            <div class="ld ld-ring ld-cycle"></div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -659,7 +663,14 @@
             return false;
         });
 
-		function sendForm (data, id) {
+        function sendForm (data, id) {
+          var btn = $(`#${id}`).find('button');
+          var btnText = btn.find('span').text();
+
+          console.log(btnText)
+
+          disableButton(btn);
+
           if ((data['phone']) && (data['name'].length > 1)) {
             $.ajax({
               type: "POST",
@@ -667,17 +678,23 @@
               data: data,
               success: function (data) {
                 console.log(data);
+
+                $(`#${id}`)[0].reset();
+
+                enableButton(btn, btnText);
+
                 showSuccessMsg();
               },
               error: function (jqXHR, textStatus, errorThrown) {
                 console.error(jqXHR, textStatus, errorThrown);
                 showErrorMsg();
+                enableButton(btn, btnText);
               }
             });
           } else {
             showErrorMsg();
           }
-    }
+        }
 
 	</script>
     <script type="text/javascript">
@@ -695,6 +712,46 @@
       });
 
 
+      $("#actionForm").on('submit', function (e) {
+        e.preventDefault();
+        var data = {
+          name: $("#actionName").val(),
+          phone: $("#actionPhone").val(),
+          message: ''
+        };
+        console.log(data);
+
+        sendForm(data, 'actionForm');
+        return false;
+      });
+
+
+      function disableButton (btn) {
+        btn.attr('disabled', 'disabled');
+        btn.find('span').text('Подождите..');
+        btn.addClass('running');
+      }
+
+      function enableButton (btn, btnText) {
+        btn.attr('disabled', false);
+        btn.find('span').text(btnText);
+        btn.removeClass('running');
+      }
+
+
+      function showSuccessMsg () {
+        iziToast.success({
+          title: 'Отлично!',
+          message: 'Ваша заявка успешно отправлена.'
+        });
+      }
+
+      function showErrorMsg () {
+        iziToast.error({
+          title: 'Упсс!',
+          message: 'Что-то пошло не так, попробуйте еще раз.'
+        });
+      }
 
     </script>
 </body>
