@@ -667,6 +667,10 @@
     margin: 0 auto;
     display: block;
   }
+
+  .section_count + .section_count {
+    margin-left: 30px;
+  }
 }
 
 @media screen and (max-width: 380px) {

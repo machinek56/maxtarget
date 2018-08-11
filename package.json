@@ -17,7 +17,5 @@
   },
   "homepage": "https://github.com/machinek56/maxtarget#readme",
   "dependencies": {
-    "inputmask": "^4.0.0",
-    "vanilla-text-mask": "^5.1.1"
   }
 }

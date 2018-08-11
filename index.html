@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <title>Заказать настройку таргетированной рекламы в Instagram в агентстве Max-Target</title>
-    <meta name="description" content="Маркетиноговое агентство Max-Target. Заказать настройку таргетированной рекламы в Инстаграм">
+    <meta name="description" content="Маркетинговое агентство Max-Target. Заказать настройку таргетированной рекламы в Инстаграм">
     <link rel="shortcut icon" href="images/index-favicon.ico" type="image/x-icon">
 
     <!-- External CSS -->
@@ -16,11 +16,11 @@
      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
      <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+    <link rel="stylesheet" href="assets/css/iziModal.min.css">
     <link rel="stylesheet" href="assets/css/iziToast.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/color/default.css">
@@ -162,7 +162,7 @@
     <!-- Fun Facts End -->
 
     <!-- Why -->
- <div id="reasons" class="section section-padding gray-bg">
+    <div id="reasons" class="section section-padding gray-bg">
      <div class="container">
             <div class="row">
                  <div class="col-sm-8 col-md-7 sm-bottom-30">
@@ -207,9 +207,9 @@
                  <div class="col-sm-4 col-md-4 col-md-offset-1">
                     <!--
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/></svg> -->
- 
+
                          <img src="images/prod-inst.png" class="img-responsive instagram-likes-img">
-                    
+
                  </div>
             </div>
         </div>
@@ -487,7 +487,7 @@
             </div>
         </div>
     </div>
-    </div>
+
     <!-- Working process end -->
 
 
@@ -547,27 +547,68 @@
 
     <!-- Modal structure -->
 	<div id="modal" data-iziModal-fullscreen="true">
-	<div class="banner-registration card card-green">
-		<a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
-    <h3 class="banner-registration-title">Узнайте, как получить клиентов уже сегодня!</h3>
-    <form id="registrationForm" class="banner-registration-form form">
-        <div class="form-group is-empty">
-            <input type="text" name="name" id="modalName" placeholder="Имя" class="form-control" required>
-            <span class="material-input"></span></div>
-        <div class="form-group is-empty">
-            <input type="tel" name="phone" id="modalPhone" placeholder="Телефон" class="form-control" required>
-            <span class="material-input"></span></div>
-        <div class="form-group is-empty">
-            <textarea class="form-control" id="modalWhenCall" name="whenCall" placeholder="Когда Вам позвонить?" rows="4"></textarea><span class="material-input"></span></div>
-        <input type="button" class="btn btn-primary" value="ПЕРЕЗВОНИТЕ МНЕ" id="sendRegistrationForm">
-    </form>
-</div>   
+        <div class="banner-registration card card-green">
+            <a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
+            <h3 class="banner-registration-title">Узнайте, как получить клиентов уже сегодня!</h3>
+            <form id="registrationForm" class="banner-registration-form form">
+                <div class="form-group is-empty">
+                    <input type="text" name="name" id="modalName" placeholder="Имя" class="form-control" required>
+                    <span class="material-input"></span></div>
+                <div class="form-group is-empty">
+                    <input type="tel" name="phone" id="modalPhone" placeholder="Телефон" class="form-control" required>
+                    <span class="material-input"></span></div>
+                <div class="form-group is-empty">
+                    <textarea class="form-control" id="modalWhenCall" name="whenCall" placeholder="Когда Вам позвонить?" rows="4"></textarea><span class="material-input"></span></div>
+                <input type="button" class="btn btn-primary" value="ПЕРЕЗВОНИТЕ МНЕ" id="sendRegistrationForm">
+            </form>
+        </div>
 	</div>
+
+    <div id="modalTimer">
+        <div class="iziModal-header card card-green">
+            <a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
+            <h3 class="modal__heading">Акция!</h3>
+        </div>
+
+        <div class="iziModal-wrap">
+            <div class="modal__content modal__content--center">
+                <div class="">
+                    <h3>Получи бесплатный аудит аккаунта</h3>
+                    <p>при заказе таргетированной рекламы</p>
+
+                    <h4>только до конца августа</h4>
+                    <div class="countdown">
+                        <div class="countdown-time" data-time="2018/08/31 00:00:00"></div>
+                    </div>
+
+
+
+
+                    <form class="form" id="actionForm">
+                        <div class="form-group is-empty">
+                            <input type="text" name="name" placeholder="Имя" class="form-control" required>
+                            <span class="material-input"></span></div>
+                        <div class="form-group is-empty">
+                            <input type="tel" name="phone" placeholder="Телефон" class="form-control" required>
+                            <span class="material-input"></span></div>
+                        <input type="button" class="btn btn-primary" value="Заказать" id="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Go to top -->
     <a class="hidden-xs scrollup btn btn-lg btn-orange btn-just-icon" href="index.html#">
         <i class="fa fa-angle-up"></i>
     </a>
+
+    <div class="gift-container" title="Заберите подарок!">
+        <div class="gift animated infinite pulse delay-2s"></div>
+        <!--<div class="gift-text">-->
+            <!--Подарок!-->
+        <!--</div>-->
+    </div>
 	 <!-- Modal end -->
 	<!--   Script Files   -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -581,14 +622,14 @@
 	<script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/jquery.countTo.js"></script>
-	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<script src="assets/js/Chart.min.js"></script>
 	<script src="assets/js/jquery.maskedinput.min.js"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script src="assets/js/jquery.countTo.js"></script>
+	<script src="assets/js/iziModal.min.js"></script>
     <script src="assets/js/iziToast.min.js"></script>
     <script src="assets/js/aos.js"></script>
 	<!--<script src="js/map.js"></script>-->

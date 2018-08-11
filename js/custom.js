@@ -73,10 +73,12 @@
     -----------------------------------*/
     $('.countdown-time').each(function () {
         var endTime = $(this).data('time');
+        console.log(endTime, this)
         $(this).countdown(endTime, function (tm) {
-            $(this).html(tm.strftime('<span class="section_count"><span class="tcount days">%D </span><span class="text">Days</span></span><span class="section_count"><span class="tcount hours">%H</span><span class="text">Hours</span></span><span class="section_count"><span class="tcount minutes">%M</span><span class="text">Mins</span></span><span class="section_count"><span class="tcount seconds">%S</span><span class="text">Secs</span></span>'));
+            $(this).html(tm.strftime('<span class="section_count"><span class="tcount days">%D </span><span class="text">дней</span></span><span class="section_count"><span class="tcount hours">%H</span><span class="text">часов</span></span><span class="section_count"><span class="tcount minutes">%M</span><span class="text">минут</span></span><span class="section_count"><span class="tcount seconds">%S</span><span class="text">секунд</span></span>'));
         });
     });
+
 
     /*-----------------------------------
     Commingsoon Height
@@ -245,38 +247,38 @@
     /*-----------------------------------
     Testimonial Carousel
     -----------------------------------*/
-    $('.testimonials-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.testimonial-nav',
-        autoplay: true,
-    });
-    $('.testimonial-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.testimonials-for',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true,
-        prevArrow: '<button class=\"slick-prev\"><i class=\"fa fa-angle-left\"></i></button>',
-        nextArrow: '<button class=\"slick-next\"><i class=\"fa fa-angle-right\"></i></button>',
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 3
-                }
-			},
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1
-                }
-			}
-		]
-    });
+    // $('.testimonials-for').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     asNavFor: '.testimonial-nav',
+    //     autoplay: true,
+    // });
+    // $('.testimonial-nav').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.testimonials-for',
+    //     dots: false,
+    //     centerMode: true,
+    //     focusOnSelect: true,
+    //     prevArrow: '<button class=\"slick-prev\"><i class=\"fa fa-angle-left\"></i></button>',
+    //     nextArrow: '<button class=\"slick-next\"><i class=\"fa fa-angle-right\"></i></button>',
+    //     responsive: [
+    //         {
+    //             breakpoint: 991,
+    //             settings: {
+    //                 slidesToShow: 3
+    //             }
+			// },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1
+    //             }
+			// }
+    // ]
+    // });
 
     /*-----------------------------------
     Case Filter
@@ -395,11 +397,14 @@
             $('#modal').iziModal('open');
         });
 
+        $("#modalTimer").iziModal();
 
-        // Slick slider  косячит с марджином
-        // if (window.screen.width <= 480) {
-        //   $('.services').slick({});
-        // }
+        $(document).on('click', '.gift', () => {
+            console.log('click')
+          $("#modalTimer").iziModal('open');
+        });
+
+
   if (window.screen.width <= 480) {
       $('.owl-carousel').owlCarousel({
         loop:true,
