@@ -68,16 +68,7 @@
 
     initCountTo();
 
-    /*-----------------------------------
-    Countdown
-    -----------------------------------*/
-    $('.countdown-time').each(function () {
-        var endTime = $(this).data('time');
-        console.log(endTime, this)
-        $(this).countdown(endTime, function (tm) {
-            $(this).html(tm.strftime('<span class="section_count"><span class="tcount days">%D </span><span class="text">дней</span></span><span class="section_count"><span class="tcount hours">%H</span><span class="text">часов</span></span><span class="section_count"><span class="tcount minutes">%M</span><span class="text">минут</span></span><span class="section_count"><span class="tcount seconds">%S</span><span class="text">секунд</span></span>'));
-        });
-    });
+
 
 
     /*-----------------------------------
@@ -405,7 +396,7 @@
         });
 
 
-  if (window.screen.width <= 480) {
+  if (window.innerWidth <= 480) {
       $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,

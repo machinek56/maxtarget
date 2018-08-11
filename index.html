@@ -573,15 +573,13 @@
         <div class="iziModal-wrap">
             <div class="modal__content modal__content--center">
                 <div class="">
-                    <h3>Получи бесплатный аудит аккаунта</h3>
-                    <p>при заказе таргетированной рекламы</p>
+                    <h3>Получи бесплатный аудит аккаунта<span>*</span></h3>
+                    <p><sup>*</sup>при заказе таргетированной рекламы</p>
 
-                    <h4>только до конца августа</h4>
+                    <h4>успей до конца августа</h4>
                     <div class="countdown">
                         <div class="countdown-time" data-time="2018/08/31 00:00:00"></div>
                     </div>
-
-
 
 
                     <form class="form" id="actionForm">
@@ -634,53 +632,70 @@
     <script src="assets/js/aos.js"></script>
 	<!--<script src="js/map.js"></script>-->
 	<script src="js/custom.js"></script>
-<script type="text/javascript">
-    var data = {
-    name: 'Приход клиента',
-    phone: 'phone',
-    message: 'message'
-};
-$.ajax({
+    <script type="text/javascript">
+        var data = {
+            name: 'Приход клиента',
+            phone: 'phone',
+            message: 'message'
+        };
+        $.ajax({
             type: "POST",
             url: "ajax.php",
             data: data,
         })
-</script>
+    </script>
     
 	<script type="text/javascript">
-		$("#sendRegistrationForm").on('click', function (e) {
-        var data = {
-            name: $("#modalName").val() || 'Username',
-            phone: $("#modalPhone").val()||'phone',
-            message: $("#modalWhenCall").val() || 'message'
-        };
-        console.log(data);
-
-        sendForm(data, 'registrationForm');
-        $('#registrationForm')[0].reset();
-        return false;
-    });
-		function sendForm (data, id) {
-      if ((data['phone']) && (data['name'].length > 1)) {
-        $.ajax({
-          type: "POST",
-          url: "ajax.php",
-          data: data,
-          success: function (data) {
+        $("#sendRegistrationForm").on('click', function (e) {
+            var data = {
+                name: $("#modalName").val() || 'Username',
+                phone: $("#modalPhone").val()||'phone',
+                message: $("#modalWhenCall").val() || 'message'
+            };
             console.log(data);
-            showSuccessMsg();
-          },
-          error: function (jqXHR, textStatus, errorThrown) {
-            console.error(jqXHR, textStatus, errorThrown);
+
+            sendForm(data, 'registrationForm');
+            $('#registrationForm')[0].reset();
+            return false;
+        });
+
+		function sendForm (data, id) {
+          if ((data['phone']) && (data['name'].length > 1)) {
+            $.ajax({
+              type: "POST",
+              url: "ajax.php",
+              data: data,
+              success: function (data) {
+                console.log(data);
+                showSuccessMsg();
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                console.error(jqXHR, textStatus, errorThrown);
+                showErrorMsg();
+              }
+            });
+          } else {
             showErrorMsg();
           }
-        });
-      } else {
-        showErrorMsg();
-      }
     }
 
 	</script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      $("input[name='phone']").mask("+7(999)999-99-99");
+
+      /*-----------------------------------
+            Countdown
+       -----------------------------------*/
+      $('.countdown-time').each(function () {
+        var endTime = $(this).data('time');
+        console.log(endTime, this)
+        $(this).countdown(endTime, function (tm) {
+          $(this).html(tm.strftime('<span class="section_count"><span class="tcount days">%D </span><span class="text">дней</span></span><span class="section_count"><span class="tcount hours">%H</span><span class="text">часов</span></span><span class="section_count"><span class="tcount minutes">%M</span><span class="text">минут</span></span><span class="section_count"><span class="tcount seconds">%S</span><span class="text">секунд</span></span>'));
+        });
+      });
+
+
+
+    </script>
 </body>
 </html>
