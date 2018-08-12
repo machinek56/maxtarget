@@ -381,7 +381,6 @@
         $("#modalTimer").iziModal();
 
         $(document).on('click', '.gift', () => {
-            console.log('click')
           $("#modalTimer").iziModal('open');
         });
 

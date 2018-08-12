@@ -3090,6 +3090,12 @@ Commingsoon Styles
   display: block;
   margin-bottom: 17px;
 }
+
+.form-action {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*.contact-form {*/
   /*background-image: url('../images/iphonex.png');*/
   /*background-repeat: no-repeat;*/

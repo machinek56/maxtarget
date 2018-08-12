@@ -582,7 +582,7 @@
                     </div>
 
 
-                    <form class="form" id="actionForm">
+                    <form class="form form-action" id="actionForm">
                         <div class="form-group is-empty">
                             <input type="text" id="actionName" name="name" placeholder="Имя" class="form-control" required>
                             <span class="material-input"></span></div>
@@ -705,7 +705,6 @@
        -----------------------------------*/
       $('.countdown-time').each(function () {
         var endTime = $(this).data('time');
-        console.log(endTime, this)
         $(this).countdown(endTime, function (tm) {
           $(this).html(tm.strftime('<span class="section_count"><span class="tcount days">%D </span><span class="text">дней</span></span><span class="section_count"><span class="tcount hours">%H</span><span class="text">часов</span></span><span class="section_count"><span class="tcount minutes">%M</span><span class="text">минут</span></span><span class="section_count"><span class="tcount seconds">%S</span><span class="text">секунд</span></span>'));
         });
