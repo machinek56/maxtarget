@@ -40,3 +40,20 @@
  .grow__content .row:nth-child(6) .progress-bar{
 	background-color: hsl(338, 100%, 79%);
  }
+
+ /*methods*/
+ .method__logo{
+ 	/*align-self: center;*/
+ }
+ .method__pic{
+ 	border-radius: 15px 15px 15px 15px;
+ }
+ /*compare*/
+ .compare{
+ 	color: #fff;
+ 	background-color: hsl(260, 53%, 50%);
+ }
+.compare__method{
+	text-align: center;
+	border-bottom: 3px solid hsl(42, 100%, 50%);
+}
