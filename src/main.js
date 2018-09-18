@@ -1,9 +1,15 @@
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'tiny-slider/dist/tiny-slider.css'
 import './assets/main.less'
 
 import Vue from 'vue'
 import App from './App.vue'
+
+import VModal from 'vue-js-modal'
+import Vuelidate from 'vuelidate'
+Vue.use(VModal)
+Vue.use(Vuelidate)
 
 Vue.config.productionTip = false
 

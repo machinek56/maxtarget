@@ -28,7 +28,7 @@
     </div>
 
 </nav> -->
-    <div class=" ">
+    <div class="">
         <section class="container section banner">
             <div class="row">
                 <div class="col">
@@ -61,6 +61,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container section grow">
             <div class="row">
                 <div class="col text-center">
@@ -129,6 +130,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container section methods">
             <div class="row">
                 <div class="col text-center">
@@ -175,6 +177,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container section compare">
             <div class="row">
                 <div class="col text-center">
@@ -266,7 +269,9 @@
 
             <div class="row">
                 <div class="col text-center">
-                    <button type="button" class="btn btn-transparent">
+                    <button type="button"
+                            class="btn btn-transparent"
+                            @click.prevent="show">
                         Мне тоже нужен результат!
                     </button>
                 </div>
@@ -289,7 +294,7 @@
                                 Ручное продвижение с помощью непроверенных сервисов...
                             </div>
                             <div class="choose__toggle">
-                                <input type="checkbox" id="switch" checked/><label for="switch" class="checkbox-label">Toggle</label>
+                                <base-switch></base-switch>
                             </div>
 
                             <h3 class="choose-maxtarget">
@@ -305,40 +310,175 @@
 
         </section>
 
-        <!--  <section class="section smm-types">
-              <div class="row">
-                  <div class="col text-center">
-                      <h2 class="section__title section__title--underlined">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ <br>ПОДОЙДЁТ ИМЕННО ВАМ?</h2>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12 smm-type">
-                      <div class="smm-type__icon">
-                          <img src="https://riselead.ru/images/analytics-u8286.png">
-                      </div>
-                      <div class="smm-type__content">
-                          <h3 class="smm-type__title">Таргетированная реклама</h3>
-                          <p class="smm-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellendus id commodi, cumque eveniet modi reprehenderit necessitatibus laboriosam fugiat soluta!</p>
-                      </div>
-                  </div>
-                  <div class="col-12 smm-type">
-                      <div class="smm-type__icon">
-                          <img src="https://riselead.ru/images/analytics-u8286.png">
-                      </div>
-                      <div class="smm-type__content">
-                          <h3 class="smm-type__title">Таргетированная реклама</h3>
-                          <p class="smm-type__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellendus id commodi, cumque eveniet modi reprehenderit necessitatibus laboriosam fugiat soluta!</p>
-                          <button type="submit" class="btn btn-yellow smm-type__sta-btn">Получить консультацию</button>
-                      </div>
-                  </div>
-              </div>
-          </section> -->
+        <section class="container steps">
+
+            <tiny-slider :mouse-drag="true" :loop="false" items="1" gutter="20">
+                <div>
+                    <h3>Аналитика</h3>
+                    <p>
+                        Проводим комплексный аудит Вашего аккаунта
+                        и выбираем самые эффективные
+                        способы продвижения
+                    </p>
+                </div>
+                <div>
+                    <h3>Договор</h3>
+                    <p>
+                        Работаем только по договору
+                        и фиксируем на бумаге
+                        все наши обещания
+                    </p>
+                </div>
+                <div>
+                    <h3>Продвижение</h3>
+                    <p>
+                        Начинаем мощное продвижение
+                        Вашего аккаунта, Вы получаете
+                        новых подписчиков и клиентов
+                    </p>
+                </div>
+                <div>
+                    <h3>Оптимизация</h3>
+                    <p>
+                        Оптимизируем рекламные
+                        кампании – Вы получаете
+                        максимальный результат
+                        от каждого действия
+                    </p>
+                </div>
+            </tiny-slider>
+
+        </section>
+
+        <modal name="modalForm" adaptive height="auto">
+            <div class="modal-container">
+                <h4 class="text-center">Оставить заявку</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Ваше имя</label>
+                        <input type="text"
+                               v-model="userName"
+                               class="form-control"
+                               :class="{'has-error': $v.userName.$error}"
+                               id="username"
+                               @blur="$v.userName.$touch()"
+                               @focus="$v.userName.$reset()"
+                               placeholder="Как вас зовут?">
+
+                        <div class="error-message" v-if="$v.userName.$error">
+                            {{userNameErrorMessage}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон</label>
+                        <masked-input type="tel"
+                                      name="phone"
+                                      id="phone"
+                                      class="form-control"
+                                      :class="{'has-error' :$v.phoneNumber.$error}"
+                                      v-model="phoneNumber"
+                                      :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
+                                      :guide="true"
+                                      @blur="$v.phoneNumber.$touch()"
+                                      @focus="$v.phoneNumber.$reset()"
+                                      placeholder="Телефон"
+                                      placeholderChar="_">
+                        </masked-input>
+
+                        <div class="error-message" v-if="$v.phoneNumber.$error">
+                           {{phoneNumberErrorMessage}}
+                        </div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
+                        <label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных</label>
+
+                        <div class="error-message">
+                            {{agreementErrorMessage}}
+                        </div>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-dark w-100"
+                            @click.prevent="submitForm"
+                    >
+                            Отправить
+                    </button>
+                </form>
+            </div>
+        </modal>
+
     </div>
 </template>
 
 <script>
+import VueTinySlider from 'vue-tiny-slider'
+import BaseSwitch from '@/components/BaseSwitch'
+import MaskedInput from 'vue-text-mask'
+import { required, minLength, numeric } from 'vuelidate/lib/validators'
+
 export default {
-  name: 'Main'
+  name: 'Main',
+  components: {
+    'tiny-slider': VueTinySlider,
+    BaseSwitch,
+    MaskedInput
+  },
+  data: () => ({
+    phoneNumber: '',
+    userName: '',
+    agreement: true
+  }),
+  methods: {
+    show () {
+      this.$modal.show('modalForm')
+    },
+    hide () {
+      this.$modal.hide('modalForm')
+    },
+    submitForm () {
+      if (!this.submitModalBtnAvailable) return
+
+      setTimeout(() => {
+        this.hide()
+      }, 2000)
+    }
+  },
+
+  computed: {
+    userNameErrorMessage () {
+      if (!this.$v.userName.$error) return ''
+
+      if (!this.$v.userName.required || !this.$v.userName.minLength) {
+        return 'Введите ваше имя'
+      }
+    },
+
+    phoneNumberErrorMessage () {
+      if (!this.$v.phoneNumber.$error) return ''
+
+      if (!this.$v.phoneNumber.required) {
+        return 'Введите корректный номер телефона'
+      }
+    },
+
+    agreementErrorMessage () {
+      return 'Без согласия отправка заявки невозможна.'
+    },
+
+    submitModalBtnAvailable () {
+      return !this.$v.phoneNumber.$invalid && !this.$v.userName.$invalid && this.agreement
+    }
+  },
+
+  validations: {
+    'userName': {
+      required,
+      minLength: minLength(2)
+    },
+    'phoneNumber': {
+      required
+    }
+  }
 }
 </script>
 
