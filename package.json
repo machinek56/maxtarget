@@ -1,21 +1,28 @@
 {
-  "name": "maxtarget",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/machinek56/maxtarget.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/machinek56/maxtarget/issues"
-  },
-  "homepage": "https://github.com/machinek56/maxtarget#readme",
   "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-standard": "^3.0.3",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "prettier": "^1.14.2",
+    "vue-template-compiler": "^2.5.17"
   }
 }
