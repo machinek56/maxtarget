@@ -45,13 +45,55 @@
                     <form id="bannerForm" class="contact-form form banner-form">
                         <div class="form-group">
                             <label for="name">Ваше имя: </label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text"
+                               v-model="userName"
+                               class="form-control"
+                               :class="{'has-error': $v.userName.$error}"
+                               id="username"
+                               @blur="$v.userName.$touch()"
+                               @focus="$v.userName.$reset()"
+                               placeholder="Как вас зовут?">
+
+                        <div class="error-message" v-if="$v.userName.$error">
+                            {{userNameErrorMessage}}
+                        </div>
                         </div>
                         <div class="form-group">
-                            <label for="tel">Ваш номер телефона:</label>
-                            <input type="tel" class="form-control" id="tel">
+                            <label for="phone">Ваш телефон</label>
+                            <masked-input type="tel"
+                                          name="phone"
+                                          id="phone"
+                                          class="form-control"
+                                          :class="{'has-error' :$v.phoneNumber.$error}"
+                                          v-model="phoneNumber"
+                                          :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
+                                          :guide="true"
+                                          @blur="$v.phoneNumber.$touch()"
+                                          @focus="$v.phoneNumber.$reset()"
+                                          placeholder="Телефон"
+                                          placeholderChar="_">
+                            </masked-input>
+
+                            <div class="error-message" v-if="$v.phoneNumber.$error">
+                               {{phoneNumberErrorMessage}}
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-yellow">Получить консультацию</button>
+                             <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
+                        <label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных</label>
+
+                        <div class="error-message">
+                            {{agreementErrorMessage}}
+                        </div>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-yellow"
+                            @click.prevent="submitForm"
+                             
+                    >
+                            Получить консультацию
+                    </button>
+                        <!-- <button type="submit" class="btn btn-yellow">Получить консультацию</button> -->
                     </form>
                 </div>
                 <div class="d-none d-md-block col-md-7">
@@ -142,7 +184,7 @@
                     <img src="promo_logo1.png" alt="" class="method__logo ">
                     <h3 class="method__title">Таргетированная реклама</h3>
                     <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам рекламы.</p>
-                    <button class="btn btn-yellow">Получить расчёт стоимости</button>
+                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
                 <div class="col-sm-6 method__pic-container"><img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
             </div>
@@ -151,7 +193,7 @@
                     <img src="promo_logo1.png" alt="" class="method__logo ">
                     <h3 class="method__title">Реклама у блогеров</h3>
                     <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит рекламу.</p>
-                    <button class="btn btn-yellow">Получить расчёт стоимости</button>
+                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
                 <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt="" class="method__pic w-100 d-none d-sm-block">
                 </div>
@@ -161,7 +203,7 @@
                     <img src="promo_logo1.png" alt="" class="method__logo ">
                     <h3 class="method__title">Ведение аккаунта</h3>
                     <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей аудитории время решают проблему.</p>
-                    <button class="btn btn-yellow">Получить расчёт стоимости</button>
+                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
                 <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt="" class="method__pic w-100 d-none d-sm-block">
                 </div>
@@ -171,7 +213,7 @@
                     <img src="promo_logo1.png" alt="" class="method__logo ">
                     <h3 class="method__title">Instagram «под ключ»</h3>
                     <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
-                    <button class="btn btn-yellow">Получить расчёт стоимости</button>
+                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
                 <div class="col-sm-6 method__pic-container"><img src="promo4.jpg" alt="" class="method__pic w-100 d-none d-sm-block">
                 </div>
