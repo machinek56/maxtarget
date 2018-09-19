@@ -32,9 +32,8 @@
         <section class="container section banner">
             <div class="row">
                 <div class="col">
-                    <h1 class="banner__title">
-                        НАЧНИТЕ ПОЛУЧАТЬ ОТ 17 НОВЫХ ЗАЯВОК ИЗ instagram ежедневно
-                    </h1></div>
+                    <h1 class="banner__title text-center text-uppercase">Начните получать от 17 новых заявок из Instagram ежедневно</h1>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-5">
