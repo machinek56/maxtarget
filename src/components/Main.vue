@@ -404,6 +404,7 @@
                     <button type="submit"
                             class="btn btn-dark w-100"
                             @click.prevent="submitForm"
+                            :disabled="!submitModalBtnAvailable"
                     >
                             Отправить
                     </button>
@@ -460,6 +461,7 @@
                     <button type="submit"
                             class="btn btn-dark w-100"
                             @click.prevent="submitForm"
+                            :disabled="!submitModalBtnAvailable"
                     >
                             Отправить
                     </button>
