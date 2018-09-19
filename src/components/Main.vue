@@ -189,41 +189,45 @@
                 <div class="col"></div>
                 <div class="col text-center"><img src="people-way.png" alt=""><p class="compare__method-title">ДРУГИЕ ВИДЫ ПРОДВИЖЕНИЯ</p></div>
             </div>
-            <div class="row">
-                <div class="col"><p>20 – 30 тысяч рублей</p></div>
-                <div class="col"><p class="compare__method">Бюджет на 30 дней</p></div>
-                <div class="col"><p>35 – 50 тысяч рублей</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><p>50 – 100 тысяч пользователей</p></div>
-                <div class="col"><p class="compare__method">Охват рекламы</p></div>
-                <div class="col"><p>20– 30 тысяч пользователей</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><p>Точное значение</p></div>
-                <div class="col"><p class="compare__method">Конверсия</p></div>
-                <div class="col"><p>Неизвестно</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><p>Целевая, точные параметры</p></div>
-                <div class="col"><p class="compare__method">Аудитория</p></div>
-                <div class="col"><p>Различная, нет точных критериев</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><p>Разовая настройка</p></div>
-                <div class="col"><p class="compare__method">Запуск рекламы</p></div>
-                <div class="col"><p>Регулярно повторяющиеся действия</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><p>Управление всеми показателями в режиме реального времени</p></div>
-                <div class="col"><p class="compare__method">Аналитика</p></div>
-                <div class="col"><p>Точные данные отсутствуют</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><p>В 5-10 раз дешевле альтернативных источников трафика</p></div>
-                <div class="col"><p class="compare__method">Стоимость заявки</p></div>
-                <div class="col"><p>Аналогична альтернативным источникам трафика</p></div>
-            </div>
+            <!-- <div class="sm-bock d-none d-sm-block"> -->
+                <div class="row">
+                    <div class="col"><p>20 – 30 тысяч рублей</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Бюджет на 30 дней</p></div>
+                    <div class="col"><p>35 – 50 тысяч рублей</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>50 – 100 тысяч пользователей</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Охват рекламы</p></div>
+                    <div class="col"><p>20– 30 тысяч пользователей</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Точное значение</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Конверсия</p></div>
+                    <div class="col"><p>Неизвестно</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Целевая, точные параметры</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Аудитория</p></div>
+                    <div class="col"><p>Различная, нет точных критериев</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Разовая настройка</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Запуск рекламы</p></div>
+                    <div class="col"><p>Регулярно повторяющиеся действия</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Управление всеми показателями в режиме реального времени</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Аналитика</p></div>
+                    <div class="col"><p>Точные данные отсутствуют</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>В 5-10 раз дешевле альтернативных источников трафика</p></div>
+                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Стоимость заявки</p></div>
+                    <div class="col"><p>Аналогична альтернативным источникам трафика</p></div>
+                </div>
+            <!-- </div> -->
+            <!-- <div class="d-sm-none">123</div> -->
+            
         </section>
 
         <section class="container section cases">
@@ -406,8 +410,67 @@
                 </form>
             </div>
         </modal>
+<section class="container section application" >
+ 
+                <h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится.</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Ваше имя</label>
+                        <input type="text"
+                               v-model="userName"
+                               class="form-control"
+                               :class="{'has-error': $v.userName.$error}"
+                               id="username"
+                               @blur="$v.userName.$touch()"
+                               @focus="$v.userName.$reset()"
+                               placeholder="Как вас зовут?">
 
+                        <div class="error-message" v-if="$v.userName.$error">
+                            {{userNameErrorMessage}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон</label>
+                        <masked-input type="tel"
+                                      name="phone"
+                                      id="phone"
+                                      class="form-control"
+                                      :class="{'has-error' :$v.phoneNumber.$error}"
+                                      v-model="phoneNumber"
+                                      :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
+                                      :guide="true"
+                                      @blur="$v.phoneNumber.$touch()"
+                                      @focus="$v.phoneNumber.$reset()"
+                                      placeholder="Телефон"
+                                      placeholderChar="_">
+                        </masked-input>
+
+                        <div class="error-message" v-if="$v.phoneNumber.$error">
+                           {{phoneNumberErrorMessage}}
+                        </div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
+                        <label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных</label>
+
+                        <div class="error-message">
+                            {{agreementErrorMessage}}
+                        </div>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-dark w-100"
+                            @click.prevent="submitForm"
+                    >
+                            Отправить
+                    </button>
+                </form>
+ 
+</section>  
     </div>
+   
+        
+         
+     
 </template>
 
 <script>
