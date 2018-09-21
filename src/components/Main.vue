@@ -32,7 +32,7 @@
         <section class="container section banner">
             <div class="row">
                 <div class="col">
-                    <h1 class="banner__title text-center text-uppercase">Начните получать от 17 новых заявок из Instagram ежедневно</h1>
+                    <h1 class="banner__title text-center text-uppercase">Начните <span class="txt-highlight">получать</span> от <span class="txt-highlight">17</span> новых <span class="txt-highlight">заявок</span> из Instagram <span class="txt-highlight">ежедневно</span></h1>
                 </div>
             </div>
             <div class="row">
@@ -172,7 +172,7 @@
             </div>
         </section>
 
-        <section class="container section methods">
+        <section class="container section methods bg-grey">
             <div class="row">
                 <div class="col text-center">
                     <h2 class="section__title section__title--underlined">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО ВАМ?</h2>
