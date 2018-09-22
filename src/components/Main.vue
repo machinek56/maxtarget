@@ -32,7 +32,10 @@
         <section class="container section banner">
             <div class="row">
                 <div class="col">
-                    <h1 class="banner__title text-center text-uppercase">Начните <span class="txt-highlight">получать</span> от <span class="txt-highlight">17</span> новых <span class="txt-highlight">заявок</span> из Instagram <span class="txt-highlight">ежедневно</span></h1>
+                    <h1 class="banner__title text-center text-uppercase">Начните <span
+                            class="txt-highlight">получать</span> от <span class="txt-highlight">17</span> новых <span
+                            class="txt-highlight">заявок</span> из Instagram <span
+                            class="txt-highlight">ежедневно</span></h1>
                 </div>
             </div>
             <div class="row">
@@ -40,60 +43,62 @@
                     <div class="d-md-none">
                         <img src="smm.png" alt="Banner Image" class="img-responsive">
                     </div>
-                    <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи через INSTAGRAM:</p>
-                    <form id="bannerForm" class="contact-form form banner-form">
-                        <div class="form-group">
-                            <label for="name">Ваше имя: </label>
-                            <input type="text"
-                               v-model="userName"
-                               class="form-control"
-                               :class="{'has-error': $v.userName.$error}"
-                               id="username"
-                               @blur="$v.userName.$touch()"
-                               @focus="$v.userName.$reset()"
-                               placeholder="Как вас зовут?">
+                    <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
+                        через INSTAGRAM:</p>
+                    <!--<form id="bannerForm" class="contact-form form banner-form">-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="name">Ваше имя: </label>-->
+                            <!--<input type="text"-->
+                                   <!--v-model="userName"-->
+                                   <!--class="form-control"-->
+                                   <!--:class="{'has-error': $v.userName.$error}"-->
+                                   <!--id="username"-->
+                                   <!--@blur="$v.userName.$touch()"-->
+                                   <!--@focus="$v.userName.$reset()"-->
+                                   <!--placeholder="Как вас зовут?">-->
 
-                        <div class="error-message" v-if="$v.userName.$error">
-                            {{userNameErrorMessage}}
-                        </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Ваш телефон</label>
-                            <masked-input type="tel"
-                                          name="phone"
-                                          id="phone"
-                                          class="form-control"
-                                          :class="{'has-error' :$v.phoneNumber.$error}"
-                                          v-model="phoneNumber"
-                                          :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
-                                          :guide="true"
-                                          @blur="$v.phoneNumber.$touch()"
-                                          @focus="$v.phoneNumber.$reset()"
-                                          placeholder="Телефон"
-                                          placeholderChar="_">
-                            </masked-input>
+                            <!--<div class="error-message" v-if="$v.userName.$error">-->
+                                <!--{{userNameErrorMessage}}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="phone">Ваш телефон</label>-->
+                            <!--<masked-input type="tel"-->
+                                          <!--name="phone"-->
+                                          <!--id="phone"-->
+                                          <!--class="form-control"-->
+                                          <!--:class="{'has-error' :$v.phoneNumber.$error}"-->
+                                          <!--v-model="phoneNumber"-->
+                                          <!--:mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"-->
+                                          <!--:guide="true"-->
+                                          <!--@blur="$v.phoneNumber.$touch()"-->
+                                          <!--@focus="$v.phoneNumber.$reset()"-->
+                                          <!--placeholder="Телефон"-->
+                                          <!--placeholderChar="_">-->
+                            <!--</masked-input>-->
 
-                            <div class="error-message" v-if="$v.phoneNumber.$error">
-                               {{phoneNumberErrorMessage}}
-                            </div>
-                        </div>
-                             <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
-                        <label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных</label>
+                            <!--<div class="error-message" v-if="$v.phoneNumber.$error">-->
+                                <!--{{phoneNumberErrorMessage}}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group form-check">-->
+                            <!--<input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">-->
+                            <!--<label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных-->
+                                <!--данных</label>-->
 
-                        <div class="error-message">
-                            {{agreementErrorMessage}}
-                        </div>
-                    </div>
-                    <button type="submit"
-                            class="btn btn-yellow"
-                            @click.prevent="submitForm"
-                             
-                    >
-                            Получить консультацию
-                    </button>
-                        <!-- <button type="submit" class="btn btn-yellow">Получить консультацию</button> -->
-                    </form>
+                            <!--<div class="error-message">-->
+                                <!--{{agreementErrorMessage}}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<button type="submit"-->
+                                <!--class="btn btn-yellow"-->
+                                <!--@click.prevent="submitForm"-->
+
+                        <!--&gt;-->
+                            <!--Получить консультацию-->
+                        <!--</button>-->
+                        <!--&lt;!&ndash; <button type="submit" class="btn btn-yellow">Получить консультацию</button> &ndash;&gt;-->
+                    <!--</form>-->
                 </div>
                 <div class="d-none d-md-block col-md-7">
                     <div class="">
@@ -106,7 +111,8 @@
         <section class="container section grow">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="section__title section__title--underlined">САМАЯ БЫСТРОРАСТУЩАЯ СОЦИАЛЬНАЯ СЕТЬ В РОССИИ</h2>
+                    <h2 class="section__title section__title--underlined">САМАЯ БЫСТРОРАСТУЩАЯ СОЦИАЛЬНАЯ СЕТЬ В
+                        РОССИИ</h2>
                 </div>
             </div>
             <div class="row">
@@ -127,44 +133,62 @@
                     <div class="grow__content grow__content--bg-yellow">
                         <div class="row">
                             <div class="col-4">До 18 лет</div>
-                            <div class="col-8"><div class="progress progress--no-bg">
-                                <div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
-                            </div>
+                            <div class="col-8">
+                                <div class="progress progress--no-bg">
+                                    <div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">20%
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">18-24 года</div>
-                            <div class="col-8"><div class="progress progress--no-bg">
-                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">34%</div>
-                            </div>
+                            <div class="col-8">
+                                <div class="progress progress--no-bg">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">34%
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">25-34 года</div>
-                            <div class="col-8"><div class="progress progress--no-bg">
-                                <div class="progress-bar" role="progressbar" style="width: 96%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">33%</div>
-                            </div>
+                            <div class="col-8">
+                                <div class="progress progress--no-bg">
+                                    <div class="progress-bar" role="progressbar" style="width: 96%;" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">33%
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">35-44 года</div>
-                            <div class="col-8"><div class="progress progress--no-bg">
-                                <div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
-                            </div>
+                            <div class="col-8">
+                                <div class="progress progress--no-bg">
+                                    <div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">20%
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">45-54 года</div>
-                            <div class="col-8"><div class="progress progress--no-bg">
-                                <div class="progress-bar" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">8%</div>
-                            </div>
+                            <div class="col-8">
+                                <div class="progress progress--no-bg">
+                                    <div class="progress-bar" role="progressbar" style="width: 24%;" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">8%
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">55 и старше</div>
-                            <div class="col-8"><div class="progress progress--no-bg">
-                                <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">1%</div>
-                            </div>
+                            <div class="col-8">
+                                <div class="progress progress--no-bg">
+                                    <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">1%
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -175,55 +199,67 @@
         <section class="container section methods bg-grey">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="section__title section__title--underlined">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО ВАМ?</h2>
+                    <h2 class="section__title section__title--underlined">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО
+                        ВАМ?</h2>
                 </div>
             </div>
             <div class="row method">
                 <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
-                    <div class="method__header">
-                       <img src="promo_logo1.png" alt="" class="method__logo ">
-                       <h3 class="method__title">Таргетированная реклама</h3> 
-                    </div>
-                    
-                    <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам рекламы.</p>
-                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+                  <div class="d-flex align-items-center">
+                    <img src="promo_logo1.png" alt="" class="method__logo ">
+                    <h3 class="method__title">Таргетированная реклама</h3>
+                  </div>
+                  <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
+                      критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам
+                      рекламы.</p>
+                  <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
-                <div class="col-sm-6 method__pic-container"><img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
+                <div class="col-sm-6 method__pic-container">
+                  <img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
             </div>
             <div class="row method">
                 <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
-                    <div class="method__header">
-                        <img src="promo_logo1.png" alt="" class="method__logo ">
-                        <h3 class="method__title">Реклама у блогеров</h3>
-                    </div>
-                    <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит рекламу.</p>
-                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+                  <div class="d-flex align-items-center">
+                    <img src="promo_logo1.png" alt="" class="method__logo ">
+                    <h3 class="method__title">Реклама у блогеров</h3>
+                  </div>
+                  <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
+                      проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит
+                      рекламу.</p>
+                  <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
-                <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt="" class="method__pic w-100 d-none d-sm-block">
+                <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt=""
+                                                                 class="method__pic w-100 d-none d-sm-block">
                 </div>
             </div>
             <div class="row method">
                 <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
-                    <div class="method__header">
-                        <img src="promo_logo1.png" alt="" class="method__logo ">
-                        <h3 class="method__title">Ведение аккаунта</h3>
-                    </div>
-                    <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей аудитории время решают проблему.</p>
-                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+                  <div class="d-flex align-items-center">
+                    <img src="promo_logo1.png" alt="" class="method__logo ">
+                    <h3 class="method__title">Ведение аккаунта</h3>
+                  </div>
+                  <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
+                      подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей
+                      аудитории время решают проблему.</p>
+                  <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
-                <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt="" class="method__pic w-100 d-none d-sm-block">
+                <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt=""
+                                                                 class="method__pic w-100 d-none d-sm-block">
                 </div>
             </div>
             <div class="row method">
                 <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
-                    <div class="method__header">
-                        <img src="promo_logo1.png" alt="" class="method__logo ">
-                        <h3 class="method__title">Instagram «под ключ»</h3>
-                    </div>
-                    <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
-                    <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+                  <div class="d-flex align-items-center">
+                    <img src="promo_logo1.png" alt="" class="method__logo ">
+                    <h3 class="method__title">Instagram «под ключ»</h3>
+                  </div>
+
+                  <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы
+                      полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
+                  <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
-                <div class="col-sm-6 method__pic-container"><img src="promo4.jpg" alt="" class="method__pic w-100 d-none d-sm-block">
+                <div class="col-sm-6 method__pic-container"><img src="promo4.jpg" alt=""
+                                                                 class="method__pic w-100 d-none d-sm-block">
                 </div>
             </div>
         </section>
@@ -235,49 +271,51 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col text-center"><img src="people.png" alt=""><p class="compare__method-title">ОФИЦИАЛЬНАЯ ТАРГЕТИРОВАННАЯ РЕКЛАМА INSTAGRAM</p></div>
+                <div class="col text-center"><img src="people.png" alt="">
+                    <p class="compare__method-title">ОФИЦИАЛЬНАЯ ТАРГЕТИРОВАННАЯ РЕКЛАМА INSTAGRAM</p></div>
                 <div class="col"></div>
-                <div class="col text-center"><img src="people-way.png" alt=""><p class="compare__method-title">ДРУГИЕ ВИДЫ ПРОДВИЖЕНИЯ</p></div>
+                <div class="col text-center"><img src="people-way.png" alt="">
+                    <p class="compare__method-title">ДРУГИЕ ВИДЫ ПРОДВИЖЕНИЯ</p></div>
             </div>
             <!-- <div class="sm-bock d-none d-sm-block"> -->
-                <div class="row">
-                    <div class="col"><p>20 – 30 тысяч рублей</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Бюджет на 30 дней</p></div>
-                    <div class="col"><p>35 – 50 тысяч рублей</p></div>
-                </div>
-                <div class="row">
-                    <div class="col"><p>50 – 100 тысяч пользователей</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Охват рекламы</p></div>
-                    <div class="col"><p>20– 30 тысяч пользователей</p></div>
-                </div>
-                <div class="row">
-                    <div class="col"><p>Точное значение</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Конверсия</p></div>
-                    <div class="col"><p>Неизвестно</p></div>
-                </div>
-                <div class="row">
-                    <div class="col"><p>Целевая, точные параметры</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Аудитория</p></div>
-                    <div class="col"><p>Различная, нет точных критериев</p></div>
-                </div>
-                <div class="row">
-                    <div class="col"><p>Разовая настройка</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Запуск рекламы</p></div>
-                    <div class="col"><p>Регулярно повторяющиеся действия</p></div>
-                </div>
-                <div class="row">
-                    <div class="col"><p>Управление всеми показателями в режиме реального времени</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Аналитика</p></div>
-                    <div class="col"><p>Точные данные отсутствуют</p></div>
-                </div>
-                <div class="row">
-                    <div class="col"><p>В 5-10 раз дешевле альтернативных источников трафика</p></div>
-                    <div class="col-sm order-first order-sm-0"><p class="compare__method">Стоимость заявки</p></div>
-                    <div class="col"><p>Аналогична альтернативным источникам трафика</p></div>
-                </div>
+            <div class="row">
+                <div class="col"><p>20 – 30 тысяч рублей</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Бюджет на 30 дней</p></div>
+                <div class="col"><p>35 – 50 тысяч рублей</p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>50 – 100 тысяч пользователей</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Охват рекламы</p></div>
+                <div class="col"><p>20– 30 тысяч пользователей</p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>Точное значение</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Конверсия</p></div>
+                <div class="col"><p>Неизвестно</p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>Целевая, точные параметры</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Аудитория</p></div>
+                <div class="col"><p>Различная, нет точных критериев</p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>Разовая настройка</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Запуск рекламы</p></div>
+                <div class="col"><p>Регулярно повторяющиеся действия</p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>Управление всеми показателями в режиме реального времени</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Аналитика</p></div>
+                <div class="col"><p>Точные данные отсутствуют</p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>В 5-10 раз дешевле альтернативных источников трафика</p></div>
+                <div class="col-sm order-first order-sm-0"><p class="compare__method">Стоимость заявки</p></div>
+                <div class="col"><p>Аналогична альтернативным источникам трафика</p></div>
+            </div>
             <!-- </div> -->
             <!-- <div class="d-sm-none">123</div> -->
-            
+
         </section>
 
         <section class="container section cases">
@@ -406,195 +444,48 @@
 
         <modal name="modalForm" adaptive height="auto">
             <div class="modal-container">
-                <h4 class="text-center">Оставить заявку</h4>
-                <form>
-                    <div class="form-group">
-                        <label for="username">Ваше имя</label>
-                        <input type="text"
-                               v-model="userName"
-                               class="form-control"
-                               :class="{'has-error': $v.userName.$error}"
-                               id="username"
-                               @blur="$v.userName.$touch()"
-                               @focus="$v.userName.$reset()"
-                               placeholder="Как вас зовут?">
-
-                        <div class="error-message" v-if="$v.userName.$error">
-                            {{userNameErrorMessage}}
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Ваш телефон</label>
-                        <masked-input type="tel"
-                                      name="phone"
-                                      id="phone"
-                                      class="form-control"
-                                      :class="{'has-error' :$v.phoneNumber.$error}"
-                                      v-model="phoneNumber"
-                                      :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
-                                      :guide="true"
-                                      @blur="$v.phoneNumber.$touch()"
-                                      @focus="$v.phoneNumber.$reset()"
-                                      placeholder="Телефон"
-                                      placeholderChar="_">
-                        </masked-input>
-
-                        <div class="error-message" v-if="$v.phoneNumber.$error">
-                           {{phoneNumberErrorMessage}}
-                        </div>
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
-                        <label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных</label>
-
-                        <div class="error-message">
-                            {{agreementErrorMessage}}
-                        </div>
-                    </div>
-                    <button type="submit"
-                            class="btn btn-dark w-100"
-                            @click.prevent="submitForm"
-                            :disabled="!submitModalBtnAvailable"
-                    >
-                            Отправить
-                    </button>
-                </form>
+               <base-form>
+               </base-form>
             </div>
         </modal>
-<section class="container section application" >
- 
-                <h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится.</h4>
-                <form>
-                    <div class="form-group">
-                        <label for="username">Ваше имя</label>
-                        <input type="text"
-                               v-model="userName"
-                               class="form-control"
-                               :class="{'has-error': $v.userName.$error}"
-                               id="username"
-                               @blur="$v.userName.$touch()"
-                               @focus="$v.userName.$reset()"
-                               placeholder="Как вас зовут?">
 
-                        <div class="error-message" v-if="$v.userName.$error">
-                            {{userNameErrorMessage}}
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Ваш телефон</label>
-                        <masked-input type="tel"
-                                      name="phone"
-                                      id="phone"
-                                      class="form-control"
-                                      :class="{'has-error' :$v.phoneNumber.$error}"
-                                      v-model="phoneNumber"
-                                      :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
-                                      :guide="true"
-                                      @blur="$v.phoneNumber.$touch()"
-                                      @focus="$v.phoneNumber.$reset()"
-                                      placeholder="Телефон"
-                                      placeholderChar="_">
-                        </masked-input>
+        <section class="container section application">
 
-                        <div class="error-message" v-if="$v.phoneNumber.$error">
-                           {{phoneNumberErrorMessage}}
-                        </div>
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
-                        <label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных</label>
-
-                        <div class="error-message">
-                            {{agreementErrorMessage}}
-                        </div>
-                    </div>
-                    <button type="submit"
-                            class="btn btn-dark w-100"
-                            @click.prevent="submitForm"
-                            :disabled="!submitModalBtnAvailable"
-                    >
-                            Отправить
-                    </button>
-                </form>
- 
-</section>  
+            <!--<h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто-->
+                <!--изменится.</h4>-->
+          <base-form>
+          </base-form>
+        </section>
     </div>
-   
-        
-         
-     
+
 </template>
 
 <script>
-import VueTinySlider from 'vue-tiny-slider'
-import BaseSwitch from '@/components/BaseSwitch'
-import MaskedInput from 'vue-text-mask'
-import { required, minLength, numeric } from 'vuelidate/lib/validators'
+  import VueTinySlider from 'vue-tiny-slider'
+  import BaseSwitch from '@/components/BaseSwitch'
+  import BaseForm from '@/components/BaseForm'
 
-export default {
-  name: 'Main',
-  components: {
-    'tiny-slider': VueTinySlider,
-    BaseSwitch,
-    MaskedInput
-  },
-  data: () => ({
-    phoneNumber: '',
-    userName: '',
-    agreement: true
-  }),
-  methods: {
-    show () {
-      this.$modal.show('modalForm')
+  export default {
+    name: 'Main',
+    components: {
+      'tiny-slider': VueTinySlider,
+      BaseSwitch,
+      BaseForm
     },
-    hide () {
-      this.$modal.hide('modalForm')
-    },
-    submitForm () {
-      if (!this.submitModalBtnAvailable) return
-
-      setTimeout(() => {
-        this.hide()
-      }, 2000)
-    }
-  },
-
-  computed: {
-    userNameErrorMessage () {
-      if (!this.$v.userName.$error) return ''
-
-      if (!this.$v.userName.required || !this.$v.userName.minLength) {
-        return 'Введите ваше имя'
+    data: () => ({
+      phoneNumber: '',
+      userName: '',
+      agreement: true
+    }),
+    methods: {
+      show () {
+        this.$modal.show('modalForm')
+      },
+      hide () {
+        this.$modal.hide('modalForm')
       }
-    },
-
-    phoneNumberErrorMessage () {
-      if (!this.$v.phoneNumber.$error) return ''
-
-      if (!this.$v.phoneNumber.required) {
-        return 'Введите корректный номер телефона'
-      }
-    },
-
-    agreementErrorMessage () {
-      return 'Без согласия отправка заявки невозможна.'
-    },
-
-    submitModalBtnAvailable () {
-      return !this.$v.phoneNumber.$invalid && !this.$v.userName.$invalid && this.agreement
-    }
-  },
-
-  validations: {
-    'userName': {
-      required,
-      minLength: minLength(2)
-    },
-    'phoneNumber': {
-      required
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
