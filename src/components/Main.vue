@@ -218,7 +218,7 @@
           <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
             критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам
             рекламы.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container">
           <img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
@@ -232,7 +232,7 @@
           <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
             проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит
             рекламу.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt=""
                                                          class="method__pic w-100 d-none d-sm-block">
@@ -247,7 +247,7 @@
           <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
             подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей
             аудитории время решают проблему.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt=""
                                                          class="method__pic w-100 d-none d-sm-block">
@@ -262,11 +262,12 @@
 
           <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы
             полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
+          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
         </div>
-        <div class="col-sm-6 method__pic-container"><img src="promo4.jpg" alt=""
-                                                         class="method__pic w-100 d-none d-sm-block">
-        </div>
+        <!--<div class="col-sm-6 method__pic-container">-->
+          <!--<img src="promo4.jpg" alt=""-->
+                                                         <!--class="method__pic w-100 d-none d-sm-block">-->
+        <!--</div>-->
       </div>
     </section>
 
@@ -277,10 +278,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col text-center"><img src="people.png" alt="">
+        <div class="col text-center"><img src="people.png" alt="" class="compare__image">
           <p class="compare__method-title">ОФИЦИАЛЬНАЯ ТАРГЕТИРОВАННАЯ РЕКЛАМА INSTAGRAM</p></div>
-        <div class="col"></div>
-        <div class="col text-center"><img src="people-way.png" alt="">
+        <div class="col text-center"><img src="people-way.png" alt="" class="compare__image">
           <p class="compare__method-title">ДРУГИЕ ВИДЫ ПРОДВИЖЕНИЯ</p></div>
       </div>
       <!-- <div class="sm-bock d-none d-sm-block"> -->

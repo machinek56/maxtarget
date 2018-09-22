@@ -99,12 +99,20 @@
 /*compare*/
 .compare{
   color: #fff;
-  //background-color: hsl(260, 53%, 50%);
   background: linear-gradient(#6458C6, #EE7E7F);
-}
-.compare__method{
-  text-align: center;
-  border-bottom: 3px solid hsl(42, 100%, 50%);
+  &__image {
+    max-width: 70px;
+    margin-bottom: 8px;
+  }
+  &__method {
+    text-align: center;
+    border-bottom: 2px solid hsl(42, 100%, 50%);
+    padding-bottom: 5px;
+
+    &-title {
+      font-size: .9rem;
+    }
+  }
 }
 /*----------------
 	RESULTS
