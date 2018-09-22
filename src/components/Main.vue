@@ -180,8 +180,11 @@
             </div>
             <div class="row method">
                 <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
-                    <img src="promo_logo1.png" alt="" class="method__logo ">
-                    <h3 class="method__title">Таргетированная реклама</h3>
+                    <div class="method__header">
+                       <img src="promo_logo1.png" alt="" class="method__logo ">
+                       <h3 class="method__title">Таргетированная реклама</h3> 
+                    </div>
+                    
                     <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам рекламы.</p>
                     <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
@@ -189,8 +192,10 @@
             </div>
             <div class="row method">
                 <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
-                    <img src="promo_logo1.png" alt="" class="method__logo ">
-                    <h3 class="method__title">Реклама у блогеров</h3>
+                    <div class="method__header">
+                        <img src="promo_logo1.png" alt="" class="method__logo ">
+                        <h3 class="method__title">Реклама у блогеров</h3>
+                    </div>
                     <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит рекламу.</p>
                     <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
@@ -199,8 +204,10 @@
             </div>
             <div class="row method">
                 <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
-                    <img src="promo_logo1.png" alt="" class="method__logo ">
-                    <h3 class="method__title">Ведение аккаунта</h3>
+                    <div class="method__header">
+                        <img src="promo_logo1.png" alt="" class="method__logo ">
+                        <h3 class="method__title">Ведение аккаунта</h3>
+                    </div>
                     <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей аудитории время решают проблему.</p>
                     <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
@@ -209,8 +216,10 @@
             </div>
             <div class="row method">
                 <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
-                    <img src="promo_logo1.png" alt="" class="method__logo ">
-                    <h3 class="method__title">Instagram «под ключ»</h3>
+                    <div class="method__header">
+                        <img src="promo_logo1.png" alt="" class="method__logo ">
+                        <h3 class="method__title">Instagram «под ключ»</h3>
+                    </div>
                     <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
                     <button class="btn btn-yellow" @click.prevent="show">Получить расчёт стоимости</button>
                 </div>
