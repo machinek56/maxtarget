@@ -9,23 +9,23 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link ancors" href="#grow">Статистика</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link ancors" href="#methods">Способы продвижения</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Таргетинг</a>
-              <a class="dropdown-item" href="#">Преимущества</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Заявка</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link ancors" href="#compare">Преимущества</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ancors" href="#results">Наши результаты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ancors" href="#steps">Как начать</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ancors" href="#application">Оставить заявку</a>
           </li>
           <li class="nav-item">
             <a href="tel:+7(916)970-57-15">+7 (916) 970-57-15</a>
@@ -117,7 +117,7 @@
     <section class="container section grow">
       <div class="row">
         <div class="col text-center">
-          <h2 class="section__title section__title--underlined">САМАЯ БЫСТРОРАСТУЩАЯ СОЦИАЛЬНАЯ СЕТЬ В
+          <h2 class="section__title section__title--underlined" id="grow">САМАЯ БЫСТРОРАСТУЩАЯ СОЦИАЛЬНАЯ СЕТЬ В
             РОССИИ</h2>
         </div>
       </div>
@@ -205,7 +205,7 @@
     <section class="container section methods bg-grey">
       <div class="row">
         <div class="col text-center">
-          <h2 class="section__title section__title--underlined">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО
+          <h2 class="section__title section__title--underlined" id="methods">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО
             ВАМ?</h2>
         </div>
       </div>
@@ -274,7 +274,7 @@
     <section class="container section compare">
       <div class="row">
         <div class="col text-center">
-          <h2 class="section__title">ДАЛЕКО НЕ ВСЕ МЕТОДЫ ПРОДВИЖЕНИЯ ЭФФЕКТИВНО РАБОТАЮТ СЕГОДНЯ</h2>
+          <h2 class="section__title" id="compare">ДАЛЕКО НЕ ВСЕ МЕТОДЫ ПРОДВИЖЕНИЯ ЭФФЕКТИВНО РАБОТАЮТ СЕГОДНЯ</h2>
         </div>
       </div>
       <div class="row">
@@ -328,7 +328,7 @@
 
       <div class="row">
         <div class="col text-center">
-          <h2>Наши результаты</h2>
+          <h2 id="results">Наши результаты</h2>
         </div>
       </div>
 
@@ -408,7 +408,7 @@
 
     </section>
 
-    <section class="container steps">
+    <section class="container steps" id="steps">
 
       <tiny-slider :mouse-drag="true" :loop="false" items="1" gutter="20">
         <div>
@@ -455,7 +455,7 @@
       </div>
     </modal>
 
-    <section class="container section application">
+    <section class="container section application" id="application">
 
       <!--<h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто-->
       <!--изменится.</h4>-->
