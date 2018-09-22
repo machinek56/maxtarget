@@ -456,11 +456,30 @@
     </modal>
 
     <section class="container section application" id="application">
-
       <!--<h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто-->
       <!--изменится.</h4>-->
       <base-form>
       </base-form>
+    </section>
+    <section class="container section contacts bg-dark" id="contacts">
+        <div class="row align-items-center">
+            <div class="col-5">
+                <a href="tel:+7(916)970-57-15">+7 999 937 79 56</a>
+            </div>
+            <div class="col d-flex justify-content-between contacts-icons">
+                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/phone-call.svg" alt=""></a>
+                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt=""></a>
+                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>        
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="mailto:max.target.agency@gmail.com">max.target.agency@gmail.com</a>
+            </div>
+            <div class="col contacts-icons">
+                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/new-email-outline.svg" alt=""></a>
+            </div>
+        </div>
     </section>
   </div>
 
