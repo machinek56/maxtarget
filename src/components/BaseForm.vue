@@ -40,7 +40,7 @@
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
                 <label class="form-check-label" for="exampleCheck1">
-                  Согласен на <a @click.prevent="$emit('show')">обработку персональных данных</a>
+                  Согласен на <a href @click.prevent="$emit('show')" class="privacy-policy__link">обработку персональных данных</a>
                 </label>
 
                 <div class="error-message">
