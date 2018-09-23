@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">MaxTarget</a>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-blue">
+      <a class="navbar-brand" href="#">Max-Target</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
             <a class="nav-link ancors" href="#application">Оставить заявку</a>
           </li>
           <li class="nav-item">
-            <a href="tel:+7(999)937-79-56">+7 (999) 937-79-56</a>
+            <a href="tel:+7(999)937-79-56" class="nav-phone">+7 (999) 937-79-56</a>
           </li>
         </ul>
       </div>
@@ -344,6 +344,16 @@
 
           </div>
         </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <button type="button"
+                  class="btn btn-transparent"
+                  @click.prevent="showModal('modalForm')">
+            Я сделал свой выбор!
+          </button>
+        </div>
+      </div>
 
     </section>
 

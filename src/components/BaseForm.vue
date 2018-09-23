@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="text-center">{{title}}</h4>
+        <h4 class="section__title">{{title}}</h4>
         <form>
             <div class="form-group">
                 <label class="form-lable" for="username">Ваше имя</label>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <button type="submit"
-                    class="btn btn-dark w-100"
+                    class="btn btn-yellow w-100"
                     @click.prevent="submitForm"
                     :disabled="!submitModalBtnAvailable"
             >
