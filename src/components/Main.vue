@@ -28,7 +28,7 @@
             <a class="nav-link ancors" href="#application">Оставить заявку</a>
           </li>
           <li class="nav-item">
-            <a href="tel:+7(916)970-57-15">+7 (916) 970-57-15</a>
+            <a href="tel:+7(999)937-79-56">+7 (999) 937-79-56</a>
           </li>
         </ul>
       </div>
@@ -51,60 +51,9 @@
           </div>
           <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
             через INSTAGRAM:</p>
-          <!--<form id="bannerForm" class="contact-form form banner-form">-->
-          <!--<div class="form-group">-->
-          <!--<label for="name">Ваше имя: </label>-->
-          <!--<input type="text"-->
-          <!--v-model="userName"-->
-          <!--class="form-control"-->
-          <!--:class="{'has-error': $v.userName.$error}"-->
-          <!--id="username"-->
-          <!--@blur="$v.userName.$touch()"-->
-          <!--@focus="$v.userName.$reset()"-->
-          <!--placeholder="Как вас зовут?">-->
 
-          <!--<div class="error-message" v-if="$v.userName.$error">-->
-          <!--{{userNameErrorMessage}}-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<div class="form-group">-->
-          <!--<label for="phone">Ваш телефон</label>-->
-          <!--<masked-input type="tel"-->
-          <!--name="phone"-->
-          <!--id="phone"-->
-          <!--class="form-control"-->
-          <!--:class="{'has-error' :$v.phoneNumber.$error}"-->
-          <!--v-model="phoneNumber"-->
-          <!--:mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"-->
-          <!--:guide="true"-->
-          <!--@blur="$v.phoneNumber.$touch()"-->
-          <!--@focus="$v.phoneNumber.$reset()"-->
-          <!--placeholder="Телефон"-->
-          <!--placeholderChar="_">-->
-          <!--</masked-input>-->
-
-          <!--<div class="error-message" v-if="$v.phoneNumber.$error">-->
-          <!--{{phoneNumberErrorMessage}}-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<div class="form-group form-check">-->
-          <!--<input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">-->
-          <!--<label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных-->
-          <!--данных</label>-->
-
-          <!--<div class="error-message">-->
-          <!--{{agreementErrorMessage}}-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<button type="submit"-->
-          <!--class="btn btn-yellow"-->
-          <!--@click.prevent="submitForm"-->
-
-          <!--&gt;-->
-          <!--Получить консультацию-->
-          <!--</button>-->
-          <!--&lt;!&ndash; <button type="submit" class="btn btn-yellow">Получить консультацию</button> &ndash;&gt;-->
-          <!--</form>-->
+          <base-form>
+          </base-form>
         </div>
         <div class="d-none d-md-block col-md-7">
           <div class="">
@@ -326,11 +275,7 @@
 
     <section class="container section cases">
 
-      <div class="row">
-        <div class="col text-center">
-          <h2 id="results">Наши результаты</h2>
-        </div>
-      </div>
+      <h2 id="results" class="section__title">Наши результаты</h2>
 
       <div class="row">
         <div class="col col-md-6">
@@ -376,15 +321,10 @@
       </div>
     </section>
 
-    <section class="section choose">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="choose__heading">Выбор за вами!</h2>
-          </div>
-        </div>
+    <section class="container section choose">
+      <h2 class="section__title choose__heading">Выбор за вами!</h2>
 
-        <div class="row">
+      <div class="row">
           <div class="col">
             <div class="choose-grid">
               <img src="hand-promotion.png" alt="" class="img-fluid choose__image">
@@ -404,7 +344,6 @@
 
           </div>
         </div>
-      </div>
 
     </section>
 
@@ -477,16 +416,14 @@
     </section>
 
     <section class="container section application bg-grey" id="application">
-      <!--<h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто-->
-      <!--изменится.</h4>-->
-      <base-form @show="showModal">
+      <base-form @show="showModal" title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
       </base-form>
     </section>
 
     <section class="container section contacts bg-dark" id="contacts">
         <div class="row align-items-center">
             <div class="col-5">
-                <a href="tel:+7(916)970-57-15">+7 999 937 79 56</a>
+                <a href="tel:+7(999)937-79-56">+7 (999) 937-79-56</a>
             </div>
             <div class="col d-flex justify-content-between contacts-icons">
                 <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/phone-call.svg" alt=""></a>

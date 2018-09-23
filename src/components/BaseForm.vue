@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="text-center">Оставить заявку</h4>
+        <h4 class="text-center">{{title}}</h4>
         <form>
             <div class="form-group">
                 <label for="username">Ваше имя</label>
@@ -66,6 +66,10 @@
     name: 'BaseForm',
     components: {
       MaskedInput
+    },
+    props: {
+      title: String,
+      default: 'Оставить заявку'
     },
     data: () => ({
       phoneNumber: '',
