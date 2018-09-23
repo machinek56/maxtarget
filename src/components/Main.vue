@@ -336,7 +336,7 @@
               </div>
 
               <h3 class="choose-maxtarget">
-                MaxTarget
+                Max-Target
               </h3>
 
               <img src="promotion.png" alt="" class="img-fluid choose__image">
@@ -348,7 +348,7 @@
       <div class="row">
         <div class="col text-center">
           <button type="button"
-                  class="btn btn-transparent"
+                  class="btn btn-transparent btn-choose"
                   @click.prevent="showModal('modalForm')">
             Я сделал свой выбор!
           </button>
@@ -430,26 +430,33 @@
       </base-form>
     </section>
 
-    <section class="container section contacts bg-dark" id="contacts">
+    <footer class="container section contacts bg-dark" id="contacts">
         <div class="row align-items-center">
-            <div class="col-5">
-                <a href="tel:+7(999)937-79-56">+7 (999) 937-79-56</a>
+          <div class="col-12 contacts__section">
+            <img class="contacts__phone-icon" src="~@/assets/images/contacts/phone-call.svg" alt="">
+              <a href="tel:+7(999)937-79-56" class="contacts__phone">+7 (999) 937-79-56</a>
+          </div>
+          <div class="col-12 contacts__section">
+            <a href="mailto:max.target.agency@gmail.com" class="contacts__phone">max.target.agency@gmail.com</a>
+          </div>
+          <div class="col-12 d-flex contacts__section contacts-icons">
+              <a href="whatsapp://send?phone=+79999377956" title="WhatsApp"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt=""></a>
+              <a href="tg://resolve?domain=@Win2erCat" title="Telegram"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>
+          </div>
+
+          <div class="col-12 d-flex">
+            <div class="contacts__copyright">
+              &copy; Max-Target 2018
             </div>
-            <div class="col d-flex justify-content-between contacts-icons">
-                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/phone-call.svg" alt=""></a>
-                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt=""></a>
-                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>        
-            </div>
+          </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col">
-                <a href="mailto:max.target.agency@gmail.com">max.target.agency@gmail.com</a>
-            </div>
-            <div class="col contacts-icons">
-                <a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/new-email-outline.svg" alt=""></a>
-            </div>
-        </div>
-    </section>
+        <!--<div class="row align-items-center">-->
+
+            <!--<div class="col contacts-icons">-->
+                <!--<a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/new-email-outline.svg" alt=""></a>-->
+            <!--</div>-->
+        <!--</div>-->
+    </footer>
 
     <modal name="modalForm" adaptive height="auto">
       <div class="modal-container">
@@ -461,7 +468,7 @@
 
     <modal name="privacyPolicy" adaptive height="auto">
       <div class="modal-container">
-        <div class="modal-close" @click="hideModal"></div>
+        <div class="modal-close" @click="hideModal('')"></div>
         <h3>Политика конфиденциальности</h3>
          <p class="privacy-policy">
            Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.
@@ -494,8 +501,11 @@
       showModal (name = 'privacyPolicy') {
         this.$modal.show(name)
       },
-      hideModal (name = 'privacyPolicy') {
-        this.$modal.hide(name)
+      hideModal (name) {
+        if (!name) {
+          this.$modal.hide('privacyPolicy')
+        }
+        this.$modal.hide(name);
       }
     }
   }
