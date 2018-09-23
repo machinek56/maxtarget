@@ -218,7 +218,7 @@
           <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
             критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам
             рекламы.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container">
           <img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
@@ -232,7 +232,7 @@
           <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
             проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит
             рекламу.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt=""
                                                          class="method__pic w-100 d-none d-sm-block">
@@ -247,7 +247,7 @@
           <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
             подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей
             аудитории время решают проблему.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt=""
                                                          class="method__pic w-100 d-none d-sm-block">
@@ -262,7 +262,7 @@
 
           <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы
             полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
-          <button class="btn btn-yellow" @click.prevent="show">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
         </div>
         <!--<div class="col-sm-6 method__pic-container">-->
           <!--<img src="promo4.jpg" alt=""-->
@@ -369,7 +369,7 @@
         <div class="col text-center">
           <button type="button"
                   class="btn btn-transparent"
-                  @click.prevent="show">
+                  @click.prevent="show('modalForm')">
             Мне тоже нужен результат!
           </button>
         </div>
@@ -408,59 +408,81 @@
 
     </section>
 
-    <section class="container steps" id="steps">
+    <section class="section container" id="steps">
 
-      <tiny-slider :mouse-drag="true" :loop="false" items="1" gutter="20">
-        <div>
-          <h3>Аналитика</h3>
-          <p>
-            Проводим комплексный аудит Вашего аккаунта
-            и выбираем самые эффективные
-            способы продвижения
-          </p>
-        </div>
-        <div>
-          <h3>Договор</h3>
-          <p>
-            Работаем только по договору
-            и фиксируем на бумаге
-            все наши обещания
-          </p>
-        </div>
-        <div>
-          <h3>Продвижение</h3>
-          <p>
-            Начинаем мощное продвижение
-            Вашего аккаунта, Вы получаете
-            новых подписчиков и клиентов
-          </p>
-        </div>
-        <div>
-          <h3>Оптимизация</h3>
-          <p>
-            Оптимизируем рекламные
-            кампании – Вы получаете
-            максимальный результат
-            от каждого действия
-          </p>
-        </div>
-      </tiny-slider>
+      <h2 class="section__title">КАК ПРИВЛЕЧЬ ВНИМАНИЕ ИМЕННО К ВАШЕМУ АККАУНТУ?</h2>
+
+      <div class="steps">
+        <tiny-slider :mouse-drag="true" :loop="true" items="1" gutter="20"
+                     controls-container="#customize-controls">
+          <div class="step">
+            <div class="step__header">
+              <img src="~@/assets/images/steps/market.svg" alt="" class="step__icon">
+              <h3 class="step__title">Аналитика</h3>
+            </div>
+
+            <p>
+              Проводим комплексный аудит Вашего аккаунта
+              и выбираем самые эффективные
+              способы продвижения
+            </p>
+          </div>
+          <div class="step">
+            <div class="step__header">
+              <img src="~@/assets/images/steps/contract.svg" alt="" class="step__icon">
+              <h3 class="step__title">Договор</h3>
+            </div>
+
+            <p>
+              Работаем только по договору
+              и фиксируем на бумаге
+              все наши обещания
+            </p>
+          </div>
+          <div class="step">
+            <div class="step__header">
+              <img src="~@/assets/images/steps/profits.svg" alt="" class="step__icon">
+              <h3 class="step__title">Продвижение</h3>
+            </div>
+            <p>
+              Начинаем мощное продвижение
+              Вашего аккаунта, Вы получаете
+              новых подписчиков и клиентов
+            </p>
+          </div>
+          <div class="step">
+            <div class="step__header">
+              <img src="~@/assets/images/steps/landing-page.svg" alt="" class="step__icon">
+              <h3 class="step__title">Оптимизация</h3>
+            </div>
+            <p>
+              Оптимизируем рекламные
+              кампании – Вы получаете
+              максимальный результат
+              от каждого действия
+            </p>
+          </div>
+        </tiny-slider>
+
+        <ul class="controls" id="customize-controls">
+          <li class="prev" aria-controls="customize" data-controls="prev">
+            <img src="~@/assets/images/next.svg" alt="">
+          </li>
+          <li class="next" aria-controls="customize" data-controls="next">
+            <img src="~@/assets/images/next.svg" alt="">
+          </li>
+        </ul>
+      </div>
 
     </section>
 
-    <modal name="modalForm" adaptive height="auto">
-      <div class="modal-container">
-        <base-form>
-        </base-form>
-      </div>
-    </modal>
-
-    <section class="container section application" id="application">
+    <section class="container section application bg-grey" id="application">
       <!--<h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто-->
       <!--изменится.</h4>-->
-      <base-form>
+      <base-form @show="show">
       </base-form>
     </section>
+
     <section class="container section contacts bg-dark" id="contacts">
         <div class="row align-items-center">
             <div class="col-5">
@@ -481,6 +503,25 @@
             </div>
         </div>
     </section>
+
+    <modal name="modalForm" adaptive height="auto">
+      <div class="modal-container">
+        <base-form @show="show">
+        </base-form>
+      </div>
+    </modal>
+
+    <modal name="privacyPolicy" adaptive height="auto">
+      <div class="modal-container">
+        <h3>Политика конфиденциальности</h3>
+         <p class="privacy-policy">
+           Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.
+           Все лица, заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную информацию, обозначенными действиями подтверждают своё согласие на обработку персональных данных и их передачу оператору обработки персональных данных.
+           Граждане, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, уничтожение.
+         </p>
+      </div>
+    </modal>
+
   </div>
 
 </template>
@@ -503,11 +544,11 @@
       agreement: true
     }),
     methods: {
-      show () {
-        this.$modal.show('modalForm')
+      show (name = 'privacyPolicy') {
+        this.$modal.show(name)
       },
-      hide () {
-        this.$modal.hide('modalForm')
+      hide (name = 'privacyPolicy') {
+        this.$modal.hide(name)
       }
     }
   }
