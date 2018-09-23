@@ -3,7 +3,7 @@
         <h4 class="text-center">{{title}}</h4>
         <form>
             <div class="form-group">
-                <label for="username">Ваше имя</label>
+                <label class="form-lable" for="username">Ваше имя</label>
                 <input type="text"
                        v-model="userName"
                        class="form-control"
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="phone">Ваш телефон</label>
+                <label class="form-lable" for="phone">Ваш телефон</label>
                 <masked-input type="tel"
                               name="phone"
                               id="phone"
