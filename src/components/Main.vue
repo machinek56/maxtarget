@@ -1,63 +1,67 @@
 <template>
   <div class="">
     <nav class="navbar navbar-expand-lg navbar-light navbar-blue">
-      <a class="navbar-brand" href="#">Max-Target</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="container">
+        <a class="navbar-brand" href="#">Max-Target</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link ancors" href="#grow">Статистика</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ancors" href="#methods">Способы продвижения</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ancors" href="#compare">Преимущества</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ancors" href="#results">Наши результаты</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ancors" href="#steps">Как начать</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ancors" href="#application">Оставить заявку</a>
-          </li>
-          <li class="nav-item">
-            <a href="tel:+7(999)937-79-56" class="nav-phone">+7 (999) 937-79-56</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link ancors" href="#grow">Статистика</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ancors" href="#methods">Способы продвижения</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ancors" href="#compare">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ancors" href="#results">Наши результаты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ancors" href="#steps">Как начать</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ancors" href="#application">Оставить заявку</a>
+            </li>
+            <li class="nav-item">
+              <a href="tel:+7(999)937-79-56" class="nav-phone">+7 (999) 937-79-56</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
 
-    <section class="container section banner">
-      <div class="row">
-        <div class="col">
-          <h1 class="banner__title text-center text-uppercase">Начните <span
-            class="txt-highlight">получать</span> от <span class="txt-highlight">17</span> новых <span
-            class="txt-highlight">заявок</span> из Instagram <span
-            class="txt-highlight">ежедневно</span></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="d-md-none">
-            <img src="smm.png" alt="Banner Image" class="img-responsive">
+    <section class="section banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="banner__title text-center text-uppercase">Начните <span
+              class="txt-highlight">получать</span> от <span class="txt-highlight">17</span> новых <span
+              class="txt-highlight">заявок</span> из Instagram <span
+              class="txt-highlight">ежедневно</span></h1>
           </div>
-          <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
-            через INSTAGRAM:</p>
-
-          <base-form @show="showModal('privacyPolicy')">
-          </base-form>
         </div>
-        <div class="d-none d-md-block col-md-7">
-          <div class="">
-            <img src="smm.png" alt="Banner Image" class="img-responsive">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="d-md-none">
+              <img src="smm.png" alt="Banner Image" class="img-responsive">
+            </div>
+            <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
+              через INSTAGRAM:</p>
+
+            <base-form @show="showModal('privacyPolicy')">
+            </base-form>
+          </div>
+          <div class="d-none d-md-block col-md-7">
+            <div class="">
+              <img src="smm.png" alt="Banner Image" class="img-responsive">
+            </div>
           </div>
         </div>
       </div>
@@ -151,126 +155,129 @@
       </div>
     </section>
 
-    <section class="container section methods bg-grey">
-      <div class="row">
-        <div class="col text-center">
-          <h2 class="section__title section__title--underlined" id="methods">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО
-            ВАМ?</h2>
-        </div>
-      </div>
-      <div class="row method">
-        <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
-          <div class="d-flex align-items-center">
-            <img src="promo_logo1.png" alt="" class="method__logo ">
-            <h3 class="method__title">Таргетированная реклама</h3>
+    <section class="section methods bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="section__title section__title--underlined" id="methods">КАКОЙ СПОСОБ ПРОДВИЖЕНИЯ ПОДОЙДЁТ ИМЕННО
+              ВАМ?</h2>
           </div>
-          <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
-            критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам
-            рекламы.</p>
-          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
         </div>
-        <div class="col-sm-6 method__pic-container">
-          <img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
-      </div>
-      <div class="row method">
-        <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
-          <div class="d-flex align-items-center">
-            <img src="promo_logo1.png" alt="" class="method__logo ">
-            <h3 class="method__title">Реклама у блогеров</h3>
+        <div class="row method">
+          <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
+            <div class="d-flex align-items-center">
+              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <h3 class="method__title">Таргетированная реклама</h3>
+            </div>
+            <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
+              критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам
+              рекламы.</p>
+            <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
           </div>
-          <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
-            проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит
-            рекламу.</p>
-          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
+          <div class="col-sm-6 method__pic-container">
+            <img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
         </div>
-        <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt=""
-                                                         class="method__pic w-100 d-none d-sm-block">
-        </div>
-      </div>
-      <div class="row method">
-        <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
-          <div class="d-flex align-items-center">
-            <img src="promo_logo1.png" alt="" class="method__logo ">
-            <h3 class="method__title">Ведение аккаунта</h3>
+        <div class="row method">
+          <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
+            <div class="d-flex align-items-center">
+              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <h3 class="method__title">Реклама у блогеров</h3>
+            </div>
+            <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
+              проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит
+              рекламу.</p>
+            <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
           </div>
-          <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
-            подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей
-            аудитории время решают проблему.</p>
-          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
-        </div>
-        <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt=""
-                                                         class="method__pic w-100 d-none d-sm-block">
-        </div>
-      </div>
-      <div class="row method">
-        <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
-          <div class="d-flex align-items-center">
-            <img src="promo_logo1.png" alt="" class="method__logo ">
-            <h3 class="method__title">Instagram «под ключ»</h3>
+          <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt=""
+                                                           class="method__pic w-100 d-none d-sm-block">
           </div>
+        </div>
+        <div class="row method">
+          <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
+            <div class="d-flex align-items-center">
+              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <h3 class="method__title">Ведение аккаунта</h3>
+            </div>
+            <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
+              подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей
+              аудитории время решают проблему.</p>
+            <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
+          </div>
+          <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt=""
+                                                           class="method__pic w-100 d-none d-sm-block">
+          </div>
+        </div>
+        <div class="row method">
+          <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
+            <div class="d-flex align-items-center">
+              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <h3 class="method__title">Instagram «под ключ»</h3>
+            </div>
 
-          <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы
-            полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
-          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
-        </div>
-        <!--<div class="col-sm-6 method__pic-container">-->
+            <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы
+              полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
+            <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
+          </div>
+          <!--<div class="col-sm-6 method__pic-container">-->
           <!--<img src="promo4.jpg" alt=""-->
-                                                         <!--class="method__pic w-100 d-none d-sm-block">-->
-        <!--</div>-->
+          <!--class="method__pic w-100 d-none d-sm-block">-->
+          <!--</div>-->
+        </div>
       </div>
     </section>
 
-    <section class="container section compare">
-      <div class="row">
-        <div class="col text-center">
-          <h2 class="section__title" id="compare">ДАЛЕКО НЕ ВСЕ МЕТОДЫ ПРОДВИЖЕНИЯ ЭФФЕКТИВНО РАБОТАЮТ СЕГОДНЯ</h2>
+    <section class="section compare">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="section__title" id="compare">ДАЛЕКО НЕ ВСЕ МЕТОДЫ ПРОДВИЖЕНИЯ ЭФФЕКТИВНО РАБОТАЮТ СЕГОДНЯ</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col text-center"><img src="people.png" alt="" class="compare__image">
+            <p class="compare__method-title">ОФИЦИАЛЬНАЯ ТАРГЕТИРОВАННАЯ РЕКЛАМА INSTAGRAM</p></div>
+          <div class="col text-center"><img src="people-way.png" alt="" class="compare__image">
+            <p class="compare__method-title">ДРУГИЕ ВИДЫ ПРОДВИЖЕНИЯ</p></div>
+        </div>
+        <!-- <div class="sm-bock d-none d-sm-block"> -->
+        <div class="row">
+          <div class="col"><p>20 – 30 тысяч рублей</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Бюджет на 30 дней</p></div>
+          <div class="col"><p>35 – 50 тысяч рублей</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><p>50 – 100 тысяч пользователей</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Охват рекламы</p></div>
+          <div class="col"><p>20– 30 тысяч пользователей</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><p>Точное значение</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Конверсия</p></div>
+          <div class="col"><p>Неизвестно</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><p>Целевая, точные параметры</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Аудитория</p></div>
+          <div class="col"><p>Различная, нет точных критериев</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><p>Разовая настройка</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Запуск рекламы</p></div>
+          <div class="col"><p>Регулярно повторяющиеся действия</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><p>Управление всеми показателями в режиме реального времени</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Аналитика</p></div>
+          <div class="col"><p>Точные данные отсутствуют</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><p>В 5-10 раз дешевле альтернативных источников трафика</p></div>
+          <div class="col-sm order-first order-sm-0"><p class="compare__method">Стоимость заявки</p></div>
+          <div class="col"><p>Аналогична альтернативным источникам трафика</p></div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="d-sm-none">123</div> -->
       </div>
-      <div class="row">
-        <div class="col text-center"><img src="people.png" alt="" class="compare__image">
-          <p class="compare__method-title">ОФИЦИАЛЬНАЯ ТАРГЕТИРОВАННАЯ РЕКЛАМА INSTAGRAM</p></div>
-        <div class="col text-center"><img src="people-way.png" alt="" class="compare__image">
-          <p class="compare__method-title">ДРУГИЕ ВИДЫ ПРОДВИЖЕНИЯ</p></div>
-      </div>
-      <!-- <div class="sm-bock d-none d-sm-block"> -->
-      <div class="row">
-        <div class="col"><p>20 – 30 тысяч рублей</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Бюджет на 30 дней</p></div>
-        <div class="col"><p>35 – 50 тысяч рублей</p></div>
-      </div>
-      <div class="row">
-        <div class="col"><p>50 – 100 тысяч пользователей</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Охват рекламы</p></div>
-        <div class="col"><p>20– 30 тысяч пользователей</p></div>
-      </div>
-      <div class="row">
-        <div class="col"><p>Точное значение</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Конверсия</p></div>
-        <div class="col"><p>Неизвестно</p></div>
-      </div>
-      <div class="row">
-        <div class="col"><p>Целевая, точные параметры</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Аудитория</p></div>
-        <div class="col"><p>Различная, нет точных критериев</p></div>
-      </div>
-      <div class="row">
-        <div class="col"><p>Разовая настройка</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Запуск рекламы</p></div>
-        <div class="col"><p>Регулярно повторяющиеся действия</p></div>
-      </div>
-      <div class="row">
-        <div class="col"><p>Управление всеми показателями в режиме реального времени</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Аналитика</p></div>
-        <div class="col"><p>Точные данные отсутствуют</p></div>
-      </div>
-      <div class="row">
-        <div class="col"><p>В 5-10 раз дешевле альтернативных источников трафика</p></div>
-        <div class="col-sm order-first order-sm-0"><p class="compare__method">Стоимость заявки</p></div>
-        <div class="col"><p>Аналогична альтернативным источникам трафика</p></div>
-      </div>
-      <!-- </div> -->
-      <!-- <div class="d-sm-none">123</div> -->
-
     </section>
 
     <section class="container section cases">
@@ -321,10 +328,11 @@
       </div>
     </section>
 
-    <section class="container section choose">
-      <h2 class="section__title choose__heading">Выбор за вами!</h2>
+    <section class="section choose">
+      <div class="container">
+        <h2 class="section__title choose__heading">Выбор за вами!</h2>
 
-      <div class="row">
+        <div class="row">
           <div class="col">
             <div class="choose-grid">
               <img src="hand-promotion.png" alt="" class="img-fluid choose__image">
@@ -345,16 +353,16 @@
           </div>
         </div>
 
-      <div class="row">
-        <div class="col text-center">
-          <button type="button"
-                  class="btn btn-transparent btn-choose"
-                  @click.prevent="showModal('modalForm')">
-            Я сделал свой выбор!
-          </button>
+        <div class="row">
+          <div class="col text-center">
+            <button type="button"
+                    class="btn btn-transparent btn-choose"
+                    @click.prevent="showModal('modalForm')">
+              Я сделал свой выбор!
+            </button>
+          </div>
         </div>
       </div>
-
     </section>
 
     <section class="section container" id="steps">
@@ -425,23 +433,26 @@
 
     </section>
 
-    <section class="container section application bg-grey" id="application">
-      <base-form @show="showModal('privacyPolicy')" title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
-      </base-form>
+    <section class="section application bg-grey" id="application">
+      <div class="container">
+        <base-form @show="showModal('privacyPolicy')" title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
+        </base-form>
+      </div>
     </section>
 
-    <footer class="container section contacts bg-dark" id="contacts">
+    <footer class="section contacts bg-dark" id="contacts">
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-12 contacts__section">
             <img class="contacts__phone-icon" src="~@/assets/images/contacts/phone-call.svg" alt="">
-              <a href="tel:+7(999)937-79-56" class="contacts__phone">+7 (999) 937-79-56</a>
+            <a href="tel:+7(999)937-79-56" class="contacts__phone">+7 (999) 937-79-56</a>
           </div>
           <div class="col-12 contacts__section">
             <a href="mailto:max.target.agency@gmail.com" class="contacts__phone">max.target.agency@gmail.com</a>
           </div>
           <div class="col-12 d-flex contacts__section contacts-icons">
-              <a href="whatsapp://send?phone=+79999377956" title="WhatsApp"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt=""></a>
-              <a href="tg://resolve?domain=@Win2erCat" title="Telegram"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>
+            <a href="whatsapp://send?phone=+79999377956" title="WhatsApp"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt=""></a>
+            <a href="tg://resolve?domain=@Win2erCat" title="Telegram"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>
           </div>
 
           <div class="col-12 d-flex justify-content-center">
@@ -452,10 +463,11 @@
         </div>
         <!--<div class="row align-items-center">-->
 
-            <!--<div class="col contacts-icons">-->
-                <!--<a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/new-email-outline.svg" alt=""></a>-->
-            <!--</div>-->
+        <!--<div class="col contacts-icons">-->
+        <!--<a href="#"><img class="contacts-icons__icon" src="~@/assets/images/contacts/new-email-outline.svg" alt=""></a>-->
         <!--</div>-->
+        <!--</div>-->
+      </div>
     </footer>
 
     <modal name="modalForm" adaptive height="auto">
