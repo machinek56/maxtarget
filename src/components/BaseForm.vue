@@ -103,10 +103,12 @@
     methods: {
       submitForm () {
         if (!this.submitModalBtnAvailable) return
+          const form = new FormData();
+          form.append('name',this.userName);
+          form.append('phone',this.phoneNumber);
 
-        setTimeout(() => {
-          this.hide()
-        }, 2000)
+          fetch('send.php',{method:"POST",body:form})
+              .then(res=>alert(res))
       }
     },
 

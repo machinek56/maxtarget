@@ -539,9 +539,7 @@
       BaseForm
     },
     data: () => ({
-      phoneNumber: '',
-      userName: '',
-      agreement: true
+     
     }),
     methods: {
       show (name = 'privacyPolicy') {
