@@ -61,6 +61,11 @@
     margin-left: 1rem;
     margin-bottom: 0;
   }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .section {
@@ -189,6 +194,11 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 0;
+  &-icon {
+    height: 30px;
+    margin-right: 7px;
+  }
 }
 
 .choose__toggle {
@@ -209,12 +219,13 @@
 }
 
 .modal-close {
-  background: url('~@/assets/images/close.svg');
-  background-size: cover;
+  //background: url('~@/assets/images/close.svg');
+  //background-size: cover;
   width: 20px;
   height: 20px;
   position: absolute;
   right: 10px;
+  cursor: pointer;
 }
 
 .has-error {
@@ -274,12 +285,16 @@
     padding: 0;
     cursor: pointer;
     transition: background 0.3s;
+
+    svg {
+      width: 30px;
+    }
   }
 
   .prev {
     left: 0;
 
-    img {
+    svg {
       transform: rotate(180deg);
     }
   }
@@ -304,6 +319,7 @@
 
   &__icon {
     max-width: 35px;
+    height: 35px;
     margin-right: 1rem;
   }
 
@@ -314,6 +330,12 @@
   &__header {
     display: flex;
     align-items: center;
+
+    & > svg {
+      > * {
+        fill: #F18D35;
+      }
+    }
   }
 }
 
@@ -338,6 +360,7 @@
      font-weight: 600;
      &-icon {
        width: 30px;
+       height: 30px;
        margin-right: 10px;
      }
    }

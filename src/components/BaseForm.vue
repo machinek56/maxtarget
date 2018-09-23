@@ -108,12 +108,23 @@
       submitForm () {
         if (!this.submitModalBtnAvailable) return
 
-        const form = new FormData();
-        form.append('name',this.userName);
-        form.append('phone',this.phoneNumber);
-        fetch('ajax.php',{ method: 'POST', body:form })
-            .then(res => res === 'success' ? this.submitSuccess() : this.submitError())
-            .catch(err => this.submitError());
+        const form = new FormData()
+        form.append('name', this.userName)
+        form.append('phone', this.phoneNumber)
+
+        fetch('ajax.php', { method: 'POST', body: form })
+          .then(res => {
+            console.log(res)
+            return res.text()
+          })
+          .then(res => {
+            console.log(res)
+            res === 'success' ? this.submitSuccess() : this.submitError()
+          })
+          .catch(err => {
+            console.error(err)
+            this.submitError()
+          });
       },
       submitSuccess(){
         this.userName = '';

@@ -36,7 +36,6 @@
       </div>
     </nav>
 
-
     <section class="section banner">
       <div class="container">
         <div class="row">
@@ -166,7 +165,8 @@
         <div class="row method">
           <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
             <div class="d-flex align-items-center">
-              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <TargetIcon class="method__icon"/>
+              <!--<img src="promo_logo1.png" alt="" class="method__logo ">-->
               <h3 class="method__title">Таргетированная реклама</h3>
             </div>
             <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
@@ -180,7 +180,8 @@
         <div class="row method">
           <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
             <div class="d-flex align-items-center">
-              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <!--<img src="promo_logo1.png" alt="" class="method__logo ">-->
+              <BloggerIcon class="method__icon"/>
               <h3 class="method__title">Реклама у блогеров</h3>
             </div>
             <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
@@ -195,7 +196,8 @@
         <div class="row method">
           <div class="col-sm-6 method__main d-flex flex-column align-items-baseline">
             <div class="d-flex align-items-center">
-              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <AccountIcon class="method__icon" />
+              <!--<img src="promo_logo1.png" alt="" class="method__logo ">-->
               <h3 class="method__title">Ведение аккаунта</h3>
             </div>
             <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
@@ -210,7 +212,8 @@
         <div class="row method">
           <div class="col-sm-6 order-2 method__main d-flex flex-column align-items-baseline">
             <div class="d-flex align-items-center">
-              <img src="promo_logo1.png" alt="" class="method__logo ">
+              <!--<img src="promo_logo1.png" alt="" class="method__logo ">-->
+              <SeoIcon class="method__icon" />
               <h3 class="method__title">Instagram «под ключ»</h3>
             </div>
 
@@ -228,11 +231,9 @@
 
     <section class="section compare">
       <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="section__title" id="compare">ДАЛЕКО НЕ ВСЕ МЕТОДЫ ПРОДВИЖЕНИЯ ЭФФЕКТИВНО РАБОТАЮТ СЕГОДНЯ</h2>
-          </div>
-        </div>
+
+        <h2 class="section__title mb-4" id="compare">ДАЛЕКО НЕ ВСЕ МЕТОДЫ ПРОДВИЖЕНИЯ ЭФФЕКТИВНО РАБОТАЮТ СЕГОДНЯ</h2>
+
         <div class="row">
           <div class="col text-center"><img src="people.png" alt="" class="compare__image">
             <p class="compare__method-title">ОФИЦИАЛЬНАЯ ТАРГЕТИРОВАННАЯ РЕКЛАМА INSTAGRAM</p></div>
@@ -343,9 +344,11 @@
                 <base-switch></base-switch>
               </div>
 
-              <h3 class="choose-maxtarget">
-                Max-Target
-              </h3>
+              <div class="d-flex align-items-center justify-content-center mb-3">
+                <InstaIcon class="choose-maxtarget-icon"/>
+                <!--<img src="~@/assets/images/instagram.svg" alt="" class="choose-maxtarget-icon">-->
+                <h3 class="choose-maxtarget">Max-Target</h3>
+              </div>
 
               <img src="promotion.png" alt="" class="img-fluid choose__image">
             </div>
@@ -374,7 +377,7 @@
                      controls-container="#customize-controls">
           <div class="step">
             <div class="step__header">
-              <img src="~@/assets/images/steps/market.svg" alt="" class="step__icon">
+              <MarketIcon class="step__icon"/>
               <h3 class="step__title">Аналитика</h3>
             </div>
 
@@ -386,7 +389,7 @@
           </div>
           <div class="step">
             <div class="step__header">
-              <img src="~@/assets/images/steps/contract.svg" alt="" class="step__icon">
+              <ContractIcon class="step__icon"/>
               <h3 class="step__title">Договор</h3>
             </div>
 
@@ -398,7 +401,8 @@
           </div>
           <div class="step">
             <div class="step__header">
-              <img src="~@/assets/images/steps/profits.svg" alt="" class="step__icon">
+              <ProfitsIcon class="step__icon"/>
+              <!--<img src="~@/assets/images/steps/profits.svg" alt="" class="step__icon">-->
               <h3 class="step__title">Продвижение</h3>
             </div>
             <p>
@@ -409,7 +413,8 @@
           </div>
           <div class="step">
             <div class="step__header">
-              <img src="~@/assets/images/steps/landing-page.svg" alt="" class="step__icon">
+              <OptimizationIcon class="step__icon" />
+              <!--<img src="~@/assets/images/steps/landing-page.svg" alt="" class="step__icon">-->
               <h3 class="step__title">Оптимизация</h3>
             </div>
             <p>
@@ -423,10 +428,12 @@
 
         <ul class="controls" id="customize-controls">
           <li class="prev" aria-controls="customize" data-controls="prev">
-            <img src="~@/assets/images/next.svg" alt="">
+            <ArrowIcon />
+            <!--<img src="~@/assets/images/next.svg" alt="">-->
           </li>
           <li class="next" aria-controls="customize" data-controls="next">
-            <img src="~@/assets/images/next.svg" alt="">
+            <ArrowIcon />
+            <!--<img src="~@/assets/images/next.svg" alt="">-->
           </li>
         </ul>
       </div>
@@ -444,15 +451,22 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 contacts__section">
-            <img class="contacts__phone-icon" src="~@/assets/images/contacts/phone-call.svg" alt="">
+            <!--<img  src="~@/assets/images/contacts/phone-call.svg" alt="">-->
+            <PhoneIcon class="contacts__phone-icon"/>
             <a href="tel:+7(999)937-79-56" class="contacts__phone">+7 (999) 937-79-56</a>
           </div>
           <div class="col-12 contacts__section">
             <a href="mailto:max.target.agency@gmail.com" class="contacts__phone">max.target.agency@gmail.com</a>
           </div>
           <div class="col-12 d-flex contacts__section contacts-icons">
-            <a href="whatsapp://send?phone=+79999377956" title="WhatsApp"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt=""></a>
-            <a href="tg://resolve?domain=@Win2erCat" title="Telegram"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>
+            <a href="whatsapp://send?phone=+79999377956" title="WhatsApp">
+              <WhatsAppIcon class="contacts-icons__icon" />
+              <!--<img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-whatsapp.svg" alt="">-->
+            </a>
+            <a href="tg://resolve?domain=@Win2erCat" title="Telegram">
+              <TelegramIcon class="contacts-icons__icon" />
+              <!--<img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt="">-->
+            </a>
           </div>
 
           <div class="col-12 d-flex justify-content-center">
@@ -472,7 +486,10 @@
 
     <modal name="modalForm" adaptive height="auto">
       <div class="modal-container">
-        <div class="modal-close" @click="hideModal('modalForm')"></div>
+        <div class="modal-close" @click="hideModal('modalForm')">
+          <CloseIcon class="modal-close"/>
+        </div>
+
         <base-form @show="showModal">
         </base-form>
       </div>
@@ -480,7 +497,10 @@
 
     <modal name="privacyPolicy" adaptive height="auto">
       <div class="modal-container">
-        <div class="modal-close" @click="hideModal('')"></div>
+        <div class="modal-close" @click="hideModal('')">
+          <CloseIcon class="modal-close"/>
+        </div>
+        <!--<div class="modal-close" @click="hideModal('')"></div>-->
         <h3>Политика конфиденциальности</h3>
          <p class="privacy-policy">
            Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.
@@ -495,32 +515,60 @@
 </template>
 
 <script>
-  import VueTinySlider from 'vue-tiny-slider'
-  import BaseSwitch from '@/components/BaseSwitch'
-  import BaseForm from '@/components/BaseForm'
+import VueTinySlider from 'vue-tiny-slider'
+import BaseSwitch from '@/components/BaseSwitch'
+import BaseForm from '@/components/BaseForm'
+import MarketIcon from '@/assets/images/steps/market.svg'
+import ContractIcon from '@/assets/images/steps/contract.svg'
+import ProfitsIcon from '@/assets/images/steps/profits.svg'
+import OptimizationIcon from '@/assets/images/steps/landing-page.svg'
+import ArrowIcon from '@/assets/images/next.svg'
+import InstaIcon from '@/assets/images/instagram.svg'
+import PhoneIcon from '@/assets/images/contacts/phone-call.svg'
+import WhatsAppIcon from '@/assets/images/contacts/icons8-whatsapp.svg'
+import TelegramIcon from '@/assets/images/contacts/icons8-telegram-app.svg'
+import TargetIcon from '@/assets/images/methods/target.svg'
+import BloggerIcon from '@/assets/images/methods/influencer.svg'
+import AccountIcon from '@/assets/images/methods/worker-career.svg'
+import SeoIcon from '@/assets/images/methods/seo.svg'
+import CloseIcon from '@/assets/images/close.svg'
 
-  export default {
-    name: 'Main',
-    components: {
-      'tiny-slider': VueTinySlider,
-      BaseSwitch,
-      BaseForm
+export default {
+  name: 'Main',
+  components: {
+    'tiny-slider': VueTinySlider,
+    BaseSwitch,
+    BaseForm,
+    MarketIcon,
+    ContractIcon,
+    ProfitsIcon,
+    OptimizationIcon,
+    ArrowIcon,
+    InstaIcon,
+    PhoneIcon,
+    WhatsAppIcon,
+    TelegramIcon,
+    TargetIcon,
+    BloggerIcon,
+    AccountIcon,
+    SeoIcon,
+    CloseIcon
+  },
+  data: () => ({
+
+  }),
+  methods: {
+    showModal (name = 'privacyPolicy') {
+      this.$modal.show(name)
     },
-    data: () => ({
-     
-    }),
-    methods: {
-      showModal (name = 'privacyPolicy') {
-        this.$modal.show(name)
-      },
-      hideModal (name) {
-        if (!name) {
-          this.$modal.hide('privacyPolicy')
-        }
-        this.$modal.hide(name);
+    hideModal (name) {
+      if (!name) {
+        this.$modal.hide('privacyPolicy')
       }
+      this.$modal.hide(name)
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
