@@ -444,7 +444,7 @@
               <a href="tg://resolve?domain=@Win2erCat" title="Telegram"><img class="contacts-icons__icon" src="~@/assets/images/contacts/icons8-telegram-app.svg" alt=""></a>
           </div>
 
-          <div class="col-12 d-flex">
+          <div class="col-12 d-flex justify-content-center">
             <div class="contacts__copyright">
               &copy; Max-Target 2018
             </div>

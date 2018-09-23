@@ -107,14 +107,15 @@
     methods: {
       submitForm () {
         if (!this.submitModalBtnAvailable) return
-          const form = new FormData();
-          form.append('name',this.userName);
-          form.append('phone',this.phoneNumber);
-          fetch('ajax.php',{ method: 'POST', body:form })
-              .then(res => res === 'success' ? this.submitSucces() : this.submitError())
-              .catch(err => this.submitError());
+
+        const form = new FormData();
+        form.append('name',this.userName);
+        form.append('phone',this.phoneNumber);
+        fetch('ajax.php',{ method: 'POST', body:form })
+            .then(res => res === 'success' ? this.submitSuccess() : this.submitError())
+            .catch(err => this.submitError());
       },
-      submitSucces(){
+      submitSuccess(){
         this.userName = '';
         this.phoneNumber = '';
         this.$toast.success('Спасибо за вашу заявку!', 'OK');
