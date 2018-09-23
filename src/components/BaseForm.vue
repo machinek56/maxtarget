@@ -107,7 +107,7 @@
           form.append('name',this.userName);
           form.append('phone',this.phoneNumber);
 
-          fetch('send.php',{method:"POST",body:form})
+          fetch('ajax.php',{method:"POST",body:form})
               .then(res=>alert(res))
       }
     },
