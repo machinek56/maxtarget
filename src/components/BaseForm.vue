@@ -68,8 +68,10 @@
       MaskedInput
     },
     props: {
-      title: String,
-      default: 'Оставить заявку'
+      title: {
+        type: String,
+        default: 'Оставить заявку'
+      },
     },
     data: () => ({
       phoneNumber: '',
