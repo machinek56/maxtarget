@@ -106,9 +106,17 @@
           const form = new FormData();
           form.append('name',this.userName);
           form.append('phone',this.phoneNumber);
-
           fetch('ajax.php',{method:"POST",body:form})
-              .then(res=>alert(res))
+              .then(res=>res=="succes"?this.submitSucces():this.submitError())
+              .catch(err=>this.submitError());
+      },
+      submitSucces(){
+        this.userName = '';
+        this.phoneNumber = '';
+        alert('Спасибо за вашу заявку!')
+      },
+      submitError(){
+        alert('Ошибка отправки, попробуйте еещ раз!')
       }
     },
 
