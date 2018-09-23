@@ -193,8 +193,17 @@
 
 .modal-container {
   padding: 1rem;
+  position: relative;
 }
 
+.modal-close {
+  background: url('~@/assets/images/close.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+}
 
 .has-error {
   border-color: #dc3545;
@@ -209,6 +218,11 @@
 
 .privacy-policy {
   line-height: 1.2;
+
+  &__link {
+    text-decoration: underline;
+    color: inherit;
+  }
 }
 
 

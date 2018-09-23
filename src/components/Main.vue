@@ -218,7 +218,7 @@
           <p class="title__desc">Ваша реклама показывается только целевой аудитории, которая определяется по
             критериям географии, возраста, пола и интересов. Вы получаете точные цифры по результатам
             рекламы.</p>
-          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container">
           <img src="promo1.jpg" alt="" class="method__pic w-100 d-none d-sm-block"></div>
@@ -232,7 +232,7 @@
           <p class="title__desc">Ваш аккаунт будут продвигать только те блогеры, которые прошли внимательную
             проверку нашей системы статистики – никаких накруток, только живая и активная аудитория увидит
             рекламу.</p>
-          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container"><img src="promo2.jpg" alt=""
                                                          class="method__pic w-100 d-none d-sm-block">
@@ -247,7 +247,7 @@
           <p class="title__desc">Вам больше не нужно ломать голову над новыми публикациями и реакцией
             подписчиков – продуманный до мелочей контент-план и ежедневные публикации в актуальное для вашей
             аудитории время решают проблему.</p>
-          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
         </div>
         <div class="col-sm-6 method__pic-container"><img src="promo3.jpg" alt=""
                                                          class="method__pic w-100 d-none d-sm-block">
@@ -262,7 +262,7 @@
 
           <p class="title__desc">Вам больше не нужно переживать о том, как живёт бизнес в Instagram. Мы
             полностью закрываем эту проблему, Вам остаётся только считать прибыль.</p>
-          <button class="btn btn-yellow" @click.prevent="show('modalForm')">Узнать стоимость</button>
+          <button class="btn btn-yellow" @click.prevent="showModal('modalForm')">Узнать стоимость</button>
         </div>
         <!--<div class="col-sm-6 method__pic-container">-->
           <!--<img src="promo4.jpg" alt=""-->
@@ -369,7 +369,7 @@
         <div class="col text-center">
           <button type="button"
                   class="btn btn-transparent"
-                  @click.prevent="show('modalForm')">
+                  @click.prevent="showModal('modalForm')">
             Мне тоже нужен результат!
           </button>
         </div>
@@ -479,7 +479,7 @@
     <section class="container section application bg-grey" id="application">
       <!--<h4 class="text-center">Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто-->
       <!--изменится.</h4>-->
-      <base-form @show="show">
+      <base-form @show="showModal">
       </base-form>
     </section>
 
@@ -506,13 +506,15 @@
 
     <modal name="modalForm" adaptive height="auto">
       <div class="modal-container">
-        <base-form @show="show">
+        <div class="modal-close" @click="hideModal('modalForm')"></div>
+        <base-form @show="showModal">
         </base-form>
       </div>
     </modal>
 
     <modal name="privacyPolicy" adaptive height="auto">
       <div class="modal-container">
+        <div class="modal-close" @click="hideModal"></div>
         <h3>Политика конфиденциальности</h3>
          <p class="privacy-policy">
            Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.
@@ -544,10 +546,10 @@
       agreement: true
     }),
     methods: {
-      show (name = 'privacyPolicy') {
+      showModal (name = 'privacyPolicy') {
         this.$modal.show(name)
       },
-      hide (name = 'privacyPolicy') {
+      hideModal (name = 'privacyPolicy') {
         this.$modal.hide(name)
       }
     }
