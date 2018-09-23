@@ -9,9 +9,12 @@ import App from './App.vue'
 
 import VModal from 'vue-js-modal'
 import Vuelidate from 'vuelidate'
+import VueIziToast from 'vue-izitoast'
+import 'izitoast/dist/css/iziToast.min.css'
+
 Vue.use(VModal)
 Vue.use(Vuelidate)
-
+Vue.use(VueIziToast)
 Vue.config.productionTip = false
 
 new Vue({

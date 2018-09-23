@@ -52,7 +52,7 @@
           <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
             через INSTAGRAM:</p>
 
-          <base-form>
+          <base-form @show="showModal('privacyPolicy')">
           </base-form>
         </div>
         <div class="d-none d-md-block col-md-7">
@@ -426,7 +426,7 @@
     </section>
 
     <section class="container section application bg-grey" id="application">
-      <base-form @show="showModal" title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
+      <base-form @show="showModal('privacyPolicy')" title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
       </base-form>
     </section>
 

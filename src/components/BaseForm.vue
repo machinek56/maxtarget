@@ -40,7 +40,7 @@
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
                 <label class="form-check-label" for="exampleCheck1">
-                  Согласен на <a href @click.prevent="$emit('show')" class="privacy-policy__link">обработку персональных данных</a>
+                  Согласен на <a href @click.prevent="$emit('show', 'privacyPolicy')" class="privacy-policy__link">обработку персональных данных</a>
                 </label>
 
                 <div class="error-message">
@@ -88,7 +88,7 @@
       phoneNumberErrorMessage () {
         if (!this.$v.phoneNumber.$error) return ''
 
-        if (!this.$v.phoneNumber.required) {
+        if (!this.$v.phoneNumber.required || !this.phoneNumber.validPhone) {
           return 'Введите корректный номер телефона'
         }
       },
@@ -110,17 +110,17 @@
           const form = new FormData();
           form.append('name',this.userName);
           form.append('phone',this.phoneNumber);
-          fetch('ajax.php',{method:"POST",body:form})
-              .then(res=>res=="succes"?this.submitSucces():this.submitError())
-              .catch(err=>this.submitError());
+          fetch('ajax.php',{ method: 'POST', body:form })
+              .then(res => res === 'success' ? this.submitSucces() : this.submitError())
+              .catch(err => this.submitError());
       },
       submitSucces(){
         this.userName = '';
         this.phoneNumber = '';
-        alert('Спасибо за вашу заявку!')
+        this.$toast.success('Спасибо за вашу заявку!', 'OK');
       },
       submitError(){
-        alert('Ошибка отправки, попробуйте еещ раз!')
+        this.$toast.error('Ошибка отправки, попробуйте еще раз!', 'Ошибка');
       }
     },
 
@@ -130,7 +130,13 @@
         minLength: minLength(2)
       },
       'phoneNumber': {
-        required
+        required,
+        validPhone (value) {
+          return true
+          // const unMaskedValue = value.replace(/[(-_\s]/, '')
+          // console.log(unMaskedValue)
+          // return value ? value.replace(/[(-_\s]/, '').length === 11 : false
+        }
       }
     }
   }
