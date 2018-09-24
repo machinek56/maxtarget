@@ -285,38 +285,147 @@
 
       <h2 id="results" class="section__title">Наши результаты</h2>
 
-      <div class="row">
-        <div class="col col-md-6">
-          <div class="case__title">
+      <tiny-slider :mouse-drag="true" :loop="true" items="1" gutter="0"
+                   controls-container="#customize-controls">
 
-            <div class="case__title-text">
-              Медицинский центр @diplomatclinic
+        <div>
+          <div class="row">
+            <div class="col col-md-6 d-none d-sm-block">
+              <div class="case__title">
+
+                <div class="case__title-text">
+                  Медицинский центр @diplomatclinic
+                </div>
+
+              </div>
             </div>
 
-          </div>
+            <div class="col-12 col-sm-6 col-md-6">
 
-          <div class="case__desc">
-            <p>
-              Увеличен процент пользователей из целевой аудитории в аккаунте
-            </p>
+              <div class="case__name .d-block .d-sm-none">
+                Медицинский центр @diplomatclinic
+              </div>
 
-            <p>
-              Обеспечено от 25 клиентов в месяц со средним чеком 22 000 рублей
-            </p>
+              <div class="case__desc">
+                <p>
+                  Увеличен процент пользователей из целевой аудитории в аккаунте
+                </p>
 
-            <p>
-              Увеличено количество лайков под каждой публикацией с 20 до 500
-            </p>
+                <p>
+                  Обеспечено от 25 клиентов в месяц со средним чеком 22 000 рублей
+                </p>
 
+                <p>
+                  Увеличено количество лайков под каждой публикацией с 20 до 500
+                </p>
+
+              </div>
+            </div>
+
+            <div class="col col-md-6 text-center">
+              <div class="case__image">
+                <img src="cases/case_2.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col col-md-6 text-center">
 
-          <div class="case__image">
-            <img src="cases/case_2.png" alt="">
+        <div>
+          <div class="row">
+            <div class="col col-md-6 d-none d-sm-block">
+              <div class="case__title">
+
+                <div class="case__title-text">
+                  Элитная недвижимость @house_mall
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6">
+
+              <div class="case__name .d-block .d-sm-none">
+                Элитная недвижимость @house_mall
+              </div>
+
+              <div class="case__desc">
+                <p>
+                  Настройка и последующее ведение таргетированной рекламы
+                </p>
+
+                <p>
+                  Обеспечено более 1 000 переходов на сайт ежедневно
+                </p>
+
+                <p>
+                  Увеличено количество звонков, обращений в 3 раза
+                </p>
+
+              </div>
+            </div>
+
+            <div class="col col-md-6 text-center">
+              <div class="case__image">
+                <img src="cases/case_3.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div>
+          <div class="row">
+            <div class="col col-md-6 d-none d-sm-block">
+              <div class="case__title">
+
+                <div class="case__title-text">
+                  Свадебный салон @vanilastudio
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6">
+
+              <div class="case__name .d-block .d-sm-none">
+                Свадебный салон @vanilastudio
+              </div>
+
+              <div class="case__desc">
+                <p>
+                  Увеличено количество клиентов из Instagram с 2 до 7 в сутки
+                </p>
+
+                <p>
+                  Обеспечено более 100 переходов на сайт ежедневно
+                </p>
+
+                <p>
+                  Достигнута высокая активность у каждой публикации
+                </p>
+
+              </div>
+            </div>
+
+            <div class="col col-md-6 text-center">
+              <div class="case__image">
+                <img src="cases/case_1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </tiny-slider>
+
+      <ul class="controls" id="customize-controls">
+        <li class="prev" aria-controls="customize" data-controls="prev">
+          <ArrowIcon />
+          <!--<img src="~@/assets/images/next.svg" alt="">-->
+        </li>
+        <li class="next" aria-controls="customize" data-controls="next">
+          <ArrowIcon />
+          <!--<img src="~@/assets/images/next.svg" alt="">-->
+        </li>
+      </ul>
 
       <div class="row">
         <div class="col text-center">
