@@ -49,12 +49,13 @@
         <div class="row">
           <div class="col-md-5">
             <div class="d-md-none">
-              <img src="smm.png" alt="Banner Image" class="img-responsive">
+              <img src="smm.png" alt="Banner Image" class="img-responsive" />
             </div>
             <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
               через INSTAGRAM:</p>
 
-            <base-form @show="showModal('privacyPolicy')">
+            <base-form @show="showModal('privacyPolicy')"
+                       :hide-title="true">
             </base-form>
           </div>
           <div class="d-none d-md-block col-md-7">
@@ -483,7 +484,7 @@
 
       <div class="steps">
         <tiny-slider :mouse-drag="true" :loop="true" items="1" gutter="20"
-                     controls-container="#customize-controls">
+                     controls-container="#customize-controls1">
           <div class="step">
             <div class="step__header">
               <MarketIcon class="step__icon"/>
@@ -535,7 +536,7 @@
           </div>
         </tiny-slider>
 
-        <ul class="controls" id="customize-controls">
+        <ul class="controls" id="customize-controls1">
           <li class="prev" aria-controls="customize" data-controls="prev">
             <ArrowIcon />
             <!--<img src="~@/assets/images/next.svg" alt="">-->
@@ -551,7 +552,8 @@
 
     <section class="section application bg-grey" id="application">
       <div class="container">
-        <base-form @show="showModal('privacyPolicy')" title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
+        <base-form @show="showModal('privacyPolicy')"
+                   title="Остался последний шаг. Внимание! После отправки заявки Ваш аккаунт круто изменится">
         </base-form>
       </div>
     </section>
@@ -599,7 +601,8 @@
           <CloseIcon class="modal-close"/>
         </div>
 
-        <base-form @show="showModal">
+        <base-form @show="showModal"
+                   @hide="hideModal('modalForm')">
         </base-form>
       </div>
     </modal>

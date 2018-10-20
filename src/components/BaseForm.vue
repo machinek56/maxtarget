@@ -1,17 +1,17 @@
 <template>
     <div>
-        <h4 class="section__title">{{title}}</h4>
+        <h4 class="section__title" v-if="!hideTitle">{{title}}</h4>
         <form>
             <div class="form-group">
                 <label class="form-lable" for="username">Ваше имя</label>
                 <input type="text"
                        v-model="userName"
                        class="form-control"
-                       :class="{'has-error': $v.userName.$error}"
                        id="username"
+                       placeholder="Как вас зовут?"
+                       :class="{'has-error': $v.userName.$error}"
                        @blur="$v.userName.$touch()"
-                       @focus="$v.userName.$reset()"
-                       placeholder="Как вас зовут?">
+                       @focus="$v.userName.$reset()">
 
                 <div class="error-message" v-if="$v.userName.$error">
                     {{userNameErrorMessage}}
@@ -23,8 +23,8 @@
                               name="phone"
                               id="phone"
                               class="form-control"
-                              :class="{'has-error' :$v.phoneNumber.$error}"
                               v-model="phoneNumber"
+                              :class="{'has-error': $v.phoneNumber.$error}"
                               :mask="['8', '(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]"
                               :guide="true"
                               @blur="$v.phoneNumber.$touch()"
@@ -37,10 +37,27 @@
                     {{phoneNumberErrorMessage}}
                 </div>
             </div>
+
+            <div class="form-group">
+              <label class="form-lable" for="account">Имя аккаунта или ссылка на сайт</label>
+              <input type="text"
+                     v-model="account"
+                     class="form-control"
+                     id="account"
+                     placeholder="@имя_аккаунта или сайт"
+                     :class="{'has-error': $v.account.$error}"
+                     @blur="$v.account.$touch()"
+                     @focus="$v.account.$reset()">
+
+              <!--<div class="error-message" v-if="$v.account.$error">-->
+                <!--{{userNameErrorMessage}}-->
+              <!--</div>-->
+            </div>
+
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="agreement">
                 <label class="form-check-label" for="exampleCheck1">
-                  Согласен на <a href @click.prevent="$emit('show', 'privacyPolicy')" class="privacy-policy__link">обработку персональных данных</a>
+                  Согласен на <span @click.prevent="$emit('show', 'privacyPolicy')" class="privacy-policy__link">обработку персональных данных</span>
                 </label>
 
                 <div class="error-message">
@@ -72,11 +89,16 @@
         type: String,
         default: 'Оставить заявку'
       },
+      hideTitle: {
+        type: Boolean,
+        default: false
+      }
     },
     data: () => ({
       phoneNumber: '',
       userName: '',
-      agreement: true
+      agreement: true,
+      account: ''
     }),
     computed: {
       userNameErrorMessage () {
@@ -113,10 +135,10 @@
         const form = new FormData()
         form.append('name', this.userName)
         form.append('phone', this.phoneNumber)
+        form.append('account', this.account)
 
         fetch('ajax.php', { method: 'POST', body: form })
           .then(res => {
-            console.log(res)
             return res.text()
           })
           .then(res => {
@@ -128,11 +150,15 @@
             this.submitError()
           });
       },
+
       submitSuccess(){
         this.userName = '';
         this.phoneNumber = '';
+        this.account = '';
         this.$toast.success('Спасибо за вашу заявку!', 'OK');
+        this.$emit('hide')
       },
+
       submitError(){
         this.$toast.error('Ошибка отправки, попробуйте еще раз!', 'Ошибка');
       }
@@ -146,11 +172,12 @@
       'phoneNumber': {
         required,
         validPhone (value) {
-          return true
-          // const unMaskedValue = value.replace(/[(-_\s]/, '')
-          // console.log(unMaskedValue)
-          // return value ? value.replace(/[(-_\s]/, '').length === 11 : false
+          const unMaskedValue = value.replace(/[-()_\s]/g, '')
+          return value ? unMaskedValue.length === 11 : false
         }
+      },
+      'account': {
+        minLength: minLength(3)
       }
     }
   }
