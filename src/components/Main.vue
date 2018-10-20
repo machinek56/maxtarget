@@ -29,7 +29,7 @@
               <a class="nav-link ancors" href="#application">Оставить заявку</a>
             </li>
             <li class="nav-item">
-              <a href="tel:+7(999)937-79-56" class="nav-phone">+7 (999) 937-79-56</a>
+              <a :href="phoneLink" class="nav-phone">{{phone}}</a>
             </li>
           </ul>
         </div>
@@ -564,7 +564,7 @@
           <div class="col-12 contacts__section">
             <!--<img  src="~@/assets/images/contacts/phone-call.svg" alt="">-->
             <PhoneIcon class="contacts__phone-icon"/>
-            <a href="tel:+7(999)937-79-56" class="contacts__phone">+7 (999) 937-79-56</a>
+            <a :href="phoneLink" class="contacts__phone">{{phone}}</a>
           </div>
           <div class="col-12 contacts__section">
             <a href="mailto:max.target.agency@gmail.com" class="contacts__phone">max.target.agency@gmail.com</a>
@@ -667,8 +667,13 @@ export default {
     CloseIcon
   },
   data: () => ({
-
+    phone: '+7 (903) 665-34-67'
   }),
+  computed: {
+    phoneLink () {
+      return `tel:${this.phone.replace(/\s/g, '')}`
+    }
+  },
   methods: {
     showModal (name = 'privacyPolicy') {
       this.$modal.show(name)
