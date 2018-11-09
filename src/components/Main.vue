@@ -499,7 +499,7 @@
               <h3 class="step__title">Аналитика</h3>
             </div>
 
-            <p>
+            <p class="step__content">
               Проводим комплексный аудит Вашего аккаунта
               и выбираем самые эффективные
               способы продвижения
@@ -511,7 +511,7 @@
               <h3 class="step__title">Договор</h3>
             </div>
 
-            <p>
+            <p class="step__content">
               Работаем только по договору
               и фиксируем на бумаге
               все наши обещания
@@ -523,7 +523,7 @@
               <!--<img src="~@/assets/images/steps/profits.svg" alt="" class="step__icon">-->
               <h3 class="step__title">Продвижение</h3>
             </div>
-            <p>
+            <p class="step__content">
               Начинаем мощное продвижение
               Вашего аккаунта, Вы получаете
               новых подписчиков и клиентов
@@ -535,7 +535,7 @@
               <!--<img src="~@/assets/images/steps/landing-page.svg" alt="" class="step__icon">-->
               <h3 class="step__title">Оптимизация</h3>
             </div>
-            <p>
+            <p class="step__content">
               Оптимизируем рекламные
               кампании – Вы получаете
               максимальный результат
