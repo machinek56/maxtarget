@@ -19,7 +19,7 @@ export default {
     display: inline-block;
     position: absolute;
     left: 6px;
-    top: 8px;
+    top: 18px;
   }
 
   .spinner > div {

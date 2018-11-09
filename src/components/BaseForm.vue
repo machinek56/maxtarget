@@ -162,7 +162,7 @@ export default {
       this.userName = ''
       this.phoneNumber = ''
       this.account = ''
-      this.$toast.success('Спасибо за вашу заявку!', 'OK')
+      this.$toast.success('Спасибо за вашу заявку! С вами свяжется наш менеджер.', 'OK')
       this.$emit('hide')
     },
 

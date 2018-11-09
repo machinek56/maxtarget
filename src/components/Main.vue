@@ -55,8 +55,12 @@
             <div class="d-md-none">
               <img src="smm.png" alt="Banner Image" class="img-responsive" />
             </div>
-            <p class="banner__cta-title">ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи
-              через INSTAGRAM:</p>
+            <!--<p class="banner__cta-title">-->
+              <!--ОСТАВЬТЕ СВОИ ДАННЫЕ И НАШ ЭКСПЕРТ РАССКАЖЕТ ВАМ, как увеличить продажи через INSTAGRAM:-->
+            <!--</p>  -->
+            <p class="banner__cta-title">
+              Оставьте свои данные и наш эксперт расскажет вам, как увеличить продажи через INSTAGRAM:
+            </p>
 
             <base-form @show="showModal('privacyPolicy')"
                        :hide-title="true">
